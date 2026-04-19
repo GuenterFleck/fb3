@@ -250,6 +250,9 @@ function runQuiz(questions, title) {
         let html = `<h1>⚓ FB3 Quiz</h1>`;
         html += `<div class="question-header"><h2>${title}</h2><span class="progress">${idx+1} / ${questions.length}</span></div>`;
         html += `<div class="question-text">${q.question} ${multiHint}</div>`;
+        if (q.picture) {
+            html += `<div style="margin-bottom:16px;text-align:center"><img src="img/${q.picture}" alt="${q.picture}" style="max-width:100%;border-radius:8px;"></div>`;
+        }
         html += `<div class="answers" id="answers">`;
         q.answers.forEach((a, i) => {
             html += `<button class="answer-btn" id="ans${i}" onclick="toggleAnswer(${i})">${a.option}) ${a.text}</button>`;
@@ -371,7 +374,8 @@ function runQuiz(questions, title) {
                     "text": "Unter Motor gar nicht.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A010101"
         },
         {
             "id": 2,
@@ -398,7 +402,8 @@ function runQuiz(questions, title) {
                     "text": "2,0 m",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A010405"
         },
         {
             "id": 3,
@@ -425,7 +430,8 @@ function runQuiz(questions, title) {
                     "text": "Der Skipper ist grundsätzlich für alle navigatorischen und technischen Belange am Schiff verantwortlich, kann aber bestimmte Verantwortlichkeiten delegieren.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "A030301"
         },
         {
             "id": 4,
@@ -452,7 +458,8 @@ function runQuiz(questions, title) {
                     "text": "… darf nicht abgelegt werden.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "A030302"
         },
         {
             "id": 5,
@@ -479,7 +486,8 @@ function runQuiz(questions, title) {
                     "text": "Mindestens 2 Crewmitglieder müssen nüchtern bleiben.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A030401"
         },
         {
             "id": 6,
@@ -506,7 +514,8 @@ function runQuiz(questions, title) {
                     "text": "Unter der Nationalflagge.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A030513"
         },
         {
             "id": 10,
@@ -533,7 +542,8 @@ function runQuiz(questions, title) {
                     "text": "So viele wie Personen für die Jacht zugelassen sind.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A030703"
         },
         {
             "id": 11,
@@ -560,7 +570,8 @@ function runQuiz(questions, title) {
                     "text": "Jachtverordnung (JachtVO)",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "A030704"
         },
         {
             "id": 13,
@@ -587,7 +598,8 @@ function runQuiz(questions, title) {
                     "text": "Ein zweites Mobiltelefon, falls das erste defekt wird.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A030902"
         },
         {
             "id": 14,
@@ -614,7 +626,8 @@ function runQuiz(questions, title) {
                     "text": "Mindestens 6 Monate.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A030903"
         },
         {
             "id": 15,
@@ -641,7 +654,8 @@ function runQuiz(questions, title) {
                     "text": "Wachen nach seemännischer Erfahrung: die erfahrenen Crewmitglieder in der Nacht, die weniger erfahrenen am Tag.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A030904"
         },
         {
             "id": 16,
@@ -668,7 +682,8 @@ function runQuiz(questions, title) {
                     "text": "Öldruck und Kühlwassertemperatur Motor",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A030908"
         },
         {
             "id": 17,
@@ -695,7 +710,8 @@ function runQuiz(questions, title) {
                     "text": "Amtliche Ernährungsrichtlinien für die Hohe See.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A030909"
         },
         {
             "id": 18,
@@ -722,7 +738,8 @@ function runQuiz(questions, title) {
                     "text": "Die Lebensmittelpreise in den verschiedenen Ländern.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A030910"
         },
         {
             "id": 19,
@@ -749,7 +766,8 @@ function runQuiz(questions, title) {
                     "text": "Nach dem persönlichen Geschmack der Crewmitglieder.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A030911"
         },
         {
             "id": 20,
@@ -776,7 +794,8 @@ function runQuiz(questions, title) {
                     "text": "… die verschiedenen Tanks bleiben getrennt, nur jeweils einer ist geöffnet, bis er leer ist.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "A030912"
         },
         {
             "id": 21,
@@ -803,7 +822,8 @@ function runQuiz(questions, title) {
                     "text": "Kontrolle des Reservediesels.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A030913"
         },
         {
             "id": 22,
@@ -830,7 +850,8 @@ function runQuiz(questions, title) {
                     "text": "Schiffe auf Langfahrt können um Ausnahmeregelungen ansuchen.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A040401"
         },
         {
             "id": 23,
@@ -857,7 +878,8 @@ function runQuiz(questions, title) {
                     "text": "Weil nur Glas und Metall ins Meer entsorgt werden dürfen.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A040401"
         },
         {
             "id": 24,
@@ -884,7 +906,8 @@ function runQuiz(questions, title) {
                     "text": "Durch jede Art von Knoten.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "A050301"
         },
         {
             "id": 26,
@@ -911,7 +934,8 @@ function runQuiz(questions, title) {
                     "text": "Mit einem Kabelbinder.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A050401"
         },
         {
             "id": 27,
@@ -938,7 +962,8 @@ function runQuiz(questions, title) {
                     "text": "Mit einem Kabelbinder.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A050402"
         },
         {
             "id": 28,
@@ -965,7 +990,8 @@ function runQuiz(questions, title) {
                     "text": "Ein Lang-Takling.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A050403"
         },
         {
             "id": 29,
@@ -992,7 +1018,8 @@ function runQuiz(questions, title) {
                     "text": "Verbindung zwischen Leine und Drahtseil.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A050501"
         },
         {
             "id": 31,
@@ -1019,7 +1046,8 @@ function runQuiz(questions, title) {
                     "text": "Zum dauerhaften Verbinden zweier geflochtener Leinen.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A050503"
         },
         {
             "id": 32,
@@ -1046,7 +1074,8 @@ function runQuiz(questions, title) {
                     "text": "Zum dauerhaften Verbinden zweier geflochtener Leinen.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "A050504"
         },
         {
             "id": 33,
@@ -1073,7 +1102,8 @@ function runQuiz(questions, title) {
                     "text": "Höhe über Wasserlinie",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010101"
         },
         {
             "id": 34,
@@ -1100,7 +1130,8 @@ function runQuiz(questions, title) {
                     "text": "Wasserlinie",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "B010102"
         },
         {
             "id": 35,
@@ -1127,7 +1158,8 @@ function runQuiz(questions, title) {
                     "text": "Bezugslinie durch den Schwerpunkt des Rumpfes",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010103"
         },
         {
             "id": 36,
@@ -1154,7 +1186,8 @@ function runQuiz(questions, title) {
                     "text": "Long Wave Line",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010104"
         },
         {
             "id": 37,
@@ -1181,7 +1214,8 @@ function runQuiz(questions, title) {
                     "text": "Der unter der Wasserlinie liegende Teil des Rumpfes",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010105"
         },
         {
             "id": 38,
@@ -1208,7 +1242,8 @@ function runQuiz(questions, title) {
                     "text": "Die Einbaulage von Schiffseinbauten",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010106"
         },
         {
             "id": 39,
@@ -1235,7 +1270,8 @@ function runQuiz(questions, title) {
                     "text": "Mechanische Eigenschaften des Bootskörpers",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010107"
         },
         {
             "id": 40,
@@ -1262,7 +1298,8 @@ function runQuiz(questions, title) {
                     "text": "Die horizontalen Schnittebenen normal zur Vertikalachse",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010108"
         },
         {
             "id": 41,
@@ -1289,7 +1326,8 @@ function runQuiz(questions, title) {
                     "text": "Grundriss des Decks",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010109"
         },
         {
             "id": 42,
@@ -1316,7 +1354,8 @@ function runQuiz(questions, title) {
                     "text": "Längsversteifungen zur Verstärkung des Kiels",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010110"
         },
         {
             "id": 43,
@@ -1343,7 +1382,8 @@ function runQuiz(questions, title) {
                     "text": "Vorderkante eines Schiffsrumpfes oberhalb der Wasserlinie",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010111"
         },
         {
             "id": 44,
@@ -1370,7 +1410,8 @@ function runQuiz(questions, title) {
                     "text": "Die Steifigkeit des Rumpfes",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010201"
         },
         {
             "id": 45,
@@ -1397,7 +1438,8 @@ function runQuiz(questions, title) {
                     "text": "Gewichtsstabilität bedingt eine Auftriebskraft geringer als die Gewichtskraft",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010202"
         },
         {
             "id": 46,
@@ -1424,7 +1466,8 @@ function runQuiz(questions, title) {
                     "text": "Bei ausschließlich formstabilen Booten liegt der Gewichtsschwerpunkt (ohne Krängung) stets unter dem Auftriebsschwerpunkt.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010203"
         },
         {
             "id": 47,
@@ -1451,7 +1494,8 @@ function runQuiz(questions, title) {
                     "text": "Wenn trotz Zuladung die Freibordmarke nicht überschritten wird",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010204"
         },
         {
             "id": 48,
@@ -1478,7 +1522,8 @@ function runQuiz(questions, title) {
                     "text": "Durch Verwendung schwerer Bootsbaumaterialien",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010205"
         },
         {
             "id": 49,
@@ -1505,7 +1550,8 @@ function runQuiz(questions, title) {
                     "text": "Bis 180°",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010206"
         },
         {
             "id": 50,
@@ -1532,7 +1578,8 @@ function runQuiz(questions, title) {
                     "text": "Wenn ein Ballastkiel den Gewichtsschwerpunkt nach unten verlagert",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010207"
         },
         {
             "id": 51,
@@ -1559,7 +1606,8 @@ function runQuiz(questions, title) {
                     "text": "Zylinderform",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010208"
         },
         {
             "id": 52,
@@ -1586,7 +1634,8 @@ function runQuiz(questions, title) {
                     "text": "Etwa 135°",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010209"
         },
         {
             "id": 53,
@@ -1613,7 +1662,8 @@ function runQuiz(questions, title) {
                     "text": "Die Tendenz eines Bootes den Kurs beizubehalten",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010210"
         },
         {
             "id": 54,
@@ -1640,7 +1690,8 @@ function runQuiz(questions, title) {
                     "text": "Der Schnittpunkt der Symmetrieebene des Schiffes mit der Wirkungslinie der Vortriebskraft",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010211"
         },
         {
             "id": 55,
@@ -1667,7 +1718,8 @@ function runQuiz(questions, title) {
                     "text": "Die Veränderung der Auftriebskraft als Funktion der Bootsgeschwindigkeit",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010212"
         },
         {
             "id": 56,
@@ -1694,7 +1746,8 @@ function runQuiz(questions, title) {
                     "text": "Zum Schutz vor elektrolytischer Korrosion",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "B010501A"
         },
         {
             "id": 57,
@@ -1721,7 +1774,8 @@ function runQuiz(questions, title) {
                     "text": "Verhindert Blitzeinschlag",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010501C"
         },
         {
             "id": 58,
@@ -1748,7 +1802,8 @@ function runQuiz(questions, title) {
                     "text": "Vor jedem Törn",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B010504"
         },
         {
             "id": 60,
@@ -1775,7 +1830,8 @@ function runQuiz(questions, title) {
                     "text": "Um sicherzustellen, dass die Starterbatterie nicht durch das Bordnetz entleert wird.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "B020201"
         },
         {
             "id": 501,
@@ -1802,7 +1858,9 @@ function runQuiz(questions, title) {
                     "text": "Wasserpumpe",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B020202",
+            "picture": "B020202.png"
         },
         {
             "id": 62,
@@ -1829,7 +1887,8 @@ function runQuiz(questions, title) {
                     "text": "Verdoppelung der Kapazität",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B020203"
         },
         {
             "id": 63,
@@ -1856,7 +1915,8 @@ function runQuiz(questions, title) {
                     "text": "Verdoppelung der Kapazität",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "B020204A"
         },
         {
             "id": 12,
@@ -1883,7 +1943,8 @@ function runQuiz(questions, title) {
                     "text": "Die Bleiplatten können schmelzen.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B020205"
         },
         {
             "id": 66,
@@ -1910,7 +1971,8 @@ function runQuiz(questions, title) {
                     "text": "Gegebenenfalls destilliertes Wasser nachfüllen",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "B020206"
         },
         {
             "id": 67,
@@ -1937,7 +1999,8 @@ function runQuiz(questions, title) {
                     "text": "Tiefentladung zu Saisonende",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B020207"
         },
         {
             "id": 68,
@@ -1964,7 +2027,8 @@ function runQuiz(questions, title) {
                     "text": "Die Ladespannung ist zu hoch.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "B020208"
         },
         {
             "id": 69,
@@ -1991,7 +2055,8 @@ function runQuiz(questions, title) {
                     "text": "Kapazitätseinbußen bei ungeeigenten Ladeströmen",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "B020209"
         },
         {
             "id": 70,
@@ -2018,7 +2083,8 @@ function runQuiz(questions, title) {
                     "text": "Die Lichtmaschine kann beschädigt werden.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "B020210"
         },
         {
             "id": 71,
@@ -2045,7 +2111,8 @@ function runQuiz(questions, title) {
                     "text": "Ohm [(cid:443)]",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B020301"
         },
         {
             "id": 72,
@@ -2072,7 +2139,8 @@ function runQuiz(questions, title) {
                     "text": "Ohm [(cid:443)]",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B020302"
         },
         {
             "id": 73,
@@ -2099,7 +2167,8 @@ function runQuiz(questions, title) {
                     "text": "Ohm [(cid:443)]",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B020303"
         },
         {
             "id": 74,
@@ -2126,7 +2195,8 @@ function runQuiz(questions, title) {
                     "text": "Elektrischer Widerstand",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B020304"
         },
         {
             "id": 75,
@@ -2153,7 +2223,8 @@ function runQuiz(questions, title) {
                     "text": "Ladezustand eines Bleiakkumulators",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "B020305"
         },
         {
             "id": 76,
@@ -2180,7 +2251,8 @@ function runQuiz(questions, title) {
                     "text": "Anemometer",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B020306"
         },
         {
             "id": 77,
@@ -2207,7 +2279,8 @@ function runQuiz(questions, title) {
                     "text": "Elektrischer Widerstand",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B020307"
         },
         {
             "id": 78,
@@ -2234,7 +2307,8 @@ function runQuiz(questions, title) {
                     "text": "Wattstunden [Wh]",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B020308A"
         },
         {
             "id": 84,
@@ -2261,7 +2335,8 @@ function runQuiz(questions, title) {
                     "text": "Planetengetriebe",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B030101"
         },
         {
             "id": 85,
@@ -2288,7 +2363,8 @@ function runQuiz(questions, title) {
                     "text": "@Über einen Wärmetauscher wird die Luft mit dem Motorkühlwasser erwärmt und über ein Schlauchsystem im Boot verteilt.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B030201"
         },
         {
             "id": 86,
@@ -2315,7 +2391,8 @@ function runQuiz(questions, title) {
                     "text": "Eine Pumpe außerhalb der Tanks fördert das Wasser zu den Armaturen.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "B030202"
         },
         {
             "id": 88,
@@ -2342,7 +2419,8 @@ function runQuiz(questions, title) {
                     "text": "Notruf absetzen und das Boot verlassen",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "B030504A"
         },
         {
             "id": 90,
@@ -2369,7 +2447,8 @@ function runQuiz(questions, title) {
                     "text": "Westeuropäische Zeit",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C010402"
         },
         {
             "id": 94,
@@ -2396,7 +2475,8 @@ function runQuiz(questions, title) {
                     "text": "Das Kartennull",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C010501"
         },
         {
             "id": 95,
@@ -2423,7 +2503,8 @@ function runQuiz(questions, title) {
                     "text": "Das geodätische Modell",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C010502"
         },
         {
             "id": 96,
@@ -2450,7 +2531,8 @@ function runQuiz(questions, title) {
                     "text": "Die Wassertiefe 0,0 m",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C010503"
         },
         {
             "id": 97,
@@ -2477,7 +2559,8 @@ function runQuiz(questions, title) {
                     "text": "Eine Linie gleichen Luftdrucks",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C010601"
         },
         {
             "id": 98,
@@ -2504,7 +2587,8 @@ function runQuiz(questions, title) {
                     "text": "Spiralförmig zu den Polen",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C010602"
         },
         {
             "id": 100,
@@ -2531,7 +2615,8 @@ function runQuiz(questions, title) {
                     "text": "Stromrichtung und -geschwindigkeit für jede Stunde des Tages",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C020302"
         },
         {
             "id": 101,
@@ -2558,7 +2643,8 @@ function runQuiz(questions, title) {
                     "text": "In Hochsee - Sportbootkarten",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C020303"
         },
         {
             "id": 103,
@@ -2585,7 +2671,8 @@ function runQuiz(questions, title) {
                     "text": "Ein Verfahren zur Standortbestimmung, bei dem nur ein Peilobjekt erforderlich ist",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C040113"
         },
         {
             "id": 104,
@@ -2612,7 +2699,8 @@ function runQuiz(questions, title) {
                     "text": "Das Peilen eines Zieles beim Aufkreuzen unter Segel.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C040114"
         },
         {
             "id": 105,
@@ -2639,7 +2727,8 @@ function runQuiz(questions, title) {
                     "text": "Eine Hyperbel",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C040201"
         },
         {
             "id": 106,
@@ -2666,7 +2755,8 @@ function runQuiz(questions, title) {
                     "text": "Abstand = 13/7 x Höhenwinkel in '",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C040202"
         },
         {
             "id": 107,
@@ -2693,7 +2783,8 @@ function runQuiz(questions, title) {
                     "text": "Erkennung von Regenfronten",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C050101"
         },
         {
             "id": 108,
@@ -2720,7 +2811,8 @@ function runQuiz(questions, title) {
                     "text": "Die Erkennung eines Ziels beruht auf dem Frequenzunterschied zwischen dem ausgesendeten Signal und dem reflektierten Echo.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050102"
         },
         {
             "id": 109,
@@ -2747,7 +2839,8 @@ function runQuiz(questions, title) {
                     "text": "Das Dauerstrichradar misst die Laufzeit einer Frequenzänderung, das Impulsradar die Laufzeit eines Pulses.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C050103"
         },
         {
             "id": 110,
@@ -2774,7 +2867,8 @@ function runQuiz(questions, title) {
                     "text": "Antennen-Geschwindigkeit",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050104"
         },
         {
             "id": 111,
@@ -2801,7 +2895,8 @@ function runQuiz(questions, title) {
                     "text": "Auf der Messung der Länge des reflektierten Impulses.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050105"
         },
         {
             "id": 112,
@@ -2828,7 +2923,8 @@ function runQuiz(questions, title) {
                     "text": "Distanz, bis zu welcher ein Ziel von der Radaranlage erfaßt werden kann.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050201"
         },
         {
             "id": 113,
@@ -2855,7 +2951,8 @@ function runQuiz(questions, title) {
                     "text": "Gleichtzeitiger Betrieb des Funkgerätes und der Radaranlage",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050202"
         },
         {
             "id": 114,
@@ -2882,7 +2979,8 @@ function runQuiz(questions, title) {
                     "text": "Zur Erhöhung der Ausgangsleistung der Radarimpulse, sodass sie auch hohe Wellenkämme durchdringen können",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050203"
         },
         {
             "id": 115,
@@ -2909,7 +3007,8 @@ function runQuiz(questions, title) {
                     "text": "Overlay",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050301"
         },
         {
             "id": 116,
@@ -2936,7 +3035,8 @@ function runQuiz(questions, title) {
                     "text": "Radarbild ist auf die Schiffslängsachse ausgerichtet.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C050302"
         },
         {
             "id": 117,
@@ -2963,7 +3063,8 @@ function runQuiz(questions, title) {
                     "text": "Radarbild ist auf die Schiffslängsachse ausgerichtet.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050303"
         },
         {
             "id": 118,
@@ -2990,7 +3091,8 @@ function runQuiz(questions, title) {
                     "text": "Radarbild ist auf die Schiffslängsachse ausgerichtet.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050304"
         },
         {
             "id": 119,
@@ -3017,7 +3119,8 @@ function runQuiz(questions, title) {
                     "text": "Peilungen sind Winkel zur Schiffslängsachse.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C050305"
         },
         {
             "id": 120,
@@ -3044,7 +3147,8 @@ function runQuiz(questions, title) {
                     "text": "Im Nordwesten",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050306"
         },
         {
             "id": 121,
@@ -3071,7 +3175,8 @@ function runQuiz(questions, title) {
                     "text": "Bb achteraus",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050307"
         },
         {
             "id": 122,
@@ -3098,7 +3203,8 @@ function runQuiz(questions, title) {
                     "text": "An Backbord querab",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050308"
         },
         {
             "id": 123,
@@ -3125,7 +3231,8 @@ function runQuiz(questions, title) {
                     "text": "HU ist günstiger für die Erkennung von Kollisionsgefahr.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050309"
         },
         {
             "id": 124,
@@ -3152,7 +3259,8 @@ function runQuiz(questions, title) {
                     "text": "Mit Abstandsmessung und Höhenwinkelmessung",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050310A"
         },
         {
             "id": 125,
@@ -3179,7 +3287,8 @@ function runQuiz(questions, title) {
                     "text": "Durch Abstandsbestimmung und Radarseitenpeilung auf ein Objekt",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C050310B"
         },
         {
             "id": 127,
@@ -3206,7 +3315,8 @@ function runQuiz(questions, title) {
                     "text": "FTC",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050402"
         },
         {
             "id": 128,
@@ -3233,7 +3343,8 @@ function runQuiz(questions, title) {
                     "text": "FTC",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050403"
         },
         {
             "id": 129,
@@ -3260,7 +3371,8 @@ function runQuiz(questions, title) {
                     "text": "Tiefenmessung",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050404"
         },
         {
             "id": 130,
@@ -3287,7 +3399,8 @@ function runQuiz(questions, title) {
                     "text": "Radareinrichtung für die Deviationskontrolle",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050406"
         },
         {
             "id": 131,
@@ -3314,7 +3427,8 @@ function runQuiz(questions, title) {
                     "text": "Die Genauigkeit hängt nur von der Qualität der Radaranlage ab, nicht von der Art der Messung.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050407"
         },
         {
             "id": 132,
@@ -3341,7 +3455,8 @@ function runQuiz(questions, title) {
                     "text": "Der Winkel zwischen recht voraus und dem Peilobjekt",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C050408A"
         },
         {
             "id": 133,
@@ -3368,7 +3483,8 @@ function runQuiz(questions, title) {
                     "text": "Die geografische Richtung zum Peilobjekt",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050408B"
         },
         {
             "id": 134,
@@ -3395,7 +3511,8 @@ function runQuiz(questions, title) {
                     "text": "rwP = SP + MgK + Dev + Mw",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C050409"
         },
         {
             "id": 135,
@@ -3422,7 +3539,8 @@ function runQuiz(questions, title) {
                     "text": "90° zum Kurs über Grund",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050410"
         },
         {
             "id": 136,
@@ -3449,7 +3567,8 @@ function runQuiz(questions, title) {
                     "text": "Normalabstand des Peilobjektes auf den Kompasskurs",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050415"
         },
         {
             "id": 137,
@@ -3476,7 +3595,8 @@ function runQuiz(questions, title) {
                     "text": "Das Echo des Kollisionsgegners wird größer.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050501"
         },
         {
             "id": 139,
@@ -3503,7 +3623,8 @@ function runQuiz(questions, title) {
                     "text": "Zeitpunkt der nähesten Annäherung",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050503"
         },
         {
             "id": 140,
@@ -3530,7 +3651,8 @@ function runQuiz(questions, title) {
                     "text": "Erwartete Ankunftszeit",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C050504"
         },
         {
             "id": 141,
@@ -3557,7 +3679,8 @@ function runQuiz(questions, title) {
                     "text": "Empfang de Entfernung von Satelliten zum GPS-Empfänger",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C060101"
         },
         {
             "id": 142,
@@ -3584,7 +3707,8 @@ function runQuiz(questions, title) {
                     "text": "Frequenzverschiebung",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C060102"
         },
         {
             "id": 143,
@@ -3611,7 +3735,8 @@ function runQuiz(questions, title) {
                     "text": "Immer, wenn man offizielle Seekarten der hydrografischen Institute verwendet.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C060103"
         },
         {
             "id": 144,
@@ -3638,7 +3763,8 @@ function runQuiz(questions, title) {
                     "text": "Zur Übermittlung derPOB / MOB-Position über Funk",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C060104"
         },
         {
             "id": 145,
@@ -3665,7 +3791,8 @@ function runQuiz(questions, title) {
                     "text": "Peilung zum Wegpunkt",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C060301"
         },
         {
             "id": 146,
@@ -3692,7 +3819,8 @@ function runQuiz(questions, title) {
                     "text": "Geschwindigkeit über Grund",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C060302"
         },
         {
             "id": 147,
@@ -3719,7 +3847,8 @@ function runQuiz(questions, title) {
                     "text": "Die Differenz zwischen Sollkurs und aktuellem Kurs",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C060303"
         },
         {
             "id": 148,
@@ -3746,7 +3875,8 @@ function runQuiz(questions, title) {
                     "text": "Ein Kurs zu einem Wegpunkt unter Berücksichtigung einer Mindestwassertiefe",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C060304"
         },
         {
             "id": 149,
@@ -3773,7 +3903,8 @@ function runQuiz(questions, title) {
                     "text": "Die Wassertiefe beim Wegpunkt",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C060305"
         },
         {
             "id": 150,
@@ -3800,7 +3931,8 @@ function runQuiz(questions, title) {
                     "text": "Ein Verfahren, das über Kontrollstationen Korrekturwerte liefert, mit denen die empfangenen Werte verbessert werden.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C060501"
         },
         {
             "id": 151,
@@ -3827,7 +3959,8 @@ function runQuiz(questions, title) {
                     "text": "GALILEO",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C060601"
         },
         {
             "id": 152,
@@ -3854,7 +3987,8 @@ function runQuiz(questions, title) {
                     "text": "Bilder von Seekarten, die mit Koordinaten-Information unterlegt werden können",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C060701"
         },
         {
             "id": 153,
@@ -3881,7 +4015,8 @@ function runQuiz(questions, title) {
                     "text": "Rasterkarten mit geodätischen Zusatzinformationen",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C060702"
         },
         {
             "id": 154,
@@ -3908,7 +4043,8 @@ function runQuiz(questions, title) {
                     "text": "Horizont ist ein Kreis in der Himmelskuqel.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C070811"
         },
         {
             "id": 155,
@@ -3935,7 +4071,8 @@ function runQuiz(questions, title) {
                     "text": "Anziehungskräfte von Mond und Sonne",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C080101A"
         },
         {
             "id": 156,
@@ -3962,7 +4099,8 @@ function runQuiz(questions, title) {
                     "text": "Nippzeit",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C080102"
         },
         {
             "id": 157,
@@ -3989,7 +4127,8 @@ function runQuiz(questions, title) {
                     "text": "Bei Nippzeit, wenn Sonne und Mond einen großen Deklinationsunterschied haben",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C080103"
         },
         {
             "id": 158,
@@ -4016,7 +4155,8 @@ function runQuiz(questions, title) {
                     "text": "Halbmond",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C080104"
         },
         {
             "id": 159,
@@ -4043,7 +4183,8 @@ function runQuiz(questions, title) {
                     "text": "Bei Nippzeit, wenn Sonne und Mond einen großen Deklinationsunterschied haben",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C080105"
         },
         {
             "id": 160,
@@ -4070,7 +4211,8 @@ function runQuiz(questions, title) {
                     "text": "Letztes Viertel",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C080106"
         },
         {
             "id": 161,
@@ -4097,7 +4239,8 @@ function runQuiz(questions, title) {
                     "text": "Letztes Viertel",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C080107"
         },
         {
             "id": 162,
@@ -4124,7 +4267,8 @@ function runQuiz(questions, title) {
                     "text": "Sichel, zunehmend",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C080108"
         },
         {
             "id": 163,
@@ -4151,7 +4295,8 @@ function runQuiz(questions, title) {
                     "text": "Sichel, abnehmend",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C080109"
         },
         {
             "id": 164,
@@ -4178,7 +4323,8 @@ function runQuiz(questions, title) {
                     "text": "Die Achse Mond-Erde steht etwa in einem Winkel von 45° zur Achse Erde-Sonne",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C080110"
         },
         {
             "id": 165,
@@ -4205,7 +4351,8 @@ function runQuiz(questions, title) {
                     "text": "Mit dem Kartennull",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C080111"
         },
         {
             "id": 166,
@@ -4232,7 +4379,8 @@ function runQuiz(questions, title) {
                     "text": "Mit den Tabellenwerten in den Gezeitentafeln.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C080112"
         },
         {
             "id": 167,
@@ -4259,7 +4407,8 @@ function runQuiz(questions, title) {
                     "text": "Das zeitlich unterschiedliche Eintreten der Springzeit an verschiedenen Orten.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C080113"
         },
         {
             "id": 168,
@@ -4286,7 +4435,8 @@ function runQuiz(questions, title) {
                     "text": "Die grafische Darstellung einer mittleren Tide am Bezugsort",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C080114"
         },
         {
             "id": 169,
@@ -4313,7 +4463,8 @@ function runQuiz(questions, title) {
                     "text": "Die Zeit, in der der Wasserstand über dem mittleren Wasserstand liegt",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C080201"
         },
         {
             "id": 170,
@@ -4340,7 +4491,8 @@ function runQuiz(questions, title) {
                     "text": "Die Zeit, in der der Wasserstand unter dem mittleren Wasserstand liegt",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C080202"
         },
         {
             "id": 171,
@@ -4367,7 +4519,8 @@ function runQuiz(questions, title) {
                     "text": "Das Fallen der Niedrigwasserhöhen während eines Mondmonats",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C080203"
         },
         {
             "id": 172,
@@ -4394,7 +4547,8 @@ function runQuiz(questions, title) {
                     "text": "Das Ansteigen der Niedrigwasserhöhen während eines Mondmonats",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C080204"
         },
         {
             "id": 173,
@@ -4421,7 +4575,8 @@ function runQuiz(questions, title) {
                     "text": "Der Verlauf der Gezeit von einem Niedrigwasser bis zum nächsten Niedrigwasser",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C080205"
         },
         {
             "id": 174,
@@ -4448,7 +4603,8 @@ function runQuiz(questions, title) {
                     "text": "Arithmetischer Mittelwert aus Tidenstieg und Tidenfall",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C080206"
         },
         {
             "id": 175,
@@ -4475,7 +4631,8 @@ function runQuiz(questions, title) {
                     "text": "Ruhiges Wasser wenn der Seegang durch Wind vom Gezeitenstrom aufgehoben wird",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C080207"
         },
         {
             "id": 176,
@@ -4502,7 +4659,8 @@ function runQuiz(questions, title) {
                     "text": "Die Betonnung regelt jeder Küstenstaat für sein Hoheitsgebiet eigenständig.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C090101"
         },
         {
             "id": 177,
@@ -4529,7 +4687,8 @@ function runQuiz(questions, title) {
                     "text": "Nur im Bereich von Hafeneinfahrten",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C090102"
         },
         {
             "id": 180,
@@ -4556,7 +4715,8 @@ function runQuiz(questions, title) {
                     "text": "Ein System zur Kennzeichnung von Fahrwassern",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C090201"
         },
         {
             "id": 181,
@@ -4583,7 +4743,8 @@ function runQuiz(questions, title) {
                     "text": "Bleibt einlaufend an Backbord liegen",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C090202A"
         },
         {
             "id": 182,
@@ -4610,7 +4771,8 @@ function runQuiz(questions, title) {
                     "text": "Bleibt einlaufend an Backbord liegen",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C090202B"
         },
         {
             "id": 183,
@@ -4637,7 +4799,8 @@ function runQuiz(questions, title) {
                     "text": "Bleibt einlaufend an Backbord liegen.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C090202C"
         },
         {
             "id": 184,
@@ -4664,7 +4827,9 @@ function runQuiz(questions, title) {
                     "text": "Einzelgefahr-Zeichen",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C090203",
+            "picture": "C090203.png"
         },
         {
             "id": 185,
@@ -4691,7 +4856,8 @@ function runQuiz(questions, title) {
                     "text": "Beim Auslaufen an Backbord liegen lassen.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C090203D"
         },
         {
             "id": 186,
@@ -4718,7 +4884,9 @@ function runQuiz(questions, title) {
                     "text": "Einzelgefahrzeichen",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C090204",
+            "picture": "C090204.png"
         },
         {
             "id": 187,
@@ -4745,7 +4913,9 @@ function runQuiz(questions, title) {
                     "text": "Fahrwassermitte",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C090301",
+            "picture": "C090301.png"
         },
         {
             "id": 188,
@@ -4772,7 +4942,8 @@ function runQuiz(questions, title) {
                     "text": "Weiß - Rot senkrecht gestreift",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C090302"
         },
         {
             "id": 189,
@@ -4799,7 +4970,8 @@ function runQuiz(questions, title) {
                     "text": "Ein System zur Kennzeichnung von Sperrgebieten",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C090401"
         },
         {
             "id": 190,
@@ -4826,7 +4998,9 @@ function runQuiz(questions, title) {
                     "text": "Dieses Seezeichen muss westlich passiert werden.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C090402",
+            "picture": "C090402.png"
         },
         {
             "id": 191,
@@ -4853,7 +5027,9 @@ function runQuiz(questions, title) {
                     "text": "Das Seezeichen muss Richtung Westen umfahren werden.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C090403",
+            "picture": "C090403.png"
         },
         {
             "id": 192,
@@ -4880,7 +5056,8 @@ function runQuiz(questions, title) {
                     "text": "Das Seezeichen kann beiderseits passiert werden.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C090404"
         },
         {
             "id": 193,
@@ -4907,7 +5084,8 @@ function runQuiz(questions, title) {
                     "text": "Westquadrant",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C090405"
         },
         {
             "id": 194,
@@ -4934,7 +5112,8 @@ function runQuiz(questions, title) {
                     "text": "Westquadrant",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C090406"
         },
         {
             "id": 195,
@@ -4961,7 +5140,8 @@ function runQuiz(questions, title) {
                     "text": "Westquadrant",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C090407"
         },
         {
             "id": 196,
@@ -4988,7 +5168,8 @@ function runQuiz(questions, title) {
                     "text": "Westquadrant",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C090408"
         },
         {
             "id": 197,
@@ -5015,7 +5196,9 @@ function runQuiz(questions, title) {
                     "text": "Südquadrant, im Süden zu umfahren",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C090409",
+            "picture": "C090409.png"
         },
         {
             "id": 198,
@@ -5042,7 +5225,9 @@ function runQuiz(questions, title) {
                     "text": "Einzelgefahrzeichen",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C090410",
+            "picture": "C090410.png"
         },
         {
             "id": 199,
@@ -5069,7 +5254,9 @@ function runQuiz(questions, title) {
                     "text": "Mittefahrwasserzeichen, kann an jeder Seite passiert werden.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C090501",
+            "picture": "C090501.png"
         },
         {
             "id": 200,
@@ -5096,7 +5283,9 @@ function runQuiz(questions, title) {
                     "text": "Einzelgefahrzeichen",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "C090502",
+            "picture": "C090502.png"
         },
         {
             "id": 201,
@@ -5123,7 +5312,8 @@ function runQuiz(questions, title) {
                     "text": "Mittefahrwasserzeichen, kann beidseitig passiert werden",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C090503"
         },
         {
             "id": 202,
@@ -5150,7 +5340,8 @@ function runQuiz(questions, title) {
                     "text": "Sonderzeichen ausschließlich für die Großschifffahrt in Hafennähe",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "C090601"
         },
         {
             "id": 203,
@@ -5177,7 +5368,8 @@ function runQuiz(questions, title) {
                     "text": "International Association for Safety of Live at Sea",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "D010101"
         },
         {
             "id": 204,
@@ -5204,7 +5396,8 @@ function runQuiz(questions, title) {
                     "text": "Abkommen über die Verhütung von Meeresverschmutzung durch die Schifffahrt",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "D010102"
         },
         {
             "id": 206,
@@ -5231,7 +5424,8 @@ function runQuiz(questions, title) {
                     "text": "Watt- oder Tagesfahrt (3 sm), Küstenfahrt (30 sm), Küstennahe Fahrt (300 sm), Weltweite Fahrt (keine Einschränkung)",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "D020402"
         },
         {
             "id": 212,
@@ -5258,7 +5452,8 @@ function runQuiz(questions, title) {
                     "text": "Die Wettererscheinungen für einen langen Zeitraum",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E010101"
         },
         {
             "id": 213,
@@ -5285,7 +5480,8 @@ function runQuiz(questions, title) {
                     "text": "Die Beschreibung der Wettererscheinungen für einen langen Zeitraum",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E010102"
         },
         {
             "id": 214,
@@ -5312,7 +5508,8 @@ function runQuiz(questions, title) {
                     "text": "Wetter bezeichnet einzelne Zustände der Atmosphäre, Klima ist deren Zusammenfassung",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E010103"
         },
         {
             "id": 215,
@@ -5339,7 +5536,8 @@ function runQuiz(questions, title) {
                     "text": "Unterschiedliche Einstrahlwinkel der Sonne",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E010201"
         },
         {
             "id": 219,
@@ -5366,7 +5564,8 @@ function runQuiz(questions, title) {
                     "text": "Aus dem Abstand der Isobaren",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E020201"
         },
         {
             "id": 502,
@@ -5393,7 +5592,8 @@ function runQuiz(questions, title) {
                     "text": "stürmischer Wind (Gradient = 4)",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020203"
         },
         {
             "id": 222,
@@ -5420,7 +5620,8 @@ function runQuiz(questions, title) {
                     "text": "Sie ist in höheren Breiten größer als in niedrigen Breiten.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020204"
         },
         {
             "id": 223,
@@ -5447,7 +5648,8 @@ function runQuiz(questions, title) {
                     "text": "Geringer Druckunterschied, kleiner Gradient, schwacher bis mäßiger Wind.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020205"
         },
         {
             "id": 224,
@@ -5474,7 +5676,9 @@ function runQuiz(questions, title) {
                     "text": "Wind etwa NE/40kn",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E020206",
+            "picture": "E020206.png"
         },
         {
             "id": 225,
@@ -5501,7 +5705,9 @@ function runQuiz(questions, title) {
                     "text": "Wind etwa SE/30 kn",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020207",
+            "picture": "E020207.png"
         },
         {
             "id": 503,
@@ -5528,7 +5734,8 @@ function runQuiz(questions, title) {
                     "text": "Sturm (Gradient = 4)",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020208"
         },
         {
             "id": 504,
@@ -5555,7 +5762,8 @@ function runQuiz(questions, title) {
                     "text": "schwerer Sturm (Gradient = 5)",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020209"
         },
         {
             "id": 505,
@@ -5582,7 +5790,8 @@ function runQuiz(questions, title) {
                     "text": "Sturm (Gradient = 4)",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020210"
         },
         {
             "id": 506,
@@ -5609,7 +5818,8 @@ function runQuiz(questions, title) {
                     "text": "Sturm (Gradient = 4)",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E020211"
         },
         {
             "id": 230,
@@ -5636,7 +5846,8 @@ function runQuiz(questions, title) {
                     "text": "m/s",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020301A"
         },
         {
             "id": 232,
@@ -5663,7 +5874,8 @@ function runQuiz(questions, title) {
                     "text": "m/s",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E020303A"
         },
         {
             "id": 233,
@@ -5690,7 +5902,8 @@ function runQuiz(questions, title) {
                     "text": "Beaufort",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020303B"
         },
         {
             "id": 234,
@@ -5717,7 +5930,8 @@ function runQuiz(questions, title) {
                     "text": "Die Corioliskraft beschleunigt den Wind auf der Nordhalbkugel und bremst ihn auf der Südhalbkugel.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020401"
         },
         {
             "id": 235,
@@ -5744,7 +5958,8 @@ function runQuiz(questions, title) {
                     "text": "Der vom Druckunterschied hervorgerufene Wind, abgelenkt durch die Coriolis-Kraft, Fliehkraft und Reibung an der Oberfläche",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020402"
         },
         {
             "id": 236,
@@ -5771,7 +5986,8 @@ function runQuiz(questions, title) {
                     "text": "Der vom Druckunterschied hervorgerufene Wind, abgelenkt durch die Coriolis-Kraft, Fliehkraft und Reibung an der Oberfläche.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020403"
         },
         {
             "id": 237,
@@ -5798,7 +6014,8 @@ function runQuiz(questions, title) {
                     "text": "Der vom Druckunterschied hervorgerufene Wind, abgelenkt durch die Coriolis-Kraft, Fliehkraft und Reibung an der Oberfläche",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E020404"
         },
         {
             "id": 238,
@@ -5825,7 +6042,8 @@ function runQuiz(questions, title) {
                     "text": "Gradientenkraft",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020406"
         },
         {
             "id": 239,
@@ -5852,7 +6070,8 @@ function runQuiz(questions, title) {
                     "text": "Die Fliehkraft",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E020407"
         },
         {
             "id": 240,
@@ -5879,7 +6098,8 @@ function runQuiz(questions, title) {
                     "text": "Subtropischer Hochdruckgürtel",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E020601"
         },
         {
             "id": 241,
@@ -5906,7 +6126,8 @@ function runQuiz(questions, title) {
                     "text": "Der Wind weht vom hohen zum tiefen Druck.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E020602"
         },
         {
             "id": 242,
@@ -5933,7 +6154,8 @@ function runQuiz(questions, title) {
                     "text": "NE - Passat",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E020603"
         },
         {
             "id": 243,
@@ -5960,7 +6182,8 @@ function runQuiz(questions, title) {
                     "text": "SW",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020604"
         },
         {
             "id": 244,
@@ -5987,7 +6210,8 @@ function runQuiz(questions, title) {
                     "text": "SW",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020605"
         },
         {
             "id": 245,
@@ -6014,7 +6238,8 @@ function runQuiz(questions, title) {
                     "text": "Nordwinde auf der Südhalbkugel",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020606"
         },
         {
             "id": 246,
@@ -6041,7 +6266,8 @@ function runQuiz(questions, title) {
                     "text": "Arabisches Meer",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E020607"
         },
         {
             "id": 247,
@@ -6068,7 +6294,8 @@ function runQuiz(questions, title) {
                     "text": "Ostwindzone auf der Südhalbkugel",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020608"
         },
         {
             "id": 248,
@@ -6095,7 +6322,8 @@ function runQuiz(questions, title) {
                     "text": "Äquatorialer Hochdruckgürtel",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E020609"
         },
         {
             "id": 249,
@@ -6122,7 +6350,8 @@ function runQuiz(questions, title) {
                     "text": "Rossbreiten",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E020610"
         },
         {
             "id": 250,
@@ -6149,7 +6378,8 @@ function runQuiz(questions, title) {
                     "text": "Nach ihrer Ausdehnung",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E030101"
         },
         {
             "id": 251,
@@ -6176,7 +6406,9 @@ function runQuiz(questions, title) {
                     "text": "Altostratus",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E030102",
+            "picture": "E030102.png"
         },
         {
             "id": 252,
@@ -6203,7 +6435,9 @@ function runQuiz(questions, title) {
                     "text": "Cirrus",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E030103",
+            "picture": "E030103.png"
         },
         {
             "id": 253,
@@ -6230,7 +6464,9 @@ function runQuiz(questions, title) {
                     "text": "Stratus",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E030104",
+            "picture": "E030104.png"
         },
         {
             "id": 254,
@@ -6257,7 +6493,9 @@ function runQuiz(questions, title) {
                     "text": "Cumulonimbus",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E030105",
+            "picture": "E030105.png"
         },
         {
             "id": 255,
@@ -6284,7 +6522,9 @@ function runQuiz(questions, title) {
                     "text": "Stratus",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E030106",
+            "picture": "E030106.png"
         },
         {
             "id": 256,
@@ -6311,7 +6551,9 @@ function runQuiz(questions, title) {
                     "text": "Stratusbewölkung, Warmfront zieht auf",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E030107",
+            "picture": "E030107.png"
         },
         {
             "id": 257,
@@ -6338,7 +6580,8 @@ function runQuiz(questions, title) {
                     "text": "Niedrige Temperaturen hängen nicht vom Bewölkungsgrad ab, sondern von der Stratosphärentemperatur.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E030108"
         },
         {
             "id": 258,
@@ -6365,7 +6608,8 @@ function runQuiz(questions, title) {
                     "text": "Verdunstungsnebel",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E030201"
         },
         {
             "id": 259,
@@ -6392,7 +6636,8 @@ function runQuiz(questions, title) {
                     "text": "Kalte Luft strömt über kaltes Wasser.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E030202"
         },
         {
             "id": 260,
@@ -6419,7 +6664,8 @@ function runQuiz(questions, title) {
                     "text": "Erwärmung der Luft",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E030203"
         },
         {
             "id": 261,
@@ -6446,7 +6692,8 @@ function runQuiz(questions, title) {
                     "text": "Abkühlung feuchter Luft",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E030204"
         },
         {
             "id": 262,
@@ -6473,7 +6720,8 @@ function runQuiz(questions, title) {
                     "text": "Mischungsnebel bei warmer Luft",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E030205"
         },
         {
             "id": 263,
@@ -6500,7 +6748,8 @@ function runQuiz(questions, title) {
                     "text": "Durch Vermischung bodennaher warmer mit kalter Luft",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E040101"
         },
         {
             "id": 264,
@@ -6527,7 +6776,8 @@ function runQuiz(questions, title) {
                     "text": "Gebiete niedrigen Drucks durch das Absinken kalter Luft",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E040102"
         },
         {
             "id": 266,
@@ -6554,7 +6804,8 @@ function runQuiz(questions, title) {
                     "text": "Durch gleich gerichtete (horizontale) Strömungsrichtungen der polaren und der gemäßigten Luftmassen",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E040207"
         },
         {
             "id": 267,
@@ -6581,7 +6832,8 @@ function runQuiz(questions, title) {
                     "text": "Eine Tiefdruckzone, die sich zwischen zwei Fronten schiebt",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E040208"
         },
         {
             "id": 268,
@@ -6608,7 +6860,8 @@ function runQuiz(questions, title) {
                     "text": "Ein Tiefdruckgebilde mit ausgeprägten Fronten",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E040209"
         },
         {
             "id": 269,
@@ -6635,7 +6888,8 @@ function runQuiz(questions, title) {
                     "text": "Tropischer Sturm",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E040401A"
         },
         {
             "id": 270,
@@ -6662,7 +6916,8 @@ function runQuiz(questions, title) {
                     "text": "Aufgefülltes Tiefdruckgebiet",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E040401B"
         },
         {
             "id": 274,
@@ -6689,7 +6944,8 @@ function runQuiz(questions, title) {
                     "text": "Die Verbindung von zwei Tiefdruckgebieten",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E040501"
         },
         {
             "id": 275,
@@ -6716,7 +6972,8 @@ function runQuiz(questions, title) {
                     "text": "Die Luft strömt linksherum aus dem Tief heraus und rechtssherum in das Hoch hinein.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E040601"
         },
         {
             "id": 276,
@@ -6743,7 +7000,8 @@ function runQuiz(questions, title) {
                     "text": "Die Zugrichtung eines Tiefs aus der Zugrichtung der hohen Wolken",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E040701"
         },
         {
             "id": 277,
@@ -6770,7 +7028,8 @@ function runQuiz(questions, title) {
                     "text": "Kommt der Wind von achteraus befindet sich das Tief vorlicher als querab an Backbord.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E040702"
         },
         {
             "id": 278,
@@ -6797,7 +7056,8 @@ function runQuiz(questions, title) {
                     "text": "Die Zugrichtung eines Tiefs aus der Richtung des Höhenwinds",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E040703"
         },
         {
             "id": 279,
@@ -6824,7 +7084,8 @@ function runQuiz(questions, title) {
                     "text": "Nördlich des Zentrums",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E040704"
         },
         {
             "id": 280,
@@ -6851,7 +7112,8 @@ function runQuiz(questions, title) {
                     "text": "Zone westlicher Winde",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E050101"
         },
         {
             "id": 281,
@@ -6878,7 +7140,8 @@ function runQuiz(questions, title) {
                     "text": "Kann den Maestrale bis Sturmstärke verstärken",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E050103"
         },
         {
             "id": 282,
@@ -6905,7 +7168,8 @@ function runQuiz(questions, title) {
                     "text": "Erhöhte Gewittergefahr",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E050104"
         },
         {
             "id": 283,
@@ -6932,7 +7196,8 @@ function runQuiz(questions, title) {
                     "text": "Nichts Besonderes, das ist im Tagesgang normal",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E060101"
         },
         {
             "id": 284,
@@ -6959,7 +7224,8 @@ function runQuiz(questions, title) {
                     "text": "Aus einem raschen Druckanstieg läßt sich nichts Konkretes schließen.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E060102"
         },
         {
             "id": 285,
@@ -6986,7 +7252,8 @@ function runQuiz(questions, title) {
                     "text": "Aus einem stabilen Druck lässt sich nichts Konkretes schließen.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E060103"
         },
         {
             "id": 289,
@@ -7013,7 +7280,8 @@ function runQuiz(questions, title) {
                     "text": "Stationsmeldungen, Warnungen, Vorhersage, Lage",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E070101"
         },
         {
             "id": 292,
@@ -7040,7 +7308,8 @@ function runQuiz(questions, title) {
                     "text": "Auf eine geringe Wassertiefe",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E070203"
         },
         {
             "id": 294,
@@ -7067,7 +7336,8 @@ function runQuiz(questions, title) {
                     "text": "Unterorganisation der UNO",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E070301"
         },
         {
             "id": 295,
@@ -7094,7 +7364,8 @@ function runQuiz(questions, title) {
                     "text": "Informationen über Liegeplatze in Häfen für die Berufsschifffahrt",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E070302"
         },
         {
             "id": 296,
@@ -7121,7 +7392,8 @@ function runQuiz(questions, title) {
                     "text": "GMDSS",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E070303"
         },
         {
             "id": 297,
@@ -7148,7 +7420,8 @@ function runQuiz(questions, title) {
                     "text": "GMDSS",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E070304"
         },
         {
             "id": 298,
@@ -7175,7 +7448,8 @@ function runQuiz(questions, title) {
                     "text": "Ein von der IMO für Küstenstaaten vorgeschriebenes Wetterinformationssystem",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E070401"
         },
         {
             "id": 299,
@@ -7202,7 +7476,8 @@ function runQuiz(questions, title) {
                     "text": "Informationen über das Verkehrsaufkommen in Häfen",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E070402"
         },
         {
             "id": 302,
@@ -7229,7 +7504,8 @@ function runQuiz(questions, title) {
                     "text": "Internet",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E070405"
         },
         {
             "id": 303,
@@ -7256,7 +7532,8 @@ function runQuiz(questions, title) {
                     "text": "gleichbleibend",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E070601"
         },
         {
             "id": 304,
@@ -7283,7 +7560,8 @@ function runQuiz(questions, title) {
                     "text": "gelichbleibend",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E070602"
         },
         {
             "id": 305,
@@ -7310,7 +7588,8 @@ function runQuiz(questions, title) {
                     "text": "der Wind wird zunehmend böiger",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E070603"
         },
         {
             "id": 306,
@@ -7337,7 +7616,8 @@ function runQuiz(questions, title) {
                     "text": "Wetterausblick",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E070604"
         },
         {
             "id": 500,
@@ -7364,7 +7644,8 @@ function runQuiz(questions, title) {
                     "text": "Niedrige Temperatur und Tiefdruckgebiet",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E080203"
         },
         {
             "id": 310,
@@ -7391,7 +7672,8 @@ function runQuiz(questions, title) {
                     "text": "Darstellung der Windstärke und -richtung im Stationsmodell",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E080301"
         },
         {
             "id": 311,
@@ -7418,7 +7700,8 @@ function runQuiz(questions, title) {
                     "text": "Pilot Charts",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E090101"
         },
         {
             "id": 313,
@@ -7445,7 +7728,8 @@ function runQuiz(questions, title) {
                     "text": "Nach der auslösenden Windstärke",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E100202"
         },
         {
             "id": 314,
@@ -7472,7 +7756,8 @@ function runQuiz(questions, title) {
                     "text": "Mittlere Wellenhöhe aus dem Drittel der höchsten Wellen",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E100203"
         },
         {
             "id": 315,
@@ -7499,7 +7784,8 @@ function runQuiz(questions, title) {
                     "text": "Mittlere Wellenhöhe aus dem Drittel der höchsten Wellen",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E100204"
         },
         {
             "id": 316,
@@ -7526,7 +7812,8 @@ function runQuiz(questions, title) {
                     "text": "Häufigkeit der Wellen",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E100302"
         },
         {
             "id": 317,
@@ -7553,7 +7840,8 @@ function runQuiz(questions, title) {
                     "text": "Dem Wind vorauslaufende Welle",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E100401"
         },
         {
             "id": 318,
@@ -7580,7 +7868,8 @@ function runQuiz(questions, title) {
                     "text": "Dünung sind direkt vom Wind angefachte Wellen, Windsee sind dem Wind vorauseilende oder nachlaufende Wellen",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E100402"
         },
         {
             "id": 319,
@@ -7607,7 +7896,8 @@ function runQuiz(questions, title) {
                     "text": "Seegang verursacht durch Kentern des Tidenstroms",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E100501A"
         },
         {
             "id": 320,
@@ -7634,7 +7924,8 @@ function runQuiz(questions, title) {
                     "text": "Steile, brechende See in seichtem Gewässer",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E100501B"
         },
         {
             "id": 321,
@@ -7661,7 +7952,8 @@ function runQuiz(questions, title) {
                     "text": "Wenn der Seegang durch Wind dem Tidenstrom entgegen wirkt",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E100502"
         },
         {
             "id": 322,
@@ -7688,7 +7980,8 @@ function runQuiz(questions, title) {
                     "text": "Seegang mit einer Wellenlänge geringer als die Wassertiefe",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E100503"
         },
         {
             "id": 323,
@@ -7715,7 +8008,8 @@ function runQuiz(questions, title) {
                     "text": "Meeresströmung läuft entgegengesetzt der Wellenrichtung",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E100504"
         },
         {
             "id": 324,
@@ -7742,7 +8036,8 @@ function runQuiz(questions, title) {
                     "text": "Läuft der Strom gegen den Wind entsteht Grundsee.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E100601"
         },
         {
             "id": 325,
@@ -7769,7 +8064,8 @@ function runQuiz(questions, title) {
                     "text": "Im Nördlichen Eismeer um ca. 40° N",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E110101"
         },
         {
             "id": 326,
@@ -7796,7 +8092,8 @@ function runQuiz(questions, title) {
                     "text": "Eine Zone westlicher Winde zwischen der äquatorialen Tiefdruckrinne und dem subtropischen Hochdruckgürtel",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E110102"
         },
         {
             "id": 327,
@@ -7823,7 +8120,8 @@ function runQuiz(questions, title) {
                     "text": "Subtropenhoch",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E110103"
         },
         {
             "id": 328,
@@ -7850,7 +8148,8 @@ function runQuiz(questions, title) {
                     "text": "Instabile Wetterlage",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E110104"
         },
         {
             "id": 329,
@@ -7877,7 +8176,8 @@ function runQuiz(questions, title) {
                     "text": "Reine advektive (horizontale) Luftbewegungen und beständige westliche Winde",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E110105"
         },
         {
             "id": 330,
@@ -7904,7 +8204,8 @@ function runQuiz(questions, title) {
                     "text": "Rossbreiten",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E110106"
         },
         {
             "id": 331,
@@ -7931,7 +8232,8 @@ function runQuiz(questions, title) {
                     "text": "Zone hohen Drucks um den Äquator",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E110107"
         },
         {
             "id": 332,
@@ -7958,7 +8260,8 @@ function runQuiz(questions, title) {
                     "text": "Polare Tiefdruckrinne",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E110108"
         },
         {
             "id": 333,
@@ -7985,7 +8288,8 @@ function runQuiz(questions, title) {
                     "text": "Polare Tiefdruckrinne",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "E110109"
         },
         {
             "id": 334,
@@ -8012,7 +8316,8 @@ function runQuiz(questions, title) {
                     "text": "In den gemäßigten Breiten",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "E110110"
         },
         {
             "id": 335,
@@ -8039,7 +8344,8 @@ function runQuiz(questions, title) {
                     "text": "Leine / Gurt vom Cockpit zum Bug gespannt zum Einpicken der Sicherheitsleine.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "F010201A"
         },
         {
             "id": 336,
@@ -8066,7 +8372,8 @@ function runQuiz(questions, title) {
                     "text": "Leinenverbindung Rettungsweste-Schiff",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "F010201B"
         },
         {
             "id": 337,
@@ -8093,7 +8400,8 @@ function runQuiz(questions, title) {
                     "text": "Leine oder Gurt zum Einhängen der Sicherheitsleinen/Sorgeleinen",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "F010201C"
         },
         {
             "id": 338,
@@ -8120,7 +8428,8 @@ function runQuiz(questions, title) {
                     "text": "Spiegel-Reflektoren",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "F010301"
         },
         {
             "id": 339,
@@ -8147,7 +8456,8 @@ function runQuiz(questions, title) {
                     "text": "Hinter der Radarantenne angebrachter Reflektor zum Verstärken der eingehenden Signale",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "F010302"
         },
         {
             "id": 340,
@@ -8174,7 +8484,8 @@ function runQuiz(questions, title) {
                     "text": "Sie werden erst durch ein einfallendes Radarsignal eingeschaltet.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "F010303"
         },
         {
             "id": 341,
@@ -8201,7 +8512,8 @@ function runQuiz(questions, title) {
                     "text": "Sie übermitteln Navigations- und Schiffsdaten an andere Schiffe.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "F010304"
         },
         {
             "id": 342,
@@ -8228,7 +8540,8 @@ function runQuiz(questions, title) {
                     "text": "Radarreflektoren benötigen keine Stromversorgung, Radar-Transponder schon.",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "F010305"
         },
         {
             "id": 343,
@@ -8255,7 +8568,8 @@ function runQuiz(questions, title) {
                     "text": "Auf Basis von Laufzeitdifferenzen ausgesendeter Signale können Schiffe in der Umgebung erkannt werden.",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "F010401"
         },
         {
             "id": 344,
@@ -8282,7 +8596,8 @@ function runQuiz(questions, title) {
                     "text": "Eine Langdrahtantenne",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "F010402"
         },
         {
             "id": 345,
@@ -8309,7 +8624,8 @@ function runQuiz(questions, title) {
                     "text": "Durch Funken bei Nacht",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "F011201"
         },
         {
             "id": 346,
@@ -8336,7 +8652,8 @@ function runQuiz(questions, title) {
                     "text": "Admiralty List of Radio Signals",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "F011202"
         },
         {
             "id": 347,
@@ -8363,7 +8680,8 @@ function runQuiz(questions, title) {
                     "text": "Notruderpinne zum Steuern einsetzen",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "F040401"
         },
         {
             "id": 348,
@@ -8390,7 +8708,8 @@ function runQuiz(questions, title) {
                     "text": "Sofort Schlepphilfe anfordern",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "F040402"
         },
         {
             "id": 349,
@@ -8417,7 +8736,8 @@ function runQuiz(questions, title) {
                     "text": "Sofort Schlepphilfe anfordern",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "F040403"
         },
         {
             "id": 352,
@@ -8444,7 +8764,8 @@ function runQuiz(questions, title) {
                     "text": "Antrieb der Treibstoffpumpe",
                     "is_correct": true
                 }
-            ]
+            ],
+            "key": "M010108"
         },
         {
             "id": 353,
@@ -8471,7 +8792,8 @@ function runQuiz(questions, title) {
                     "text": "Über die Leckölleitung",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "M010201"
         },
         {
             "id": 354,
@@ -8498,7 +8820,8 @@ function runQuiz(questions, title) {
                     "text": "glasfaserverstärkter Kunststoff",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "M010309"
         },
         {
             "id": 355,
@@ -8525,7 +8848,8 @@ function runQuiz(questions, title) {
                     "text": "Zylinderkopfdichtung",
                     "is_correct": false
                 }
-            ]
+            ],
+            "key": "M020204"
         }
     ];
 showMenu();
