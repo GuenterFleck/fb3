@@ -1,0 +1,2137 @@
+Category A Jachtbedienung
+A010101 Question:Wie reagiert eine Jacht unter Motor auf seitlichen Wind?
+o a Parallele Abdrift der Jacht nach Lee. 
+x b Der Bug dreht nach Lee.
+o c Das Heck dreht nach Lee.
+o d Unter Motor gar nicht.
+1
+A010405 Question:Wie weit versetzt ein Strom von 2  kn ein manövrierendes Boot pro Sekunde?
+o a 0,5 m
+x b 1,0 m
+o c 1,85 m
+o d 2,0 m
+2
+A030301 Question:Welche Rechte und Pflichten hat ein Schiffsführer?
+x a Das Weisungsrecht in allen nautischen Belangen.
+o b Die Verantwortung des Schiffsführers wird in einem Crewvertrag festgelegt.
+o c Der Skipper ist nur für die Navigation und die richtige Abfolge der Manöver zuständig.
+x d Der Skipper ist grundsätzlich für alle navigatorischen und technischen Belange am Schiff verantwortlich, kann aber bestimmte Verantwortlichkeiten delegieren.
+3
+A030302 Question:Wenn vor Antritt der Fahrt der Skipper nicht feststeht, dann …?
+o a … kann jeweils der Wachführer für seine Wache die Aufgaben und Pflichten des Skippers übernehmen.
+o b … werden die Entscheidungen auf demokratischer Basis gemeinsam getroffen.
+o c … übermimmt das Crewmitglied mit der größten Erfahrung die Aufgaben des Skippers. 
+x d … darf nicht abgelegt werden.
+4
+A030401 Question:Darf während einer Bootsreise Alkohol konsumiert werden?
+o a Ja, alle dürfen Alkohol trinken, wenn die Sicherheit nicht beeinträchtigt wird. 
+x b Promillegrenzen werden von den Küstenstaaten bestimmt.
+x c In vielen Ländern gilt für Bootsführung 0,0 Promille.
+o d Mindestens 2 Crewmitglieder müssen nüchtern bleiben.
+5
+A030513 Question:Wo am Schiff wird die Flagge Q geführt?
+o a An einem Flaggstock am Heck des Schiffes.
+x b In Europa meist unter der Backbordsaling des (vordersten) (Signal-)Mastes. 
+o c Bei Segeljachten am Achterstag.
+o d Unter der Nationalflagge.
+6
+A030701A Question:Womit muss gemäß JachtVO ein Rettungsring ausgerüstet sein?
+x a Mit einem wasserdichten Signallicht.
+x b Mit einer Signalpfeife.
+x c Mit einer mind. 20 m langen Leine.
+o d Mit einer mind. 40 m langen, schwimmfähigen Leine.
+7
+A030702 Question:Womit eine Rettungsweste gemäß JachtVO ausgerüstet sein?
+x a Mit einem wasserdichten Signallicht.
+x b Mit einer Signalpfeife.
+x c Mit einer mind. 20 m langen Leine.
+o d Mit einer mind. 40 m langen, schwimmfähigen Leine.
+8
+A030702B Question:Womit muss der in der Nähe des Rudergängers befindliche Rettungsring gemäß JachtVO ausgerüstet sein?
+x a Mit einem wasserdichten Signallicht.
+x b Mit einer Signalpfeife.
+x c Mit einer mind. 20 m langen Leine.
+o d Mit einer mind. 40 m langen, schwimmfähigen Leine.
+9
+A030703 Question:Wieviele Rettungswesten müssen gemäß JachtVO an Bord sein?
+x a Eine für jede an Bord befindliche Person.
+o b Eine je Kojenplatz.
+o c Eine für jedes Crewmitglied auf Wache.
+o d So viele wie Personen für die Jacht zugelassen sind.
+10
+A030704 Question:Wo ist die Ausrüstung österreichischer Jachten mit Funkanlagen geregelt?
+o a Funkverordnung (FunkVO)
+o b Funkergesetz (FuG)
+o c Telekommunikationsgesetz (TKG) 
+x d Jachtverordnung (JachtVO)
+11
+A030901 Question:Was wird als Langfahrt bezeichnet?
+o a Ein Törn der über den Fahrbereich 2 hinausführt.
+x b Ein Törn bei dem man mehrere Tage und Nächte auf See verbringt.
+o c Eine Fahrt auf See, die länger als 12 Stunden andauert.
+o d Eine Fahrt auf See, bei der man mindestens 120 Seemeilen ohne anzulegen zurücklegt.
+12
+A030902 Question:Was gehört u. a. zur Vorbereitung einer Langstreckenfahrt?
+x a Reiseplan mit der beabsichtigten Route und erwarteten Reisedauer bei der Abreise hinterlassen.
+x b Zu erwartende Wetterverhältnisse für das zu befahrende Seegebiet erkunden. 
+x c Trinkwasser und Proviant für die geplante Reisedauer einbunkern.
+o d Ein zweites Mobiltelefon, falls das erste defekt wird.
+13
+A030903 Question:Wie lange dauert die Törnvorbereitung für eine Langfahrt?
+x a Abhängig vom Revier kann die Vorbereitung länger daueren, auch mehrere Wochen. 
+o b Eine Törnvorbereitung ist nicht notwendig.
+o c Bis die Crew feststeht.
+o d Mindestens 6 Monate.
+14
+A030904 Question:Wie sollte der Skipper die Crew einer Langfahrt einteilen?
+x a Nach Wachplan und Rollenverteilung.
+o b Nach Geschlecht getrennte Wachzyklen.
+o c Keine Einteilung im Vorhinein. Die Rollenverteilung ergibt sich während der Fahrt von selbst.
+o d Wachen nach seemännischer Erfahrung: die erfahrenen Crewmitglieder in der Nacht, die weniger erfahrenen am Tag.
+15
+A030908 Question:Welche der aufgelisteten Informationen sind zum Wachwechsel von  Relevanz?
+x a Objekte in Sicht (mögliche Kollisionsgegner, Leuchtfeuer, ...) 
+x b Position, Kurs, Geschwindigkeit
+o c Füllstand Süßwassertank
+o d Öldruck und Kühlwassertemperatur Motor
+16
+A030909 Question:Welche Informationsmöglichkeiten hat der Skipper um für eine Langfahrt eine Lebensmittelliste zu erstellen?
+x a Nautische Literatur, Internet, Vereine, …
+o b Crewmitglieder nach den persönlichen Essenswünschen befragen. 
+o c Amtlicher Befähigungsausweis „Long Range Certificate“.
+o d Amtliche Ernährungsrichtlinien für die Hohe See.
+17
+A030910 Question:Was berechnet man vorrangig mittels einer Lebensmittelliste für eine  Langfahrt?
+x a Nach den Mengen, Vitamin- und Kaloriengehalt.
+o b Nach wie vielen Tagen Gefahr von Skorbut besteht.
+o c Die Mengen nach Gewicht der Crewmitglieder.
+o d Die Lebensmittelpreise in den verschiedenen Ländern.
+18
+A030911 Question:Nach welchen Kriterien erstellt man vorrangig eine Lebensmittelliste für eine Langfahrt?
+x a Nach dem Vitamin- und Kaloriengehalt.
+x b Nach der Haltbarkeit der einzelnen Lebensmittel.
+o c Nach dem Gewicht der Crewmitglieder.
+o d Nach dem persönlichen Geschmack der Crewmitglieder.
+19
+A030912 Question:Die beiden getrennten Wassertanks Ihrer Jacht sind auf Langfahrt ...?
+o a … immer verbunden, damit die Pumpe nicht trockenläuft.
+o b … immer verbunden, damit eine gleichmäßige Wasserqualität erhalten bleibt.
+o c … nur zusammengeschaltet, wenn Wasser verbraucht wird.
+x d … die verschiedenen Tanks bleiben getrennt, nur jeweils einer ist geöffnet, bis er leer ist.
+20
+A030913 Question:Zu den mindestens einmal täglich durchgeführten Kontrollen auf Langfahrt gehört?
+x a Kontrolle der Süßwasservorräte (Tanks, separate Gebinde).
+x b Kontrolle von Obst und Gemüse (mehr als nur optische Kontrolle). 
+o c Kontrolle der Funktion des Kühlschranks.
+o d Kontrolle des Reservediesels.
+21
+A040401 Question:Wohin ist der Müll auf Langfahrten zu entsorgen?
+o a Außerhalb der 12-Meilen-Zone darf verrottbarer Müll entsorgt werden.
+x b Nur Speisereste dürfen außerhalb der Küstengebiete ins Meer entsorgt werden, alles andere muss an Land entsorgt werden.
+o c Speisereste und Fäkalien dürfen außerhalb der 3-Meilen-Zone ins Meer entsorgt werden. 
+o d Schiffe auf Langfahrt können um Ausnahmeregelungen ansuchen.
+22
+A040401 Question:Warum sollte man für den anfallenden Müll bei Langfahrten einen Plan aufstellen?
+x a Weil außer Speiseresten alles an Land entsorgt werden muss.
+o b Weil außerhalb des Küstenmeeres nur verrottbarer Müll ins Meer geworfen werden darf. 
+o c Weil der anfallende Müll nur in geschlossenen Behältern ins Meer entsorgt werden darf. 
+o d Weil nur Glas und Metall ins Meer entsorgt werden dürfen.
+23
+A050301 Question:Wodurch wird eine Leine geschwächt?
+x a Durch Alterung.
+x b Durch Sonneneinstrahlung.
+o c Durch wiederholtes gleiches Aufschießen. 
+x d Durch jede Art von Knoten.
+24
+A050302 Question:Warum haben fast alle hochfesten Leinen einen Mantel?
+x a Es ist ein Schutz gegen UV-Strahlung.
+o b Zur Unterscheidung der verschiedenen Leinen.
+o c Der Mantel trägt etwa 50 % der Belastung.
+x d Die Leine lässt sich mit dem Mantel besser angreifen und halten.
+25
+A050401 Question:Wie verhindern Sie das Aufdrehen eines Tampen aus Kunststoff?
+x a Durch verschmelzen der Kardeele mit einer Flamme. 
+o b Mit einem Lang- oder Kurzspleiss.
+x c Mit einem Schrumpfschlauch.
+o d Mit einem Kabelbinder.
+26
+A050402 Question:Wie verhindern Sie das Aufdrehen eines Tampen aus Naturfaser?
+o a Durch verschmelzen der Kardeele mit einer Flamme. 
+x b Mit einem Rückspleiss.
+x c Mit einem Takling.
+o d Mit einem Kabelbinder.
+27
+A050403 Question:Welche Art von Takling schützt zuverlässiger?
+o a Ein Behelfstakling.
+x b Ein ganähter Takling.
+x c Ein gekreuzter Takling. 
+o d Ein Lang-Takling.
+28
+A050501 Question:Was ist ein Rückspleiß?
+o a Ein anderer Name für einen Augspleiß.
+x b Eine Art von Takling (spanischer Takling). 
+o c Verkürzungsknoten für geflochtene Leinen. 
+o d Verbindung zwischen Leine und Drahtseil.
+29
+A050502 Question:Wie reduziert ein Augspleiß die Bruchlast einer dreikardeligen Leine?
+o a Reduziert die Bruchlast fast nicht.
+o b Reduziert die Bruchlast um etwa 50 %. 
+x c Reduziert die Bruchlast um etwa 30 %. 
+o d Reduziert die Bruchlast um etwa 10 %.
+30
+A050503 Question:Wozu dient ein Augspleiß?
+o a Zum Schutz einer Leine vor Aufdrüseln.
+x b Zur Herstellung eines festen Auges.
+o c Zum dauerhaften Verbinden zweier gedrehter Leinen.
+o d Zum dauerhaften Verbinden zweier geflochtener Leinen.
+31
+A050504 Question:Wozu dient ein Kurzspleiß?
+o a Zum Schutz einer Leine vor Aufdrüseln.
+o b Zum kurzzeitigen Verbinden zweier Leinen.
+x c Zum dauerhaften Verbinden zweier gedrehter Leinen.
+o d Zum dauerhaften Verbinden zweier geflochtener Leinen.
+32
+Category B Bootsbau
+B010101 Question:Was gehört zu den Hauptabmessungen einer Jacht?
+x a Höhe Freibord
+x b Länge über Alles
+x c Konstruktionswasserlinienlänge 
+o d Höhe über Wasserlinie
+33
+B010102 Question:Was bedeutet die Abkürzung WL im Jachtbau?
+o a Wellenlinie
+o b Widerstandslinie 
+o c Wöhlerlinie
+x d Wasserlinie
+34
+B010103 Question:Was ist die Konstruktionswasserlinie (CWL) im Jachtbau?
+x a Die berechnete Wasserlinie der Jacht bei einem definiertem Gewicht
+o b Die projizierte Umrisslinie parallel zur Mittschiffsebene
+o c Die Schnittlinie des Rumpfes mit der Wasseroberfläche ohne Beladung 
+o d Bezugslinie durch den Schwerpunkt des Rumpfes
+35
+B010104 Question:Was bedeutet die Abkürzung LWL im Jachtbau?
+o a Länge der Bugwelle in Verdrängungsfahrt 
+x b Länge der Wasserlinie
+o c Länge der Widerstandslinie
+o d Long Wave Line
+36
+B010105 Question:Was wird als Lateralplan bezeichnet?
+o a Die Darstellung von Kiel und Spanten im Aufriss
+o b Eine grafische Darstellung der Rumpfdurchbrüche
+x c Die unter der Wasserlinie liegende Fläche des Längsschnittes 
+o d Der unter der Wasserlinie liegende Teil des Rumpfes
+37
+B010106 Question:Was kann dem Lateralplan entnommen werden?
+o a Die Schiffsaufbauten im Seitenriss
+x b Die Form der seitlichen Projektion des Unterwasserschiffs 
+o c Die Anordnung und Form von Spanten und Kiel
+o d Die Einbaulage von Schiffseinbauten
+38
+B010107 Question:Wofür ist der Lateralplan ein Indikator?
+o a Wasserwiderstand eines Rumpfes
+x b Widerstand gegen Abdrift
+o c Formstabilität des Rumpfes
+o d Mechanische Eigenschaften des Bootskörpers
+39
+B010108 Question:Was wird im Jachtbau als Längsriss bezeichnet?
+x a Die vertikalen Schnittebenen parallel zur Mittschiffsebene
+o b Die horizontalen Schnittebenen parallel zur Wasseroberfläche 
+o c Die vertikalen Schnittebenen normal zur Schiffslängsachse
+o d Die horizontalen Schnittebenen normal zur Vertikalachse
+40
+B010109 Question:Was wird im Jachtbau als Freibord bezeichnet?
+x a Höhe zwischen Deckoberkante und Wasserlinie
+o b Höhe zwischen Schandeck und Konstruktionswasserlinie 
+o c Rumpf oberhalb der Wasserlinie im Seitenriss
+o d Grundriss des Decks
+41
+B010110 Question:Was sind Spanten?
+o a Längsverbände eines Schiffsrumpfes
+x b Querverbände eines Schiffsrumpfes
+o c Querversteifungen zur Verstärkung des Kiels 
+o d Längsversteifungen zur Verstärkung des Kiels
+42
+B010111 Question:Was ist der Kiel?
+o a Am Schiffsrumpf befestigter Ballast
+x b Unterster Längsverband eines Schiffes
+o c Vorderkante eines Schiffsrumpfes unterhalb der Wasserlinie 
+o d Vorderkante eines Schiffsrumpfes oberhalb der Wasserlinie
+43
+B010201 Question:Was versteht man unter Stabilität von Schiffen?
+o a Die Sicherung der Ladung gegen verrutschen
+o b Der Widerstand gegen (ungewollte) Kursänderungen 
+x c Die Tendenz sich bei Krängung aufzurichten
+o d Die Steifigkeit des Rumpfes
+44
+B010202 Question:Was sind Unterschiede zwischen Formstabilität und Gewichtsstabilität?
+o a Formstabilität bedingt eine Zunahme der Stabilität mit zunehmendem Krängungswinkel 
+x b Gewichtsstabilität bedingt eine Zunahme der Stabilität mit zunehmendem Krängungswinkeln
+o c Formstabilität bedingt eine Auftriebskraft größer als die Gewichtskraft
+o d Gewichtsstabilität bedingt eine Auftriebskraft geringer als die Gewichtskraft
+45
+B010203 Question:Was sind Eigenschaften von ausschließlich formstabilen bzw. gewichtsstabilen Booten?
+x a Ausschließlich formstabile Boote kentern bei Krängungswinkeln kleiner 90°
+o b Gewichtsstabile Boote können nicht kentern
+x c Bei ausschließlich formstabilen Booten liegt der Gewichtsschwerpunkt (ohne Krängung) stets höher als der Auftriebsschwerpunkt.
+o d Bei ausschließlich formstabilen Booten liegt der Gewichtsschwerpunkt (ohne Krängung) stets unter dem Auftriebsschwerpunkt.
+46
+B010204 Question:Wann wird ein Boot als gewichtsstabil bezeichnet?
+x a Wenn der tief liegende Gewichtsschwerpunkt (Ballastkiel) auch bei Krängungswinkeln größer 90° ein aufrichtendes Moment erzeugt
+o b Wenn es bei Seegang unanfällig gegen (ungewollte) Kursänderungen ist 
+o c Wenn die Gewichtskraft höher als die Auftriebskraft ist
+o d Wenn trotz Zuladung die Freibordmarke nicht überschritten wird
+47
+B010205 Question:Wodurch wird die Gewichtsstabilität einer Jacht vergrößert?
+x a Durch ein geringes Gewicht der Aufbauten
+x b Durch ein hohes Gewicht unter der Konstruktionswasserlinie 
+o c Durch Verwendung leichter Bootsbaumaterialien
+o d Durch Verwendung schwerer Bootsbaumaterialien
+48
+B010206 Question:Bis zu welchem Krängungswinkel erzeugt ein gewichtsstabiles Boot ein  aufrichtendes Moment?
+o a Bis etwa 45°
+o b Bis maximal 90° 
+x c Auch über 90°
+o d Bis 180°
+49
+B010207 Question:Wann wird ein Boot als formstabil bezeichnet?
+x a Wenn die Rumpfform bei Krängung eine Verschiebung der Auftriebskraft bewirkt 
+o b Wenn der Rumpf bei Belastung seine Form weitestgehend beibehält
+o c Wenn der Lateralplan auch bei Krängung unverändert bleibt
+o d Wenn ein Ballastkiel den Gewichtsschwerpunkt nach unten verlagert
+50
+B010208 Question:Welcher Rumpfquerschnitt ist im Wasser eher formstabil?
+o a Kreisform 
+x b V-Form
+x c Rechtecksform 
+o d Zylinderform
+51
+B010209 Question:Bis zu welchem Krängungswinkel erzeugt ein ausschließlich formstabiles Boot ein aufrichtendes Moment?
+x a Weniger als 90°
+o b Etwa 90°
+o c Deutlich mehr als 90° 
+o d Etwa 135°
+52
+B010210 Question:Was wird im Jachtbau als Stabilität bezeichnet?
+o a Die richtige und sichere Stauung von Zuladung
+o b Der Widerstand des Rumpfs gegen Verformung
+x c Die Tendenz eines Bootes sich bei Krängung wieder aufzurichten 
+o d Die Tendenz eines Bootes den Kurs beizubehalten
+53
+B010211 Question:Was wird im Jachtbau als (scheinbares) Metazentrum bezeichnet?
+o a Der Schnittpunkt der Symmetrieebene des Schiffes mit der Wirkungslinie der Gewichtskraft
+x b Der Schnittpunkt der Symmetrieebene des Schiffes mit der Wirkungslinie der Auftriebskraft
+o c Der Schnittpunkt der Symmetrieebene des Schiffes mit der Wirkungslinie der Querkraft 
+o d Der Schnittpunkt der Symmetrieebene des Schiffes mit der Wirkungslinie der Vortriebskraft
+54
+B010212 Question:Was stellt im Jachtbau eine Stabilitätskurve dar?
+o a Die Verformung des Rumpfes bei mechanischer Belastung
+x b Den Verlauf des aufrichtenden Moments als Funktion des Krängungswinkels 
+o c Den Verlauf der Krängungwinkels als Funktion von Windgeschwindigkeit und Windeinfallswinkel
+o d Die Veränderung der Auftriebskraft als Funktion der Bootsgeschwindigkeit
+55
+B010501A Question:Wozu dient eine Opferanode?
+o a Zum Schutz des Unterwasserschiffs vor Algenbewuchs 
+x b Zum Schutz metallischer Bauteile unter Wasser
+o c Zum Schutz vor Osmose
+x d Zum Schutz vor elektrolytischer Korrosion
+56
+B010501C Question:Wozu dient die Opferanode?
+x a Verhindert elektrolytische Korrosion von Metallteilen unter Wasser
+o b Verhindert Bewuchs durch aggressive Muscheln an Propeller und Welle 
+o c Verhindert den Elektrodenverschleiß der Zündkerze
+o d Verhindert Blitzeinschlag
+57
+B010504 Question:Wann bzw. wie oft müssen Opferanoden kontrolliert werden??
+o a Alle drei Jahre
+x b Jedes Jahr
+o c Jeden Monat
+o d Vor jedem Törn
+58
+B020101 Question:Welche Bordnetzspannungen sind auf Jachten üblich?
+x a 12 Volt
+x b 24 Volt
+o c 230 Volt
+o d 400 Volt
+59
+B020201 Question:Warum werden auf Jachten üblicherweise zwei getrennte Stromnetze betrieben?
+o a Damit mehrere gleiche Akkumulatoren eingesetzt werden können.
+x b Weil Starter- und Verbraucher-Akkumulatoren unterschiedlich aufgebaut sind.
+o c Damit beim Zusammenbruch eines Akkumulators weiter Strom zur Verfügung steht. 
+x d Um sicherzustellen, dass die Starterbatterie nicht durch das Bordnetz entleert wird.
+60
+B020202 Question:Welches Nebenaggregat eines Bootsdiesels ist in der Abbildung mit der Zahl 3 versehen?
+x a Lichtmaschine 
+o b Starter
+o c Ölpumpe
+o d Wasserpumpe
+61
+B020203 Question:Was bewirkt die Serienschaltung von zwei Batterien mit gleicher Spannung und gleicher Kapazität?
+o a Halbierung der Spannung
+x b Verdoppelung der Spannung 
+o c Halbierung der Kapazität
+o d Verdoppelung der Kapazität
+62
+B020204A Question:Was bewirkt die Parallelschaltung von zwei Batterien mit gleicher Spannung und gleicher Kapazität?
+o a Halbierung der Spannung
+o b Verdoppelung der Spannung 
+o c Halbierung der Kapazität
+x d Verdoppelung der Kapazität
+63
+B020204B Question:Was bewirkt die Parallel-Schaltung zweier 12 V - Akkumulatoren mit je 70 Ah?
+o a Spannung 6 V, Gesamtkapazität 70 Ah
+o b Spannung 24 V, Gesamtkapazität 70 Ah
+x c Spannung 12 V, Gesamtkapazität 140 Ah 
+o d Spannung 24 V, Gesamtkapazität 140 Ah
+64
+B020205 Question:Welche Risken bestehen, wenn die Ladespannung eines 12 V-Bordnetzes (mit Bleiakkumulatoren) 14,4 V übersteigt?
+x a Die Akkumulatoren können beschädigt werden. 
+x b Knallgas kann entstehen.
+o c Die Batteriesäure kann ausflocken.
+o d Die Bleiplatten können schmelzen.
+65
+B020206 Question:Was gehört zu den Wartungsarbeiten von Bleiakkumulatoren?
+o a Spülen der Batterie mit destilliertem Wasser
+o b Akkumulatorenöl nachfüllen
+x c Pole mit Polfett fetten
+x d Gegebenenfalls destilliertes Wasser nachfüllen
+66
+B020207 Question:Was gehört zu den Wartungsarbeiten von Bleiakkumulatoren?
+x a Kontrolle des Säurestandes, gegebenenfalls Nachfüllen von destilliertem Wasser 
+o b Tausch korrodierter Bleiplatten
+o c Kontrolle des Säurestandes, gegebenenfalls Nachfüllen von Akkusäure
+o d Tiefentladung zu Saisonende
+67
+B020208 Question:Was sind Ursachen für Knallgasbildung (Kochen) bei Bleiakkumulatoren?
+o a Der Elektrolyt ist chemisch verbraucht und muss erneuert werden. 
+o b Der Batterieraum ist schlecht belüftet.
+o c Der Ladestrom ist zu klein.
+x d Die Ladespannung ist zu hoch.
+68
+B020209 Question:Was ist beim Laden von Bleiakkumulatoren zu beachten?
+o a Die Akkumulatoren müssen vor Ladebeginn tiefentladen werden.
+o b Die Akkumulatoren müssen sich in einem abgeschlossenen, warmen Raum befinden. 
+x c Die Explosionsgefahr durch mögliche Knallgasbildung
+x d Kapazitätseinbußen bei ungeeigenten Ladeströmen
+69
+B020210 Question:Warum sollen bei laufendem Motor die Akkumulatoren nicht abgeklemmt werden?
+o a Es kann zu einem Kabelbrand aufgrund eines Kurzschlusses kommen. 
+o b Die Akkumulatoren werden beschädigt.
+o c Die Dieselförderpumpe fällt aus.
+x d Die Lichtmaschine kann beschädigt werden.
+70
+B020301 Question:Was ist die technische Einheit für die Stromstärke?
+o a Volt [V]
+x b Ampere [A] 
+o c Watt [W]
+o d Ohm [ƻ]
+71
+B020302 Question:Was ist die technische Einheit der elektrischen Spannung?
+x a Volt [V]
+o b Ampere [A] 
+o c Watt [W]
+o d Ohm [ƻ]
+72
+B020303 Question:Was ist die technische Einheit der Leistung?
+o a Volt [V]
+o b Ampere [A] 
+x c Watt [W]
+o d Ohm [ƻ]
+73
+B020304 Question:Was wird mit einem Amperemeter gemessen?
+o a Elektrische Spannung
+o b Kapazität einer Batterie 
+x c Elektrische Stromstärke 
+o d Elektrischer Widerstand
+74
+B020305 Question:Was wird mit einem Aräometer (Säureheber) gemessen?
+o a Kapazität eines Bleiakkumulators
+o b Säurepegel in einem Bleiakkumulator 
+x c Säuredichte eines Bleiakkumulators
+x d Ladezustand eines Bleiakkumulators
+75
+B020306 Question:Womit kann die Säuredichte und damit der Ladezustand eines Bleiakkumulators gemessen werden?
+o a Altometer
+x b Aräometer
+o c Amperemeter 
+o d Anemometer
+76
+B020307 Question:Was wird mit einem Voltmeter gemessen?
+o a Stromstärke
+o b Kapazität einer Batterie 
+x c Elektrische Spannung
+o d Elektrischer Widerstand
+77
+B020308A Question:In welcher Einheit wird die Kapazität einer Batterie angegeben?
+o a Voltstunden [Vh]
+x b Amperestunden [Ah] 
+o c Ohmstunden [ƻh]
+o d Wattstunden [Wh]
+78
+B020401 Question:Welche Größenordnung hat die Stromaufnahme eines typischen 12 V-Bordkühlschranks?
+o a 0,5 A
+x b 5 A
+o c 50 A
+o d 500 A
+79
+B020402 Question:Welche Größenordnung hat die Stromaufnahme einer typischen 12 V-Ankerwinsch?
+o a 7,5 A
+x b 75 A
+o c 750 A
+o d 7500 A
+80
+B020403 Question:Welche Größenordnung hat die Leistung eines typischen Bordkühlschranks?
+o a 0,5 W
+o b 5 W
+x c 50 W
+o d 500 W
+81
+B020404 Question:Welche Größenordnung hat die Leistung einer typischen Ankerwinsch?
+o a 10 W
+o b 100 W
+x c 1000 W
+o d 10000 W
+82
+B020405 Question:Wie viel Strom kann zwei parallel geschalteten Batterien mit je 180 Ah theoretisch entnommen werden?
+x a 18 A für 20 Stunden 
+o b 18 A für 10 Stunden 
+x c 36 A für 10 Stunden 
+o d 36 A für 5 Stunden
+83
+B030101 Question:Wie wird die Bewegung des Ruderrades üblicherweise auf die Ruderwelle übertragen?
+o a Riementrieb 
+x b Königswelle 
+x c Seilzug
+o d Planetengetriebe
+84
+B030201 Question:@Wie sind Bordheizungen üblicherweise aufgebaut?
+o a Batteriebetriebene Infrarotstrahler erwärmen Bootsrumpf und Inneneinrichtung.
+x b In einer meist mit Diesel betriebenen Brennkammer wird Luft erwärmt und mit einemVentilator über ein Schlauchsystem im Boot verteilt.
+o c Warmwasser aus einem Boiler oder Kühlwasser des Motors versorgen Radiatoren im Boot.
+o d Über einen Wärmetauscher wird die Luft mit dem Motorkühlwasser erwärmt und über ein Schlauchsystem im Boot verteilt.
+85
+B030202 Question:Wie erfolgt die Frischwasserversorgung auf einer Jacht?
+o a Überdruck im Tank drückt das Wasser zu den Armaturen.
+o b Eine Tauchpumpe im Tank fördert das Wasser zu den Armaturen.
+o c Die Wassertanks sind höher angebracht als die Armaturen.
+x d Eine Pumpe außerhalb der Tanks fördert das Wasser zu den Armaturen.
+86
+B030203 Question:Welche Möglichkeiten gibt es üblicherweise zur Warmwasseraufbereitung auf Jachten?
+o a Mittels Abgaswärmetauscher
+x b Mittels Boiler, der vom Motorkühlwasser durchströmt wird
+x c Mittels Boiler mit elektrischem Heizer, der mit 230 V Wechselstrom betrieben wird 
+o d Mittels elektrischem Durchlauferhitzer, der vom Bordnetz gespeist wird
+87
+B030504A Question:Welche Maßnahmen sind zu ergreifen, wenn an Bord Gasgeruch festgestellt wird?
+x a Absperrventil an der Gasflasche schließen 
+x b Jedes offene Feuer vermeiden
+o c Bilgepumpe einschalten
+o d Notruf absetzen und das Boot verlassen
+88
+B030508 Question:Auf welchen Überdruck wird der Gasdruck an der Flasche mit einem handelsüblichen Druckminderer größenordnungsmäßig geregelt?
+o a Ca. 3 - 5 mbar
+x b Ca. 30 - 50 mbar
+o c Ca. 300 - 500 mbar 
+o d Ca. 3 - 5 bar
+89
+Category C Navigation
+C010402 Question:In welcher Zeitzone gilt Zonenzeit = UTC + 1?
+o a Greenwich Sommerzeit 
+x b Mitteleuropäische Zeit 
+o c Osteuropäische Zeit
+o d Westeuropäische Zeit
+90
+C010404 Question:Mitteleuropäische Sommerzeit MESZ entpricht?
+o a UTC + 1
+x b UTC + 2
+o c UTC - 1
+o d UTC - 2
+91
+C010405 Question:Mitteleuropäische Zeit MEZ entspricht?
+x a UTC + 1
+o b UTC + 2
+o c UTC - 1
+o d UTC - 2
+92
+C010406 Question:Westeuropäische Zeit WEZ entspricht?
+o a UTC - 1
+x b UTC
+o c UTC + 1
+o d UTC + 2
+93
+C010501 Question:Was ist das Chart Datum einer (englischen) Seekarte?
+o a Das Druckdatum
+o b Das Ausgabedatum
+o c Das Datum der letzten Berichtigung 
+x d Das Kartennull
+94
+C010502 Question:Was ist das Kartendatum einer Seekarte?
+o a Das Druckdatum
+o b Das Ausgabedatum
+o c Das Datum der letzten Berichtigung 
+x d Das geodätische Modell
+95
+C010503 Question:Was ist das Kartennull einer Seekarte?
+o a Das Bezugsniveau für Höhenangaben 
+x b Das Bezugsniveau für Tiefenangaben 
+o c Der absolut niedrigste Wasserstand
+o d Die Wassertiefe 0,0 m
+96
+C010601 Question:Was ist eine Isogone?
+o a Eine Linie gleicher Höhe über Kartennull 
+x b Eine Linie gleicher Missweisung
+o c Eine Linie gleicher Wassertiefe
+o d Eine Linie gleichen Luftdrucks
+97
+C010602 Question:Wie verlaufen Isogonen?
+o a Geradlinig von Pol zu Pol
+x b Nicht geradlinig zwischen den magnetischen Polen 
+o c Geradlinig zwischen den magnetischen Polen
+o d Spiralförmig zu den Polen
+98
+C020301 Question:Wie viele Karten umfasst ein Stromatlas für ein bestimmtes Seegebiet?
+o a Je nach Größe des Seegebiets verschieden
+o b Zwei Karten, eine für Springzeit und eine für Nippzeit
+o c 12 Karten, 6 für Hochwasser, 6 für Niedrigwasser
+x d 13 Karten, je 6 für die Stunden vor und nach dem Hochwasser und eine Karte für die Stunde des Hochwassers
+99
+C020302 Question:Welche Informationen über den Gezeitenstrom findet man in einem Stromatlas?
+o a Durchschnittliche Stromrichtung und -geschwindigkeit im Seegebiet
+x b Stromrichtung und -geschwindigkeit für mittlere Spring- und Nipphübe 
+o c Stromrichtung und -geschwindigkeit jeweils bei Springzeit und Nippzeit 
+o d Stromrichtung und -geschwindigkeit für jede Stunde des Tages
+100
+C020303 Question:Wo kann man Angaben über die Stromverhältnisse in größeren Seegebieten finden?
+x a In einem Stromatlas
+o b In den British Admiralty Tide Tables 
+o c In einem Übersegler
+o d In Hochsee - Sportbootkarten
+101
+C020304 Question:Was gilt für die 13 Kartenblätter eines Stromatlas eines bestimmten Seegebiets?
+x a Die Angaben über die Stromrichtung u. -geschwindigkeit sind bezogen auf den Zeitpunkt des HW am Bezugsort (bzw. 1 bis 6 Stunden vorher und nachher).
+o b Jedes Blatt gibt Richtung und Geschwindigkeit des mittleren Gezeitenstromes an.
+x c Jedes Blatt gibt Richtung und Geschwindigkeit des Gezeitenstroms für mittlere Nipp- und Springhübe an.
+o d Die Angaben gelten für 1 Jahr und müssen jährlich angepasst werden.
+102
+C040113 Question:Was ist eine Doppelpeilung?
+o a Zweite Peilung auf ein Peilobjekt, wenn die erste Peilung einen nicht plausiblen Wert ergeben hat.
+o b Zwei Peilungen auf zwei Peilobjekte zum praktisch gleichen Zeitpunkt
+x c Zwei Peilungen auf ein oder zwei Peilobjekt(e) zu unterschiedlichen Zeitpunkten
+x d Ein Verfahren zur Standortbestimmung, bei dem nur ein Peilobjekt erforderlich ist
+103
+C040114 Question:Was ist eine Versegelungspeilung?
+o a Eine Peilung unter Segel
+o b Ein Verfahren zur Standortbestimmung bei dem die Strecke zwischen erster und zweiter Peilung unter Segel zurückgelegt wird.
+x c Ein Verfahren zur Standortbestimmung, bei dem ein Peilobjekt nach einer zurückgelegten Strecke ein zweites Mal gepeilt wird.
+o d Das Peilen eines Zieles beim Aufkreuzen unter Segel.
+104
+C040201 Question:Welche Art von Standlinie ergibt sich aus einer Höhenwinkelmessung?
+o a Ein Winkel
+o b Eine Gerade 
+x c Ein Kreis
+o d Eine Hyperbel
+105
+C040202 Question:Wie lautet die näherungsweise Formel für den Abstand aus einer Höhenwinkelmessung?
+o a Abstand = 2,43 x Höhe in m : Höhenwinkel in ' 
+x b Abstand = 13/7 x Höhe in m : Höhenwinkel in ' 
+o c Abstand = 2,43 x Höhenwinkel in '
+o d Abstand = 13/7 x Höhenwinkel in '
+106
+C050101 Question:Wofür wird RADAR in der Nautik hauptsächlich verwendet?
+x a Kollisionsverhütung
+x b Abstandsmessung und Peilung 
+o c Geschwindigkeitsmessung
+x d Erkennung von Regenfronten
+107
+C050102 Question:Was ist das Funktionsprinzip eines Impulsradars?
+o a Ausgestrahlte Ultraschallsignale werden von einem Ziel reflektiert, die Echos von der Antenne empfangen und am Radarschirm dargestellt.
+x b Von einer Antenne ausgesendete Funkimpulse werden von einem Ziel reflektiert, die Echos von der Antenne empfangen und am Radarschirm dargestellt.
+x c Aus der Laufzeit elektromagnetischer Impulse wird die Entfernung zu einem Ziel bestimmt.
+o d Die Erkennung eines Ziels beruht auf dem Frequenzunterschied zwischen dem ausgesendeten Signal und dem reflektierten Echo.
+108
+C050103 Question:Wie unterscheidet sich ein frequenzmoduliertes Dauerstrichradar FMCW von einem Impulsradar?
+o a Ein Dauerstrichradar sendet längere Impulse als das Impulsradar.
+x b Ein Dauerstrichradar sendet permanent, ein Impulsradar wechselt zwischen Senden und Empfangen.
+x c Das Dauerstrichradar kann kleinere Entfernungen als das Impulsradar messen.
+x d Das Dauerstrichradar misst die Laufzeit einer Frequenzänderung, das Impulsradar die Laufzeit eines Pulses.
+109
+C050104 Question:Welche Einstellungen sind zu kontrollieren, wenn beim Radar ein Bereichswechsel vorgenommen wird?
+o a Sendeintensität
+x b Empfangsempfindlichkeit
+o c Frequenz-Feinabstimmung 
+o d Antennen-Geschwindigkeit
+110
+C050105 Question:Worauf beruht die Distanzmessung beim Impulsradar?
+x a Auf der Ausbreitungsgeschwindigkeit elektromagnetischer Wellen und der Zeit, die zwischen Aussendung des Impulses und Empfang des Echos vergeht.
+o b Auf der Messung der Geschwindigkeit eines reflektierten Signals.
+o c Auf den Frequenzunterschied zwischen ausgesendetem und empfangenem Signal. 
+o d Auf der Messung der Länge des reflektierten Impulses.
+111
+C050201 Question:Was ist die horizontale Auflösung einer Radaranlage?
+o a Der horizontale Öffnungswinkel der Radarantenne
+x b Die Fähigkeit einer Radaranlage, nebeneinander liegende Ziele getrennt darstellen zu können.
+o c Der horizontale Bereich, in dem eine Radaranlage aussendet bzw. empfängt. 
+o d Distanz, bis zu welcher ein Ziel von der Radaranlage erfaßt werden kann.
+112
+C050202 Question:Was kann bei einer Radaranlage Störechos hervorrufen?
+o a Aussendungen anderer Radaranlagen
+x b Starke Niederschläge
+x c Steile Wellen im Nahbereich
+o d Gleichtzeitiger Betrieb des Funkgerätes und der Radaranlage
+113
+C050203 Question:Wozu dient das Bedienungselement „SEA CLUTTER“ auf dem Radargerät?
+x a Echos mit sehr kurzer Laufzeit werden unterdrückt, um den Schirm nicht mit Wellenechos zu überladen.
+o b Die Impulsaussendung wird leicht angehoben, damit keine Wellenechos empfangen werden.
+o c Zur Aktivierung der Anzeige der mittleren Wellenhöhe am Radarschirm
+o d Zur Erhöhung der Ausgangsleistung der Radarimpulse, sodass sie auch hohe Wellenkämme durchdringen können
+114
+C050301 Question:Welche Darstellungsarten gibt es beim Radargerät?
+x a Head Up, Course UP, North Up
+x b True Motion
+x c Vorausorientiert, kursstabilisiert, nordstabilisiert 
+o d Overlay
+115
+C050302 Question:Was bedeutet die Radardarstellung „Head Up?
+o a Radarbild ist auf magnetisch Nord ausgerichtet.
+o b Radarbild ist auf rechtweisend Nord ausgerichtet.
+o c Radarbild ist auf den Soll-Kurs ausgerichtet.
+x d Radarbild ist auf die Schiffslängsachse ausgerichtet.
+116
+C050303 Question:Was bedeutet die Radardarstellung „North Up?
+x a Radarbild ist auf rechtweisend Nord ausgerichtet. 
+o b Radarbild ist auf den aktuellen Kurs ausgerichtet. 
+o c Radarbild ist auf den Soll-Kurs ausgerichtet.
+o d Radarbild ist auf die Schiffslängsachse ausgerichtet.
+117
+C050304 Question:Was bedeutet die Radardarstellung „Course Up?
+o a Radarbild ist auf Nord ausgerichtet.
+o b Radarbild ist auf rechtweisend Nord ausgerichtet.
+x c Radarbild ist auf den Soll-Kurs ausgerichtet.
+o d Radarbild ist auf die Schiffslängsachse ausgerichtet.
+118
+C050305 Question:Der Radarmonitor ist auf „Head Up“ eingestellt. Was bedeutet das für Peilungen?
+o a Peilungen sind rechtweisende Peilungen.
+o b Peilungen sind missweisende Peilungen.
+x c Peilungen sind Seitenpeilungen.
+x d Peilungen sind Winkel zur Schiffslängsachse.
+119
+C050306 Question:Radardarstellung HEAD UP, Kurs 90°, Echo steuerbord achteraus: Wo befindet sich das Objekt?
+x a Im Südwesten 
+o b Im Südosten
+o c Im Nordosten
+o d Im Nordwesten
+120
+C050307 Question:Radararstellung NORTH UP, Kurs 90°, Echo am Monitor links unten: Wo befindet sich das Objekt?
+o a Stb voraus
+x b Stb achteraus 
+o c Bb voraus
+o d Bb achteraus
+121
+C050308 Question:Das Radar arbeitet im ,,Head up Modus und zeigt einen Kontakt auf der rechten Seite des Schirmes. Wo ist dieses Fahrzeug?
+o a Östlich der eigenen Position
+x b An Steuerbord
+o c Westlich der eigenen Position 
+o d An Backbord querab
+122
+C050309 Question:Was ist am Radarbildschirm der Unterschied zwischen Head Up (HU) und  Course Up (CU)?
+x a Bei HU ändert sich die Voraus-Linie nicht, bei CU schon.
+x b Bei HU ändert sich mit dem Gieren des Bootes das Radarbild, bei CU nicht. 
+o c HU ist günstiger für die Durchführung einer RaSP.
+o d HU ist günstiger für die Erkennung von Kollisionsgefahr.
+123
+C050310A Question:Auf welche Art kann mit Radar ein Standort ermittelt werden?
+x a Mit zwei Abstandsmessungen
+x b Mit zwei Seitenpeilungen
+x c Mit Abstandsmessung und Seitenpeilung
+o d Mit Abstandsmessung und Höhenwinkelmessung
+124
+C050310B Question:Auf welche Art kann mit Radar ein Standort ermittelt werden?
+x a Durch zwei Abstandsbestimmungen
+x b Durch Radarseitenpeilungen auf zwei Objekte
+o c Durch Empfang der eigenen Position von einer Radarbake
+x d Durch Abstandsbestimmung und Radarseitenpeilung auf ein Objekt
+125
+C050401 Question:Wozu wird Radar in der Navigation eingesetzt?
+o a Zur Abstandswinkelmessung zwischen 2 Objekten
+x b Zum Peilen mit dem Peilstrahl
+x c Zur Entfernungsmessung mit dem variablen Abstandsring 
+o d Zur Messung eines Höhenwinkels auf einen Leuchtturm
+126
+C050402 Question:Wie ist die Bedieneinrichtung für die Distanzmessung auf dem Radargerät  üblicherweise beschriftet?
+o a STC
+x b VRM
+o c EBL
+o d FTC
+127
+C050403 Question:Wie ist die Bedieneinrichtung zum Peilen auf dem Radargerät üblicherweise  beschriftet?
+o a STC
+o b VRM
+x c EBL
+o d FTC
+128
+C050404 Question:Welche Messungen sind mit Radar möglich?
+x a Abstandsmessung
+o b Windgeschwindigkeitsmessung 
+x c Seitenpeilung
+o d Tiefenmessung
+129
+C050406 Question:Was sind Radarantwortbaken (RACON)?
+o a Schwimmende Radareinrichtungen einer Radarleitkette zur Orientierung der Großschifffahrt
+o b Radarstationen zur Kalibrierung des Schiffsradars
+x c Seezeichen, die bei Empfang eines Schiffsradars eigene Impulsgruppen aussenden, die am Radarmonitor als Morsecode eines Buchstabens dargestellt werden.
+o d Radareinrichtung für die Deviationskontrolle
+130
+C050407 Question:Wie ist die Genauigkeit von Radarbeobachtungen zu bewerten?
+o a Peilungen sind üblicherweise genauer als Abstandsmessungen.
+o b Peilungen und Distanzmessungen haben üblicherweise dieselbe Genauigkeit.
+x c Distanzmessungen sind üblicherweise genauer als Peilungen.
+o d Die Genauigkeit hängt nur von der Qualität der Radaranlage ab, nicht von der Art der Messung.
+131
+C050408A Question:Was ist eine Seitenpeilung?
+x a Der Winkel zwischen der Schiffslängsachse und dem Peilobjekt
+o b Der Winkel zwischen dem Kurs durchs Wasser und dem Peilobjekt 
+o c Der Winkel zwischen dem Kurs über Grund und dem Peilobjekt
+x d Der Winkel zwischen recht voraus und dem Peilobjekt
+132
+C050408B Question:Was ist das Ergebnis einer Seitenpeilung?
+x a Der Winkel zwischen dem rechtweisenden Kurs und dem Peilobjekt
+o b Mit Windabdrift der Winkel zwischen dem Kurs durchs Wasser und dem Peilobjekt
+o c Mit Windabdrift und Stromversetzung der Winkel zwischen dem Kurs über Grund und dem Peilobjekt
+o d Die geografische Richtung zum Peilobjekt
+133
+C050409 Question:Wie wird eine Seitenpeilung in eine rechtweisende Peilung umgerechnet?
+x a rwP = SP+ rwK
+o b rwP = SP - MgK
+o c rwP = MgK + SP
+x d rwP = SP + MgK + Dev + Mw
+134
+C050410 Question:Was bedeutet querab?
+x a 90° zum rechtweisenden Kurs 
+o b 90° zum missweisenden Kurs 
+o c 90° zum Kurs durchs Wasser 
+o d 90° zum Kurs über Grund
+135
+C050415 Question:Was wird mit einer 4-Strich-Peilung konstruiert?
+o a Schrägabstand des Objekts auf den Kompasskurs
+o b Normalabstand des Peilobjektes auf den rechtweisenden Kurs 
+x c Normalabstand des Peilobjektes auf den Kartenkurs
+o d Normalabstand des Peilobjektes auf den Kompasskurs
+136
+C050501 Question:Was sind Hinweise auf einen möglichen Kollisionskurs?
+o a Der Winkel zwischen Kurs des Beobachters und Kurs des Kollisionsgegners wird kleiner. 
+x b Die Richtung zum Kollisionsgegner bleibt gleich.
+o c Die Vorausrichtung des Beobachters und Vorausrichtung des Kollisionsgegners kreuzen sich.
+o d Das Echo des Kollisionsgegners wird größer.
+137
+C050502 Question:Welche Bewegungen stellt das abgebildete Wegedreieck dar?
+x a Relativbewegung eines Radarziels von O nach A
+x b Absolute Bewegung des eigenen Bootes von W nach O 
+x c Die absolute Bewegung des Radarzieles von W nach A 
+o d Relativbewegung des eigenen Bootes von W nach O
+138
+C050503 Question:Was ist der CPA?
+x a Ort eines Radarzieles zum Zeitpunkt der nähesten Annäherung 
+o b Passierabstand eines Radarzieles
+o c Kürzester Abstand zu einem bewegten Radarziel
+o d Zeitpunkt der nähesten Annäherung
+139
+C050504 Question:Was ist die TCPA?
+x a Zeitdauer bis zur nähesten Annäherung
+o b Zeitpunkt der nähesten Annäherung
+o c Abstand bei der nähesten Annäherung eines bewegten Radarzieles 
+o d Erwartete Ankunftszeit
+140
+C060101 Question:Wie ermittelt ein GPS-Empfänger die aktuelle Position?
+o a Durch Peilung von mindestens zwei Satelliten
+x b Durch Bestimmung der Entfernung von Satelliten durch Laufzeitmessung 
+o c Empfang der eigenen Position von geostationären Satelliten
+o d Empfang de Entfernung von Satelliten zum GPS-Empfänger
+141
+C060102 Question:Nach welchem Verfahren ermittelt der GPS-Empfänger die aktuelle Position?
+o a Amplitudenverschiebung und Dopplereffekt 
+o b Hyperbelverfahren
+x c Laufzeitmessung
+o d Frequenzverschiebung
+142
+C060103 Question:Wann kann die vom GPS angezeigte Position direkt in die Seekarte  eingetragen werden?
+o a Nie, sie muss immer umgerechnet werden.
+x b Nur dann, wenn im Setup das mit der Karte übereinstimmende Bezugssystem eingestellt ist.
+o c Immer, da der GPS-Empfänger das Bezugssystem aufgrund der aktuellen Position richtig darstellt.
+o d Immer, wenn man offizielle Seekarten der hydrografischen Institute verwendet.
+143
+C060104 Question:Wozu dient die POB (früher MOB)-Funktion des GPS-Empfängers?
+o a Zur automatischen Absetzung eines Notrufs bei Person (Mann) über Bord
+x b Zur Speicherung der POB/MOB-Position am GPS-Empfänger als (besonderen) Wegpunkt 
+o c Zur Übermittlung der POB/MOB-Position via Satellit
+o d Zur Übermittlung derPOB / MOB-Position über Funk
+144
+C060301 Question:Was ist die VMC des GPS-Empfängers?
+x a Geschwindigkeit zum eingestellten Wegpunkt auf dem momentanen Kurs 
+o b Richtung zum Wegpunkt
+o c Kurs zum Wegpunkt
+o d Peilung zum Wegpunkt
+145
+C060302 Question:Was ist die VMG?
+o a Geschwindigkeit zum eingestellten Wegpunkt auf dem momentanen Kurs 
+x b Geschwindigkeit Richtung Luv
+o c Geschwindigkeit durchs Wasser
+o d Geschwindigkeit über Grund
+146
+C060303 Question:Was ist der XTE am GPS-Empfänger?
+o a Ein Wert für die Ungenauigkeit der aktuellen GPS-Position
+x b Der momentane Abstand von der Sollkurslinie, die zum Zeitpunkt der Zieleingabe errechnet wurde
+o c Die Entfernung vom Ziel
+o d Die Differenz zwischen Sollkurs und aktuellem Kurs
+147
+C060304 Question:Was ist der Sollkurs des GPS-Empfängers?
+x a Der geplante Kurs zu einem Wegpunkt zum Zeitpunkt der Zieleingabe
+o b Der aktuelle Kurs zu einem Wegpunkt
+o c Die aktuelle Kurs über Grund
+o d Ein Kurs zu einem Wegpunkt unter Berücksichtigung einer Mindestwassertiefe
+148
+C060305 Question:Am GPS-Empfänger ist ein Wegpunkt aktiviert. Welche Informationen  werden angezeigt?
+x a Der seitliche Abstand vom Sollkurs zum Wegpunkt, der zum Zeitpunkt der Zieleingabe errechnet wurde.
+x b Die Distanz zum Wegpunkt 
+x c Die Peilung zum Wegpunkt 
+o d Die Wassertiefe beim Wegpunkt
+149
+C060501 Question:Was ist das differentielle GPS?
+o a Ein Verfahren, das wesentlich von GPS differiert
+o b Ein Verfahren, das mit Laufzeit-Differenzen arbeitet
+o c Ein Verfahren, das durch mathematische Differentiation Ergebnisse erzielt
+x d Ein Verfahren, das über Kontrollstationen Korrekturwerte liefert, mit denen die empfangenen Werte verbessert werden.
+150
+C060601 Question:Welche Systeme sind Satelliten-Navigationssysteme?
+x a Global Positioning System (GPS)
+x b Global Navigation Satellite System (GLONASS)
+o c Electronic Chart Display and Information System (ECDIS) 
+x d GALILEO
+151
+C060701 Question:Was sind Rasterkarten?
+o a Seekarten mit einem Raster zur Positionsbestimmung
+o b Elektronische Seekarten in denen die Informationen nach einem festgelegten Raster dargestellt werden
+x c Elektronische Seekarten, deren Datenbasis aus einzelnen Bildpunkten besteht
+x d Bilder von Seekarten, die mit Koordinaten-Information unterlegt werden können
+152
+C060702 Question:Was sind Vektorkarten?
+o a Elektronische Seekarten mit einem von der IMO definierten Standard
+x b Elektronische Seekarten, deren einzelne Elemente Datensätze mit Eigenschaften und Informationen sind
+o c Alle elektronische Seekarten sind Vektorkarten, Rasterkarten sind Papier-Seekarten. 
+o d Rasterkarten mit geodätischen Zusatzinformationen
+153
+C070811 Question:Was ist der Unterschied zwischen Horizont und Kimm?
+o a Es gibt keinen Unterschied.
+x b Kimm ist die optische Grenze zwischen Himmel und Wasser.
+o c Horizont ist die optische Grenze zwischen Himmel und Wasser. 
+x d Horizont ist ein Kreis in der Himmelskuqel.
+154
+C080101A Question:Was sind Ursachen für die Gezeiten?
+o a Corioliskraft
+o b Fliehkräfte durch Erdrotation
+x c Fliehkräfte des Systems Erde/Mond
+x d Anziehungskräfte von Mond und Sonne
+155
+C080102 Question:Zu welcher Zeit bzw. Mondphase ist in mittleren Breiten mit niedrigstem  Hochwasser zu rechnen?
+o a Springzeit 
+o b Vollmond 
+x c Halbmond 
+x d Nippzeit
+156
+C080103 Question:Unter welchen Bedingungen ist in den mittleren Breiten mit niedrigstem  Hochwasser zu rechnen?
+o a Bei Springzeit, wenn Sonne und Mond einen kleinen Deklinationsunterschied haben 
+o b Bei Springzeit, wenn Sonne und Mond einen großen Deklinationsunterschied haben 
+o c Bei Nippzeit, wenn Sonne und Mond einen kleinen Deklinationsunterschied haben
+x d Bei Nippzeit, wenn Sonne und Mond einen großen Deklinationsunterschied haben
+157
+C080104 Question:Zu welcher Zeit bzw. Mondphase ist in mittleren Breiten mit niedrigstem  Niedrigwasser zu rechnen?
+x a Springzeit 
+o b Nippzeit
+x c Neumond
+o d Halbmond
+158
+C080105 Question:Unter welchen Bedingungen ist in den mittleren Breiten mit niedrigstem  Niedrigwasser zu rechnen?
+x a Bei Springzeit, wenn Sonne und Mond einen kleinen Deklinationsunterschied haben 
+o b Bei Springzeit, wenn Sonne und Mond einen großen Deklinationsunterschied haben 
+o c Bei Nippzeit, wenn Sonne und Mond einen kleinen Deklinationsunterschied haben
+o d Bei Nippzeit, wenn Sonne und Mond einen großen Deklinationsunterschied haben
+159
+C080106 Question:In welchem Zeitraum des Mondmonats ist der Tidenhub besonders groß?
+x a Neumond
+o b Erstes Viertel 
+x c Vollmond
+o d Letztes Viertel
+160
+C080107 Question:In welchem Zeitraum des Mondmonats ist der Tidenhub besonders gering?
+o a Neumond
+x b Erstes Viertel 
+o c Vollmond
+x d Letztes Viertel
+161
+C080108 Question:Wie kann in Europa der Mond zur Nippzeit aussehen?
+x a Halbmond 
+o b Neumond 
+o c Vollmond
+o d Sichel, zunehmend
+162
+C080109 Question:Wie kann in Europa der Mond zur Springzeit aussehen?
+o a Halbmond 
+x b Neumond 
+x c Vollmond
+o d Sichel, abnehmend
+163
+C080110 Question:Wie ist die Konstellation Sonne - Mond - Erde bei Nippzeit?
+o a Mond und Sonne stehen etwa in einer Achse, auf verschiedenen Seiten der Erde 
+o b Mond und Sonne stehen etwa in einer Achse, auf derselben Seite der Erde
+x c Die Achse Mond-Erde steht etwa rechtwinkelig zur Achse Erde-Sonne
+o d Die Achse Mond-Erde steht etwa in einem Winkel von 45° zur Achse Erde-Sonne
+164
+C080111 Question:Womit ist der in der Seekarte angegebene Wert der Tiefe zu korrigieren?
+o a Mit dem Höhenunterschied der Gezeit 
+o b Mit dem Gezeitenunterschied
+x c Mit der Höhe der Gezeit
+o d Mit dem Kartennull
+165
+C080112 Question:Mit welcher Unterlage kann die Höhe der Gezeit zu einem beliebigen  Zeitpunkt bestimmt werden?
+x a Mit einem Gezeitenkalender
+o b Mit einem Mondkalender
+x c Mit der Tidenkurve in den Gezeitentafeln
+o d Mit den Tabellenwerten in den Gezeitentafeln.
+166
+C080113 Question:Was ist die Springverspätung?
+x a Die Zeitverzögerung zwischen einer entsprechenden Gestirnskonstellation und dem Eintreten der Auswirkungen auf die Gezeitenhöhen an einem Ort.
+x b Der Zeitverzögerung von Spring- und Nippzeit gegenüber den entsprechenden Mondphasen.
+o c Der Zeitunterschied des Auftretens des Hochwassers an verschiedenen Orten. 
+o d Das zeitlich unterschiedliche Eintreten der Springzeit an verschiedenen Orten.
+167
+C080114 Question:Was wird als Tidenkurve bezeichnet?
+o a Die grafische Darstellung des Gezeitenverlaufs an einem Ort über einen längeren
+o b Die grafische Darstellung des Gezeitenverlaufs an einem Bezugsort über einen längeren Zeitraum
+x c Die grafische Darstellung einer bestimmten Tide an einem Ort 
+x d Die grafische Darstellung einer mittleren Tide am Bezugsort
+168
+C080201 Question:Was wird als Flut bezeichnet?
+x a Das Steigen des Wassers vom Niedrigwasser zum folgenden Hochwasser 
+o b Der Zeitpunkt des höchsten Wasserstandes
+o c Der höchste Wasserstand im Verlauf eines Mondmonats
+o d Die Zeit, in der der Wasserstand über dem mittleren Wasserstand liegt
+169
+C080202 Question:Was wird als Ebbe bezeichnet?
+o a Das Steigen des Wassers vom Niedrigwasser zum kommenden Hochwasser
+x b Das Fallen des Wassers von einem Hochwasser zum folgenden Niedrigwasser 
+o c Der niedrigste Wasserstand im Lauf eines Mondmonats
+o d Die Zeit, in der der Wasserstand unter dem mittleren Wasserstand liegt
+170
+C080203 Question:Was wird als Tidenfall bezeichnet?
+x a Der Höhenunterschied zwischen einem Hochwasser und dem folgenden Niedrigwasser 
+o b Die Zeitdauer vom Hochwasser zum folgenden Niedrigwasser
+o c Das Fallen der Hochwasserhöhen während eines Mondmonats
+o d Das Fallen der Niedrigwasserhöhen während eines Mondmonats
+171
+C080204 Question:Was wird als Tidenstieg bezeichnet?
+o a Die Zeitdauer vom Niedrigwasser zum folgenden Hochwasser
+x b Der Höhenunterschied zwischen einem Niedrigwasser und dem darauffolgenden Hochwasser
+o c Das Ansteigen der Hochwasserhöhen während eines Mondmonats
+o d Das Ansteigen der Niedrigwasserhöhen während eines Mondmonats
+172
+C080205 Question:Was wird als Tide bezeichnet?
+o a Der Verlauf der Gezeit von einem Hochwasser bis zum nächsten Niedrigwasser 
+o b Der Verlauf der Gezeit von einem Niedrigwasser bis zum nächsten Hochwasser 
+o c Der Verlauf der Gezeit von einem Hochwasser bis zum nächsten Hochwasser
+x d Der Verlauf der Gezeit von einem Niedrigwasser bis zum nächsten Niedrigwasser
+173
+C080206 Question:Was bezeichnet man als Tide?
+o a Höhenunterschied beim Steigen des Wassers
+o b Höhenunterschied beim Fallen des Wassers
+x c Einzelne Gezeit von einem Niedrigwasser zum nächsten 
+o d Arithmetischer Mittelwert aus Tidenstieg und Tidenfall
+174
+C080207 Question:Was bedeutet Stillwasser?
+x a Übergang von Flutstrom auf Ebbstrom 
+x b Übergang von Ebbstrom auf Flutstrom 
+o c Ruhiges Wasser bei Flaute
+o d Ruhiges Wasser wenn der Seegang durch Wind vom Gezeitenstrom aufgehoben wird
+175
+C090101 Question:Welches Betonnungssystem wird in Europa verwendet?
+x a Betonnungssystem IALA „A“ 
+o b Betonnungssystem IALA „B“ 
+o c Betonnungssystem IALA „C“ 
+o d Die Betonnung regelt jeder Küstenstaat für sein Hoheitsgebiet eigenständig.
+176
+C090102 Question:Wo gilt das Betonnungssystem Region A?
+x a In Europa
+o b Ausschließlich in der Adria
+o c In den nordamerikanischen Küstengewässern 
+o d Nur im Bereich von Hafeneinfahrten
+177
+C090103A Question:Was unterscheidet das Betonnungssystem IALA A von IALA B?
+o a Unterschiedliche Seezeichen im Lateralsystem
+o b Unterschiedliche Seezeichen im Kardinalsystem
+x c Unterschiedliche Farben der Seezeichen im Lateralsystem 
+o d Unterschiedliche Formen der Seezeichen im Lateralsystem
+178
+C090103B Question:Was sind Unterschiede zwischen den Betonnungssystemen IALA A von IALA B?
+o a Im Betonnungssystem A sind Stumpftonnen grün, im Betonnungsystem B rot 
+x b Im Betonnungssystem A sind Stumpftonnen rot, im Betonnungsystem B grün 
+o c Im Betonnungssystem A markieren einlaufend Spitztonnen die Steuerbordseite, im Betonnungsystem B Stumpftonnen
+o d Im Betonnungssystem A markieren einlaufend Stumpftonnen die Steuerbordseite, im Betonnungsystem B Spitztonnen
+179
+C090201 Question:Was ist das Lateralsystem?
+o a Ein System zur Markierung zur Markierung temporärer Gefahrenbereiche 
+o b Ein System zur Kennzeichnung gefährlicher Bereiche
+o c Ein System zur Kennzeichnung von Untiefen
+x d Ein System zur Kennzeichnung von Fahrwassern
+180
+C090202A Question:Wie ist zu steuern, wenn eine Tonne mit Toppzeichen Zylinder auftaucht?
+o a Kann mit genügend Abstand auf beiden Seiten passiert werden 
+x b Bleibt auslaufend an Steuerbord liegen
+o c Bleibt auslaufend an Backbord liegen
+x d Bleibt einlaufend an Backbord liegen
+181
+C090202B Question:Wie ist zu steuern, wenn eine Tonne mit Toppzeichen Kegel, Spitze nach oben, auftaucht?
+o a Kann mit genügend Abstand auf beiden Seiten passiert werden 
+o b Bleibt auslaufend an Steuerbord liegen
+x c Bleibt auslaufend an Backbord liegen
+o d Bleibt einlaufend an Backbord liegen
+182
+C090202C Question:Wie verhält man sich bei einem Seezeichen mit einem Zylinder als  Toppzeichen?
+o a Braucht nicht beachtet zu werden, gilt nur für die Großschifffahrt. 
+x b Bleibt auslaufend an Steuerbord liegen.
+o c Bleibt auslaufend an Backbord liegen.
+x d Bleibt einlaufend an Backbord liegen.
+183
+C090203 Question:Zu welchem Betonnungssystem gehört das abgebildete Seezeichen?
+x a Lateralsystem
+o b Kardinalsystem
+o c Sonderzeichen
+o d Einzelgefahr-Zeichen
+184
+C090203D Question:Wie verhält man sich bei einem Seezeichen mit einem Zylinder als  Toppzeichen?
+o a Beim Einlaufen an Steuerbord liegen lassen. 
+x b Beim Einlaufen an Backbord liegen lassen.
+x c Beim Auslaufen an Steuerbord liegen lassen. 
+o d Beim Auslaufen an Backbord liegen lassen.
+185
+C090204 Question:Was bedeutet das abgebildete Seezeichen?
+x a Rechte Seite des Fahrwassers, einlaufend 
+o b Linke Seite des Fahrwassers, einlaufend
+o c Mitte des Fahrwassers
+o d Einzelgefahrzeichen
+186
+C090301 Question:Welche Bedeutung hat das abgebildete Seezeichen?
+o a Muringboje 
+o b Einzelgefahr 
+o c Untiefe
+x d Fahrwassermitte
+187
+C090302 Question:Wie sieht ein Mitte-Fahrwasser-Zeichen aus?
+o a Schwarz mit einem waagrechten roten Streifen 
+o b Schwarz - Rot senkrecht gestreift
+o c Weiß mit einem waagrechten roten Streifen
+x d Weiß - Rot senkrecht gestreift
+188
+C090401 Question:Was ist das Kardinalsystem?
+o a Ein System zur Kennzeichnung einzelner Gefahrenstellen
+x b Ein System zur Kennzeichnung von Gefahrenstellen größerer Ausdehnung 
+o c Ein System zur Kennzeichnung von Fahrwassern
+o d Ein System zur Kennzeichnung von Sperrgebieten
+189
+C090402 Question:Auf Kurs Süd taucht nachts voraus ein Feuer mit der dargestellten Kennung  auf. Wie ist zu steuern?
+x a Das Seezeichen muss backbord liegen bleiben.
+o b Das Seezeichen muss steuerbord liegen bleiben.
+o c Das Seezeichen kann beiderseits passiert werden. 
+x d Dieses Seezeichen muss westlich passiert werden.
+190
+C090403 Question:Auf Kurs Nord taucht nachts voraus ein Feuer SFkl(9) auf. Wie ist zu steuern?
+o a Das Seezeichen muss backbord liegen bleiben.
+x b Das Seezeichen muss steuerbord liegen bleiben.
+o c Das Seezeichen kann beiderseits passiert werden.
+x d Das Seezeichen muss Richtung Westen umfahren werden.
+191
+C090404 Question:Auf Kurs Ost taucht nachts voraus ein Feuer mit der dargestellten Kennung  auf. Wie ist zu steuern?
+x a Das Seezeichen muss backbord liegen bleiben.
+o b Das Seezeichen muss steuerbord liegen bleiben.
+x c Das Seezeichen muss Richtung Süden umfahren werden. 
+o d Das Seezeichen kann beiderseits passiert werden.
+192
+C090405 Question:Welche Bedeutung kann ein Leuchtfeuer mit der Kennung Q W haben?
+x a Nordquadrant 
+o b Ostquadrant
+o c Südquadrant
+o d Westquadrant
+193
+C090406 Question:Welche Bedeutung kann ein Leuchtfeuer mit der Kennung Q(9) W haben?
+o a Nordquadrant 
+o b Ostquadrant
+o c Südquadrant
+x d Westquadrant
+194
+C090407 Question:Welche Bedeutung kann ein Leuchtfeuer mit der Kennung Q(6)+LFl W  haben?
+o a Nordquadrant 
+o b Ostquadrant
+x c Südquadrant
+o d Westquadrant
+195
+C090408 Question:Welche Bedeutung kann ein Leuchtfeuer mit der Kennung Q(3) W haben?
+o a Nordquadrant 
+x b Ostquadrant
+o c Südquadrant
+o d Westquadrant
+196
+C090409 Question:Welche Bedeutung hat das abgebildete Seezeichen?
+x a Westquadrant, im Westen zu umfahren 
+o b Ostquadrant, im Osten zu umfahren
+o c Nordquadrant, im Norden zu umfahren 
+o d Südquadrant, im Süden zu umfahren
+197
+C090410 Question:Zu welchem Betonnungssystem gehört das abgebildete Seezeichen?
+o a Lateralsystem
+x b Kardinalsystem
+o c Sonderzeichen
+o d Einzelgefahrzeichen
+198
+C090501 Question:Welche Bedeutung hat das abgebildete Seezeichen?
+x a Einzelgefahrzeichen, kann an jeder Seite in gehörigem Abstand passiert werden. 
+o b Steuerbordseite eines Fahrwassers
+o c Sonderzeichen
+o d Mittefahrwasserzeichen, kann an jeder Seite passiert werden.
+199
+C090502 Question:Welche Bedeutung hat das abgebildete Seezeichen?
+o a Fahrwasserkennzeichnung 
+o b Mittefahrwasserzeichen
+o c Sonderzeichen
+x d Einzelgefahrzeichen
+200
+C090503 Question:Was bedeutet eine schwarz-rot-schwarz waagrecht gestreifte Tonne?
+o a Nordquadrant ist unklar, passieren in einem anderen Quadranten
+o b Nordquadrant, muss im Süden passiert werden
+x c Einzelgefahrzeichen, kann beidseitig in gehörigem Abstand passiert werden 
+o d Mittefahrwasserzeichen, kann beidseitig passiert werden
+201
+C090601 Question:Was sind Sonderzeichen?
+x a Seezeichen, die besondere Gefahren oder spezielle Gebiete kennzeichnen. 
+o b Deviationsbaken, Richtfeuer, Ansteuerungstonnen
+o c Navigationszeichen an Land
+o d Sonderzeichen ausschließlich für die Großschifffahrt in Hafennähe
+202
+Category D Rechtskunde
+D010101 Question:Was ist die IALA?
+o a Ein Übereinkommen über die Klassifizierung von Jachten internationaler Regatten 
+x b Eine Organisation zur internationalen Kooperation der Seezeichenverwaltungen
+x c International Association of Marine Aids to Navigation and Lighthouse Authorities 
+o d International Association for Safety of Live at Sea
+203
+D010102 Question:Was ist die IMO?
+o a Internationaler Seegerichtshof
+x b Internationale Seeschiffahrts-Organisation
+x c International Maritime Organization
+o d Abkommen über die Verhütung von Meeresverschmutzung durch die Schifffahrt
+204
+D020401 Question:Für welche Fahrtbereiche und welchen Berechtigungsumfang kann in  Österreich ein IC ausgestellt werden?
+o a Fahrtbereich 1, 2, 3 und 4 für Motorjachten oder Segeljachten
+x b Fahrtbereich 1, 2, 3 und 4 für Motorjachten oder Motor- und Segeljachten 
+o c Fahrtbereich 1, 2, 3, 4 und 5
+o d In Österreich wird kein IC ausgestellt, nur ein Befähigungsausweis.
+205
+D020402 Question:Wie weit reichen die Fahrtbereiche lt. Jachtverordnung?
+x a Watt- oder Tagesfahrt (3 sm), Küstenfahrt (20 sm), Küstennahe Fahrt (200 sm), Weltweite Fahrt (keine Einschränkung)
+o b Watt- oder Tagesfahrt (3 sm), Küstenfahrt (6 sm), Küstennahe Fahrt (20 sm), Weltweite Fahrt (200 sm)
+o c Watt- oder Tagesfahrt (6 sm), Küstenfahrt (12 sm), Küstennahe Fahrt (30 sm), Weltweite Fahrt
+o d Watt- oder Tagesfahrt (3 sm), Küstenfahrt (30 sm), Küstennahe Fahrt (300 sm), Weltweite Fahrt (keine Einschränkung)
+206
+D020403 Question:Bis zu welcher Entfernung von der Küste bzw. von Inseln reicht der  Fahrtenbereich 1?
+x a 3 Seemeilen 
+o b 6 Seemeilen 
+o c 12 Seemeilen
+o d 30 Seemeilen
+207
+D020404 Question:Bis zu welcher Entfernung von der Küste bzw. von  Inseln reicht der  Fahrtbereich 2?
+o a 12 Seemeilen 
+x b 20 Seemeilen 
+o c 30 Seemeilen 
+o d 200 Seemeilen
+208
+D020405 Question:Bis zu welcher Entfernung von der Küste bzw. von Inseln reicht der  Fahrtenbereich 3?
+o a 3 Seemeilen
+o b 12 Seemeilen
+o c 20 Seemeilen
+x d 200 Seemeilen
+209
+D020406 Question:Welche Jachten dürfen mit dem IC für FB1 geführt werden?
+x a Jachten bis zu einer Länge von 10 Metern innerhalb des Fahrtbereichs 1
+o b Jachten, die mindestens für den Fahrtbereich 1 zugelassen sind, unabhängig von ihrer Länge.
+o c Jachten, die für den Fahrtbereich 1 zugelassen sind, bis zu einer Motorleistung von 30 kW pro Antriebsmaschine.
+o d Jachten, die für weniger als 6 Personen zugelassen sind im Fahrtbereich 1.
+210
+D020407 Question:Welche Jachten dürfen mit dem FB2 geführt werden?
+o a Jachten innerhalb des Fahrtbereichs 2 ohne Einschränkung der Länge
+x b Jachten bis 24 Meter innerhalb des Fahrtbereichs 2
+o c Jachten, die für weniger als 12 Personen zugelassen sind im Fahrtbereich 2 
+o d Jachten im Fahrtbereich 2 bis zu einer Antriebsleistung von max. 350 kW
+211
+Category E Wetter
+E010101 Question:Was wird mit dem Begriff Wetter beschrieben?
+x a Der Zustand der untersten Luftschicht der Atmosphäre
+o b Der Zustand der Atmosphäre über einen langen Zeitraum 
+x c Die Wettererscheinungen zu einem bestimmten Zeitpunkt 
+o d Die Wettererscheinungen für einen langen Zeitraum
+212
+E010102 Question:Was wird mit dem Begriff Klima beschrieben?
+o a Der Zustand der untersten Luftschicht der Atmosphäre
+x b Die Beschreibung des Zustands der Atmosphäre über einen langen Zeitraum 
+o c Die Beschreibung der Wettererscheinungen für einen bestimmten Zeitpunkt 
+x d Die Beschreibung der Wettererscheinungen für einen langen Zeitraum
+213
+E010103 Question:Wodurch unterscheiden sich die Begriffe Wetter und Klima?
+o a Kein Unterschied, nur unterschiedliche Begriffe
+o b Wetter bezeichnet örtlich auftretende Wettererscheinungen, Klima weltweit auftretende Wettererscheinungen.
+x c Wetter ist der Zustand zu einem bestimmten Zeitpunkt, Klima ist die statistische Beschreibung der Vorgänge in der Atmosphäre über einen längeren Zeitraum.
+o d Wetter bezeichnet einzelne Zustände der Atmosphäre, Klima ist deren Zusammenfassung
+214
+E010201 Question:Was sind Ursachen für unterschiedliche Zustände der Atmosphäre?
+o a Unterschiedliche Erwärmung der Luft durch die Sonne
+x b Unterschiedliche Erwärmung der Erdoberfläche durch die Sonne
+o c Unterschiedliche Höhe der Atmosphäre in verschiedenen geografischen Breiten 
+x d Unterschiedliche Einstrahlwinkel der Sonne
+215
+E020110 Question:Wie groß ist der niedrigste gemessene Luftdruck auf Meereshöhe?
+o a etwa 820 hPa 
+x b etwa 870 hPa 
+o c etwa 920 hPa 
+o d etwa 970 hPa
+216
+E020111 Question:Wie groß ist der höchste gemessene Luftdruck auf Meereshöhe?
+o a etwa 1030 hPa 
+x b etwa 1080 hPa 
+o c etwa 1130 hPa 
+o d etwa 1180 hPa
+217
+E020112 Question:In welchem Bereich bewegt sich der Luftdruck in gemäßigten Breiten auf  Meereshöhe?
+o a ca. 850 - 950 hPa
+o b ca. 900 - 1000 hPa
+x c ca. 950 - 1060 hPa
+o d ca. 1000 - 1150 hPa
+218
+E020201 Question:Wie lässt sich aus einer Vorhersagekarte die zu erwartende  Windgeschwindigkeit ermitteln?
+o a Gar nicht, die Windgeschwindigkeiten erfährt man aus dem Wetterbericht. 
+o b Aus dem Druckunterschied zwischen Hoch und Tief
+o c Aus der Entfernung zwischen Hoch und Tief
+x d Aus dem Abstand der Isobaren
+219
+E020202 Question:Auf einer Breite von ca. 40° N herrscht ein Druckgradient von 3 hPa. Mit  welcher Windgeschwindigkeit ist zu rechnen?
+o a 10 - 17 kn 
+o b 18 - 25 kn 
+x c 25 - 30 kn 
+o d 35 - 40 kn
+220
+E020203 Question:Der Druckunterschied zwischen 40 sm voneinander entfernten Orten in den  mittleren Breiten beträgt 2 hPa. Mit welcher Windgeschwindigkeit ist zu  rechnen?
+o a schwacher Wind (Gradient = 1) 
+o b mittlerer Wind (Gradient = 2)
+x c starker Wind (Gradient = 3)
+o d stürmischer Wind (Gradient = 4)
+221
+E020204 Question:Was trifft auf die Windgeschwindigkeit bei gleichem Druckgradienten zu?
+x a Sie ist in einem Hochdruckgebiet größer als in einem Tiefdruckgebiet. 
+o b Sie ist in einem Tiefdruckgebiet größer als in einem Hochdruckgebiet. 
+x c Sie ist in niedrigen Breiten größer als in höheren Breiten.
+o d Sie ist in höheren Breiten größer als in niedrigen Breiten.
+222
+E020205 Question:Welche Bedeutungen kann ein geringer Isobarenabstand haben?
+o a Geringe Zuggeschwindigkeit des Hochdruckgebiets.
+o b Geringe Zuggeschwindigkeit des Tiefdruckgebiets.
+x c Großer Druckunterschied, großer Gradient, starker Wind bis Sturm.
+o d Geringer Druckunterschied, kleiner Gradient, schwacher bis mäßiger Wind.
+223
+E020206 Question:Position 45° N / 012° E. Welche Windrichtung/Geschwindigtkeit ist aus der  Wetterkarte etwa zu schließen?
+o a Wind etwa NE/18 kn 
+o b Wind etwa NW/24kn 
+o c Wind etwa SW/28kn 
+x d Wind etwa NE/40kn
+224
+E020207 Question:Position 39° N / 010°W. Auf welche Windrichtung/-geschwindigkeit ist aus  der Wetterkarte zu schließen?
+o a Wind etwa E/12 kn
+o b Wind etwa SW/20 kn 
+x c Wind etwa NE/20 kn 
+o d Wind etwa SE/30 kn
+225
+E020208 Question:Der Druckunterschied zwischen 40 sm voneinander entfernten Orten auf  etwa 45° N  beträgt 2 hPa. Mit welcher Windgeschwindigkeit ist zu rechnen?
+o a schwacher Wind (Gradient = 1) 
+o b mäßiger Wind (Gradient = 2)
+x c starker Wind (Gradient = 3)
+o d Sturm (Gradient = 4)
+226
+E020209 Question:Der Druckunterschied zwischen 120 sm voneinander entfernten Orten auf  etwa 45° N  beträgt 4 hPa. Mit welcher Windgeschwindigkeit ist zu rechnen?
+x a mäßiger Wind (Gradient = 2)
+o b starker Wind (Gradient = 3)
+o c Sturm (Gradient = 4)
+o d schwerer Sturm (Gradient = 5)
+227
+E020210 Question:Der Druckunterschied zwischen 150 sm voneinander entfernten Orten auf  etwa 45° N  beträgt 5 hPa. Mit welcher Windgeschwindigkeit ist zu rechnen?
+o a schwacher Wind (Gradient = 1) 
+x b mäßiger Wind (Gradient = 2)
+o c starker Wind (Gradient = 3)
+o d Sturm (Gradient = 4)
+228
+E020211 Question:Der Druckunterschied zwischen 75 sm voneinander entfernten Orten auf  etwa 45° N  beträgt 5 hPa. Mit welcher Windgeschwindigkeit ist zu rechnen?
+o a schwacher Wind (Gradient = 1) 
+o b mäßiger Wind (Gradient = 2)
+o c starker Wind (Gradient = 3)
+x d Sturm (Gradient = 4)
+229
+E020301A Question:Wie wird die Windstärke angegeben?
+x a Bft
+o b sm/h
+o c km/h
+o d m/s
+230
+E020302 Question:Wie viele Windstärkestufen hat die Beaufortskala (ohne Windstärke 0)?
+o a 9
+o b 10
+x c 12
+o d 20
+231
+E020303A Question:In welchen Maßeinheiten wird die Windgeschwindigkeit angegeben?
+o a kWh
+x b sm/h
+x c km/h
+x d m/s
+232
+E020303B Question:Wie wird die Windgeschwindigkeit angegeben?
+x a Seemeilen pro Stunde 
+x b Kilometer pro Stunde 
+x c Meter pro Sekunde
+o d Beaufort
+233
+E020401 Question:Welche Auswirkungen auf den Wind hat die Coriolis-Kraft?
+o a Der Wind strömt direkt vom Hoch zum Tief. 
+o b Der Wind strömt direkt vom Tief zum Hoch. 
+x c Großräumige Luftbewegungen werden auf der Nordhalbkugel nach rechts, auf der Südhalbkugel nach links abgelenkt.
+o d Die Corioliskraft beschleunigt den Wind auf der Nordhalbkugel und bremst ihn auf der Südhalbkugel.
+234
+E020402 Question:Was ist der Gradientenwind?
+o a Der vom Druckunterschied hervorgerufene Wind
+o b Der vom Druckunterschied hervorgerufene Wind, abgelenkt durch die Coriolis-Kraft
+x c Der vom Druckunterschied hervorgerufene Wind, abgelenkt durch die Coriolis-Kraft und Fliehkraft
+o d Der vom Druckunterschied hervorgerufene Wind, abgelenkt durch die Coriolis-Kraft, Fliehkraft und Reibung an der Oberfläche
+235
+E020403 Question:Was ist der geostrophische Wind?
+o a Der vom Druckunterschied hervorgerufene Wind
+x b Der vom Druckunterschied hervorgerufene Wind, abgelenkt durch die Coriolis-Kraft
+o c Der vom Druckunterschied hervorgerufene Wind, abgelenkt durch die Coriolis-Kraft und Fliehkraft
+o d Der vom Druckunterschied hervorgerufene Wind, abgelenkt durch die Coriolis-Kraft, Fliehkraft und Reibung an der Oberfläche.
+236
+E020404 Question:Was ist der Bodenwind?
+o a Der vom Druckunterschied hervorgerufene Wind
+o b Der vom Druckunterschied hervorgerufene Wind, abgelenkt durch die Coriolis-Kraft
+o c Der vom Druckunterschied hervorgerufene Wind, abgelenkt durch die Coriolis-Kraft und Fliehkraft
+x d Der vom Druckunterschied hervorgerufene Wind, abgelenkt durch die Coriolis-Kraft, Fliehkraft und Reibung an der Oberfläche
+237
+E020406 Question:Wodurch wird der Wind von der direkten Richtung zum Minimum abgelenkt?
+x a Corioliskraft
+x b Zentrifugalkraft
+o c Gravitationskraft 
+o d Gradientenkraft
+238
+E020407 Question:Was sind Ursachen dafür, dass der Wind in Bodennähe nicht parallel zu den  Isobaren weht?
+o a Die Gradientenkraft 
+x b Die Bodenreibung
+x c Die Corioliskraft
+x d Die Fliehkraft
+239
+E020601 Question:Was gehört zu den Hauptelementen des planetarischen Windsystems?
+x a Polare Hochdruckzone
+x b Westwindgürtel in den gemäßigten Breiten 
+o c Südostasiatisches Monsungebiet
+x d Subtropischer Hochdruckgürtel
+240
+E020602 Question:Was trifft für das planetarische Windsystem zu?
+o a Der Höhenwind weht unbeeinflusst von Hoch- und Tiefdruckzonen immer von Ost nach West.
+o b Der Höhenwind weht unbeeinflusst von Hoch- und Tiefdruckzonen immer von West nach Ost.
+o c Der Wind weht vom tiefen zum hohen Druck. 
+x d Der Wind weht vom hohen zum tiefen Druck.
+241
+E020603 Question:Mit welchen Winden kann in der Karibik gerechnet werden?
+o a Ostro
+o b SW - Monsun 
+o c SE - Passat
+x d NE - Passat
+242
+E020604 Question:Welche Richtungen haben die auf der Nordhalbkugel vorkommenden  Passatwinde?
+o a SE
+o b NW
+x c NE
+o d SW
+243
+E020605 Question:Welche Richtungen haben die auf der Südhalbkugel vorkommenden  Passatwinde?
+x a SE
+o b NW
+o c NE
+o d SW
+244
+E020606 Question:Welche großräumigen Windsysteme gibt es im planetarischen Windsystem?
+x a Passate
+o b Äquatorialwinde
+x c Westwinde in der Westwindzone 
+o d Nordwinde auf der Südhalbkugel
+245
+E020607 Question:In welchen Seegebieten tritt DER Monsun auf.
+o a Hudson Bucht (Hudson Bay) 
+o b Ostsee
+x c Indischer Ozean 
+x d Arabisches Meer
+246
+E020608 Question:Was sind die „Roaring Forties“?
+x a Westwindzone zwischen 40° S und 50° S 
+o b Westwindzone zwischen 40° N und 50° N 
+o c Westwindzone auf der Nordhalbkugel
+o d Ostwindzone auf der Südhalbkugel
+247
+E020609 Question:Welche der folgenden Ausdrücke bezeichnen die innertropische  Konvergenzzone?
+x a Doldrums
+x b Äquatoriale Tiefdruckrinne
+x c Innertropische Tiefdruckrinne 
+o d Äquatorialer Hochdruckgürtel
+248
+E020610 Question:Was sind Zonen mit geringer horizontaler Luftströmung?
+x a Äquatoriale Tiefdruckrinne
+o b Westwindgürtel
+x c Subtropischer Hochdruckgürtel 
+x d Rossbreiten
+249
+E030101 Question:Wonach werden Wolken unterschieden?
+x a Nach Höhe und Form
+o b Nach ihrem Entstehungsprozess
+o c Nach ihrem Gehalt an Wasserdampf 
+o d Nach ihrer Ausdehnung
+250
+E030102 Question:Zu welcher Gattung gehört die abgebildete Wolke?
+x a Cirrus
+o b Nimbostratus 
+o c Cumulus
+o d Altostratus
+251
+E030103 Question:Zu welcher Gattung gehört die abgebildete Wolke?
+x a Cumulonimbus 
+o b Nimbostratus
+o c Stratus
+o d Cirrus
+252
+E030104 Question:Zu welcher Gattung gehört die abgebildete Wolke?
+o a Cirrus
+o b Nimbostratus 
+x c Cumulus
+o d Stratus
+253
+E030105 Question:Zu welcher Gattung gehört die abgebildete Wolke?
+o a Cirrostratus
+x b Nimbostratus 
+o c Cumulus
+o d Cumulonimbus
+254
+E030106 Question:Zu welcher Gattung gehört die abgebildete Wolke?
+x a Altocumulus 
+o b Nimbostratus 
+o c Stratus
+o d Stratus
+255
+E030107 Question:Was ist aufgrund der abgebildeten Wolkenformation zu erwarten?
+o a Harmlose Cumuluswolke, es besteht keine Gefahr
+x b Wolke mit vertikaler Entwicklung, es ist Vorsicht geboten da die Luft labil geschichtet ist. 
+o c Gewitterwolke, Gefahr von Sturmböen
+o d Stratusbewölkung, Warmfront zieht auf
+256
+E030108 Question:Warum sinkt in der Nacht bei klarem Himmel die Temperatur tiefer ab als bei  bewölktem Himmel?
+x a Weil die Wärmestrahlung der Erde bei wolkenlosem Himmel ungehindert abgegeben wird 
+o b Weil die Wärmestrahlung der Erde bei wolkenlosem Himmel auf der Erdoberfläche bleibt 
+o c Weil bei klarem Himmel die Kälte der hohen Luftschichten ungehindert auf den Boden sinken kann
+o d Niedrige Temperaturen hängen nicht vom Bewölkungsgrad ab, sondern von der Stratosphärentemperatur.
+257
+E030201 Question:Welche Arten von Nebel gibt es?
+o a Konvektionsnebel
+x b Advektionsnebel
+x c Mischungsnebel
+x d Verdunstungsnebel
+258
+E030202 Question:Wie kann auf See Nebel entstehen?
+o a Warme Luft strömt über warmes Wasser. 
+x b Warme Luft strömt über kaltes Wasser.
+x c Kalte Luft strömt über warmes Wasser.
+o d Kalte Luft strömt über kaltes Wasser.
+259
+E030203 Question:Wodurch kann Nebel entstehen?
+o a Überschreitung des Taupunkts 
+x b Unterschreitung des Taupunkts 
+x c Abkühlung der Luft
+o d Erwärmung der Luft
+260
+E030204 Question:Unter welchen Umständen kann sich Nebel bilden?
+x a Zufuhr von Feuchte in eine Luftmasse
+o b Entzug von Feuchte einer Luftmasse
+x c Mischung zweier Luftmassen unterschiedlicher Temperatur und hoher Feuchte 
+x d Abkühlung feuchter Luft
+261
+E030205 Question:Was wird als Seerauch bezeichnet?
+x a Verdunstungsnebel bei kaltem Wasser 
+o b Strahlungsnebel bei sehr kalter Luft
+o c Advektionsnebel bei warmer Luft
+o d Mischungsnebel bei warmer Luft
+262
+E040101 Question:Wie können thermische Tiefdruckgebiete entstehen?
+x a Die Erwärmung bodennaher Luftschichten führt zu einem Aufsteigen der Luft, der Luftdruck nimmt ab.
+o b Die Erwärmung hoher Luftschichten führt zu einem Absteigen der Luft, der Luftdruck nimmt ab.
+o c Durch Zufuhr warmer Luft aus einem Gebiet höheren Drucks 
+o d Durch Vermischung bodennaher warmer mit kalter Luft
+263
+E040102 Question:Was sind thermische Tiefdruckgebiete?
+o a Gebiete niedrigen Drucks aufgrund der Abkühlung von Luftmassen
+o b Gebiete niedrigen Drucks durch das Aufeinandertreffen warmer und kalter Luftmassen 
+x c Gebiete niedrigen Drucks durch das Aufsteigen warmer Luft
+o d Gebiete niedrigen Drucks durch das Absinken kalter Luft
+264
+E040206 Question:Welches Kräftegleichgewicht beschreibt den Wind in einem Tiefdruckgebiet?
+o a Gradientenkraft - Corioliskraft + Zentrifugalkraft = 0 
+x b Gradientenkraft - Corioliskraft - Zentrifugalkraft = 0 
+o c Gradientenkraft - Corioliskraft = 0
+o d Gradientenkraft + Corioliskraft - Zentrifugalkraft = 0
+265
+E040207 Question:Wodurch bilden sich dynamische Tiefdruckgebiete in der polaren  Tiefdruckrinne?
+o a Durch das Aufeinandertreffen kontinentaler und maritimer Luftmassen
+o b Durch Divergenz der polaren und der gemäßigten Luftmassen
+x c Durch gegengleich gerichtete (horizontale) Strömungsrichtungen der polaren und der gemäßigten Luftmassen
+o d Durch gleich gerichtete (horizontale) Strömungsrichtungen der polaren und der gemäßigten Luftmassen
+266
+E040208 Question:Was ist ein Tief-Ausläufer?
+o a Ein Hochdruckkeil, der sich zwischen zwei Tiefs schiebt
+o b Ein sich auflösendes Tiefdruckgebiet, wenn die Kaltfront die Warmfront eingeholt hat 
+x c Eine Tiefdruckzone, die sich zwischen zwei Hochs schiebt
+o d Eine Tiefdruckzone, die sich zwischen zwei Fronten schiebt
+267
+E040209 Question:Was wird als Randtief bezeichnet?
+o a Ein Tiefdruckgebilde am Rand eines Hochdruckgebietes
+o b Ein neues Tiefdruckgebiet an der subpolaren Tiefdruckrinne
+x c Ein kleines Nebentief, welches das Zentraltief in zyklonalem Sinn umkreist 
+o d Ein Tiefdruckgebilde mit ausgeprägten Fronten
+268
+E040401A Question:Was ist eine Antizyklone?
+o a Tiefdruckgebiet
+x b Hochdruckgebiet
+o c Wirbelsturm in der Karibik 
+o d Tropischer Sturm
+269
+E040401B Question:Was ist eine Antizyklone?
+x a Hochdruckgebiet
+o b Tiefdruckgebiet auf der Südhalbkugel 
+o c Wirbelsturm auf der Südhalbkugel
+o d Aufgefülltes Tiefdruckgebiet
+270
+E040403 Question:Welches Kräftegleichgewicht beschreibt den Wind in einem Hochdruckgebiet?
+o a Gradientenkraft - Corioliskraft + Zentrifugalkraft = 0 
+o b Gradientenkraft - Corioliskraft - Zentrifugalkraft = 0 
+x c Gradientenkraft - Corioliskraft + Zentrifugalkraft = 0 
+o d Gradientenkraft - Zentrifugalkraft = 0
+271
+E040404 Question:Wann wird ein Gebiet als Hochdruckgebiet bezeichnet?
+o a über 950 hPa
+o b über 1000 hPa
+o c über 1050 hPa
+x d Wenn der Luftdruck höher als in dessen großräumiger Umgebung ist.
+272
+E040405 Question:Wann wird ein Gebiet als Tiefdruckgebiet bezeichnet?
+o a unter 1000 hPa
+o b unter 950 hPa
+o c unter 900 hPa
+x d Wenn der Luftdruck niedriger als in dessen großräumiger Umgebung ist.
+273
+E040501 Question:Was ist ein Tiefdrucktrog?
+o a Ein Tiefdruckgebiet mit besonders niedrigem Kerndruck
+o b Ein Tiefdruckgebiet mit ellipsenförmigen Isobaren
+x c Eine schmale Zone mit großem Druckgradienten hinter der Kaltfront 
+o d Die Verbindung von zwei Tiefdruckgebieten
+274
+E040601 Question:Wie fließt die Luft zwischen Hoch und Tief südlich des Äquators?
+o a Die Luft strömt rechtsherum aus dem Hoch heraus und linksherum in das Tief hinein.
+x b Die Luft strömt linksherum aus dem Hoch heraus und rechtssherum in das Tief hinein. 
+o c Die Luft strömt rechtsherum aus dem Tief heraus und linksherum in das Hoch hinein.
+o d Die Luft strömt linksherum aus dem Tief heraus und rechtssherum in das Hoch hinein.
+275
+E040701 Question:Welche Zusammenhänge sind durch die Rückenwindregel beschrieben?
+o a Die Zugrichtung eines Tiefs aus der Richtung des Bodenwinds
+x b Die Lage des Tiefs aus der Richtung des Bodenwinds
+o c Die Lage des Tiefs aus der Zugrichtung der hohen Wolken
+o d Die Zugrichtung eines Tiefs aus der Zugrichtung der hohen Wolken
+276
+E040702 Question:Was sagt die Rückenwindregel auf der Nordhalbkugel aus?
+o a Der Wind kommt von achteraus.
+o b Kommt der Wind von achteraus befindet sich das Tief voraus.
+o c Kommt der Wind von achteraus befindet sich das Tief achteraus.
+x d Kommt der Wind von achteraus befindet sich das Tief vorlicher als querab an Backbord.
+277
+E040703 Question:Welcher Zusammenhang ist durch die Querwindregel beschrieben?
+o a Die Zugrichtung eines Tiefs aus der Richtung des Bodenwinds
+o b Die Lage des Tiefs aus der Richtung des Bodenwinds
+x c Lage und Zugrichtung des Tiefs aus Richtung von Höhenwind und Bodenwind 
+o d Die Zugrichtung eines Tiefs aus der Richtung des Höhenwinds
+278
+E040704 Question:Wo befindet man sich in Bezug auf das Tief, wenn der Höhenwind von links  und der Bodenwind von hinten weht?
+o a In Zugrichtung des Tiefs hinter dem Zentrum 
+x b In Zugrichtung des Tiefs vor dem Zentrum
+o c Südlich des Zentrums
+o d Nördlich des Zentrums
+279
+E050101 Question:Was wird als Westwetterlage bezeichnet?
+x a Eine über mehrere Tage ostwärts gerichtete Strömung über Europa
+o b Die Wetterlage in Westeuropa
+o c Eine über mehrere Tage westwärts gerichtete Strömung über Europa 
+o d Zone westlicher Winde
+280
+E050103 Question:Was bedeutet ein Genuatief für das Wetter in der Adria?
+x a Scirocco und Niederschläge
+o b Keine Auswirkung, das Tief liegt westlich der Adria 
+o c Starkwind aus West bis Südwest
+o d Kann den Maestrale bis Sturmstärke verstärken
+281
+E050104 Question:Was bedeutet ein Azorenhoch für das Wetter im Mittelmeer?
+o a Vom südlichen Rand des Hochs ziehen Tiefdruckgebiete ins Mittelmeer. 
+o b Es kommt eine Phase unbeständigen Wetters.
+x c Ruhiges, stabiles Schönwetter
+o d Erhöhte Gewittergefahr
+282
+E060101 Question:Was bedeutet es, wenn der Luftdruck rasch fällt?
+o a Rasche Wetterbesserung
+o b Langsame Wetterbesserung
+x c Starkwind- oder Sturmgefahr
+o d Nichts Besonderes, das ist im Tagesgang normal
+283
+E060102 Question:Was bedeutet ein rascher Anstieg des Luftdrucks in der Adria?
+x a Ein Hinweis auf kommende Bora
+o b Rasche Wetterbesserung, die längere Zeit anhalten wird
+o c Nachhaltige Wetterbesserung in ein bis zwei Tagen
+o d Aus einem raschen Druckanstieg läßt sich nichts Konkretes schließen.
+284
+E060103 Question:Seit längerem herrscht gleichbleibender höherer Luftdruck. Welche  Wettersituation ist zu erwarten?
+o a Es ist die typische Ruhe vor dem Sturm, in den nächsten Stunden ist mit Starkwind zu rechnen.
+x b Gleichbleibender Luftdruck deutet auf beständiges Wetter hin. 
+o c Der Wind wird auf Bft 4-5 zunehmen.
+o d Aus einem stabilen Druck lässt sich nichts Konkretes schließen.
+285
+E060104 Question:Auf mittlerer Breite fällt der Luftdruck innerhalb 3 Stunden um 4 hPa. Welche  Windstärke ist zu erwarten?
+o a Es ist keine Änderung der Windstärke zu erwarten, das entspricht dem normalen Tagesgang des Luftdrucks.
+o b 3 - 4 Bft
+o c 4 - 5 Bft
+x d 6 - 7 Bft
+286
+E060105 Question:Wie groß ist die tägliche Schwankung des Luftdrucks in gemäßigten Breiten  bei stabiler Wetterlage?
+x a etwa 1 hPa 
+o b etwa 2 hPa 
+o c etwa 3 hPa 
+o d etwa 4 hPa
+287
+E060106 Question:Wie groß ist die tägliche Schwankung des Luftdrucks am Äquator bei stabiler  Wetterlage?
+o a etwa 1 hPa 
+o b etwa 2 hPa 
+o c etwa 3 hPa 
+x d etwa 4 hPa
+288
+E070101 Question:In welcher Reihenfolge werden die Informationen in einem Seewetterbericht  gesendet?
+o a Keine einheitliche Reihenfolge, je nach Land verschieden 
+o b Vorhersage, Lage, Warnungen
+x c Warnungen, Lage, Vorhersage, ev. Stationsmeldungen
+o d Stationsmeldungen, Warnungen, Vorhersage, Lage
+289
+E070102A Question:Ab welcher Windstärke wird üblicherweise eine Starkwindwarnung  herausgegeben?
+x a ab 6 Bft
+o b ab 8 Bft
+o c ab 10 Bft
+o d ab 12 Bft
+290
+E070102B Question:Ab welcher Windstärke wird üblicherweise eine Sturmwarnung  herausgegeben?
+o a ab 5 Bft
+o b ab 6 Bft
+x c ab 8 Bft
+o d ab 10 Bft
+291
+E070203 Question:Worauf lässt Dünung schließen?
+x a Auf ein entferntes Windfeld
+x b Auf ein vergangenes Windfeld
+o c Kein Rückschluss auf Wettergeschehen, Dünung resultiert aus den Gezeiten 
+o d Auf eine geringe Wassertiefe
+292
+E070204 Question:Welche Sichtweite wird als meteorologisch gute Sicht bezeichnet?
+o a zwischen 2 Meilen und 5 Meilen
+o b zwischen 5 Meilen und 11 Meilen
+x c zwischen 11 Meilen und 27 Meilen 
+o d über 27 Meilen
+293
+E070301 Question:Was ist MSI?
+x a Internationales System zur Verbreitung von Sicherheits- und Wetterinformationen für die Seefahrt
+o b Identifikationsnummer im GMDSS
+o c Internationale Maritime Organisation 
+o d Unterorganisation der UNO
+294
+E070302 Question:Welche Informationen werden durch MSI übermittelt?
+x a Navigationswarnungen
+x b Wetterinformationen
+o c Traffic List
+o d Informationen über Liegeplatze in Häfen für die Berufsschifffahrt
+295
+E070303 Question:Was sind Bestandteile des MSI?
+o a GPS
+x b Navtex
+x c SafetyNet 
+o d GMDSS
+296
+E070304 Question:Mit welchen Geräten kann eine Wetterkarte an Bord empfangen werden?
+x a Wetterfax 
+o b Navtex
+o c SafetyNet 
+o d GMDSS
+297
+E070401 Question:Was ist NAVTEX?
+o a Funksystem zum Senden und Empfangen von Textnachrichten
+x b Funksystem zum Empfangen von nautischen Warnungen und Wettermeldungen 
+o c Ein Wetternachrichten- und Telefonvermittlungssystem
+o d Ein von der IMO für Küstenstaaten vorgeschriebenes Wetterinformationssystem
+298
+E070402 Question:Welche Informationen werden u. a. über NAVTEX verbreitet?
+x a Seewetterberichte, Wetterwarnungen
+x b Ausfall von Leuchtfeuern
+x c Neuinstallation von Seezeichen
+o d Informationen über das Verkehrsaufkommen in Häfen
+299
+E070403 Question:Mit welchen Geräten können NAVTEX-Meldungen empfangen werden?
+o a UKW Funkgerät mit DSC Controller 
+x b NAVTEX-Empfänger
+o c AIS-Empfänger, Klasse A
+o d ARPA
+300
+E070404 Question:Auf welcher Frequenz / welchem Kanal werden NAVTEX-Meldungen  verbreitet?
+o a Kanal 16
+o b Kanal 72
+x c 518 bzw. 490 kHz 
+x d 4209,5 kHz
+301
+E070405 Question:Wie kann man an Bord Wetterinformationen erhalten?
+x a Sprechfunk 
+x b Wetterfax
+x c NAVTEX
+x d Internet
+302
+E070601 Question:Was bedeutet increasing in englischsprachigen Wetterberichten?
+o a abnehmend 
+x b zunehmend 
+o c wechselhaft 
+o d gleichbleibend
+303
+E070602 Question:Was bedeutet decreasing in englischsprachigen Wetterberichten?
+x a abnehmend 
+o b zunehmend 
+o c wechselhaft 
+o d gelichbleibend
+304
+E070603 Question:Was bedeutet backing in englischsprachigen Wetterberichten?
+o a backbord drehend
+x b rückdrehend
+o c nachlassend
+o d der Wind wird zunehmend böiger
+305
+E070604 Question:Was bedeutet synopsis in englischsprachigen Wetterberichten?
+o a Wettervorhersage 
+x b Wetterlage
+o c Wetterwarnung
+o d Wetterausblick
+306
+E080201 Question:Was geben die Werte der Isohypsen in einer 500 hPa-Geopotentialkarte an?
+o a Den Luftdruck in einer Höhe von 5700 m
+x b Die Höhe über Meeresniveau, in der ein Druck von 500 hPa herrscht 
+o c Die Luftdichte bei einem Druck von 500 hPa
+o d Die Luftfeuchte bei einem Druck von 500 hPa
+307
+E080202 Question:Position Madeira (33° N/018° W): Mit welchem Druckgradienten ist etwa zu  rechnen?
+x a Gradient 2
+o b Gradient 3,6 
+o c Gradient 4
+o d Gradient 5
+308
+E080203 Question:Worauf weist ein hohes Geopotential in einer 500 hPa-Geopotentialkarte ihn?
+x a Hohe Temperatur und Hochdruckgebiet
+o b Hohe Temperatur und Tiefdruckgebiet
+o c Niedrige Temperatur und Hochdruckgebiet 
+o d Niedrige Temperatur und Tiefdruckgebiet
+309
+E080301 Question:Was ist ein Windstern?
+x a Windsterne stellen die Anteile verschiedener Windrichtungen und Stärken für einen angegebenen Zeitraum graphisch dar und werden z.B. in Monatskarten verwendet
+o b Darstellung der maximalen Windstärken in Pilot Charts
+o c Darstellung der Windstärke und -richtung in Wetterkarten
+o d Darstellung der Windstärke und -richtung im Stationsmodell
+310
+E090101 Question:Wie heißen Karten, die die durchschnittlichen monatlichen Wind- und  Stromverhältnisse größerer Seebereiche darstellen?
+x a Monatskarten
+o b Übersegler
+x c Routing Charts 
+x d Pilot Charts
+311
+E100201 Question:Wieviele Stufen hat die Seegangsskala nach Douglas (ohne Stärke null)?
+x a 9
+o b 10
+o c 11
+o d 12
+312
+E100202 Question:Wonach wird der Seegang klassifiziert?
+o a Nach der Beaufortskala
+o b Je nach Seegebiet unterschiedlich
+x c Nach der 10-stufigen Seegangsskala der WMO 
+o d Nach der auslösenden Windstärke
+313
+E100203 Question:Welche Wellenhöhe wird im Seewetterbericht angegeben?
+o a Maximale Wellenhöhe
+o b Durchschnittliche Wellenhöhe
+x c Signifikante Wellenhöhe
+x d Mittlere Wellenhöhe aus dem Drittel der höchsten Wellen
+314
+E100204 Question:Was ist die signifikante Wellenhöhe?
+o a Maximale Wellenhöhe
+o b Minimale Wellenhöhe
+o c Durchschnittliche Wellenhöhe
+x d Mittlere Wellenhöhe aus dem Drittel der höchsten Wellen
+315
+E100302 Question:Was wird als Fetch bezeichnet?
+o a Amplitude der Wellenbewegung
+o b Steilheit der Wellen
+x c Streichlänge, auf der der Wind den Seegang entfacht 
+o d Häufigkeit der Wellen
+316
+E100401 Question:Was ist Dünung?
+o a Lange, gleichmäßige Wellenbewegung bei geringen Windstärken 
+o b Kurze, steile Strömungswelle
+x c Dem Wind nachlaufende Welle
+x d Dem Wind vorauslaufende Welle
+317
+E100402 Question:Was unterscheidet Windsee von Dünung?
+o a Windsee hat eine längere Wellenlänge als Dünung 
+x b Windsee hat eine kürzere Wellenlänge als Dünung 
+x c Windsee sind direkt vom Wind angefachte Wellen, Dünung sind dem Wind vorauseilende oder nachlaufende Wellen
+o d Dünung sind direkt vom Wind angefachte Wellen, Windsee sind dem Wind vorauseilende oder nachlaufende Wellen
+318
+E100501A Question:Was ist Grundsee?
+o a Steigerung der Wellenhöhe durch Aufeinandertreffen von Windsee und Dünung verschiedener Richtungen
+x b Steiler werdende Wellen bei Abnahme der Wassertiefe
+o c Steiler werdende Wellen durch entgegengesetzte Richtung von Wind und Seegang 
+o d Seegang verursacht durch Kentern des Tidenstroms
+319
+E100501B Question:Was ist Grundsee?
+o a Bezeichnung für die durchschnittliche Wellenhöhe in einem Seegangsfeld 
+o b Wellen die durch Tidenströmungen entstehen, nicht durch Windeinfluss
+o c Wellenbild, wenn Wind und Strom in entgegengesetzter Richtung wirken 
+x d Steile, brechende See in seichtem Gewässer
+320
+E100502 Question:Unter welchen Umständen entsteht Grundsee?
+x a Wenn die Wassertiefe kleiner ist als die halbe Wellenlänge
+o b Wenn die Wassertiefe größer ist als die Wellenlänge
+o c Wenn der Seegang durch Wind der Dünung entgegen wirkt
+o d Wenn der Seegang durch Wind dem Tidenstrom entgegen wirkt
+321
+E100503 Question:Was ist Kreuzsee?
+x a Wellen aus verschiedenen Richtungen treffen aufeinander
+o b Wellen laufen auf geringe Wassertiefe auf
+o c Seegang zum Zeitpunkt zu dem der Tidenstrom kentert
+o d Seegang mit einer Wellenlänge geringer als die Wassertiefe
+322
+E100504 Question:Wie ensteht Kreuzsee?
+o a Wellen laufen auf geringe Wassertiefe auf
+x b Die Wellenrichtung wird durch Landmassen verändert
+x c Dünung trifft auf Windsee unterschiedlicher Richtung
+o d Meeresströmung läuft entgegengesetzt der Wellenrichtung
+323
+E100601 Question:Wie wirken sich Strömungen auf den Seegang aus?
+o a Läuft der Strom gegen den Wind werden die Wellen flacher und länger. 
+x b Läuft der Strom gegen den Wind werden die Wellen steiler und kürzer. 
+o c Läuft der Strom gegen den Wind entsteht Kreuzsee.
+o d Läuft der Strom gegen den Wind entsteht Grundsee.
+324
+E110101 Question:Wo sind die,,Roaring Forties?
+x a Im Südlichen Ozean zwischen 40° und 50° S. 
+o b Im Südpazifik zwischen 30° und 40° S
+o c Zwischen 40° und 50° N bzw. S
+o d Im Nördlichen Eismeer um ca. 40° N
+325
+E110102 Question:Was ist die Westwindzone?
+o a Eine Zone westlicher Winde um 30° N/S
+x b Eine Zone westlicher Winde zwischen 35° und 65° N/S
+x c Eine Zone westlicher Winde zwischen dem subtropischen Hochdruckgürtel und der subpolaren Tiefdruckrinne
+o d Eine Zone westlicher Winde zwischen der äquatorialen Tiefdruckrinne und dem subtropischen Hochdruckgürtel
+326
+E110103 Question:Wie wird der Luftdruckgürtel um den Äquator bezeichnet?
+o a Äquatoriale Hochdruckzone
+x b Äquatoriale Tiefdruckrinne
+x c Innertropische Konvergenzzone 
+o d Subtropenhoch
+327
+E110104 Question:Was ist typisch für die Rossbreiten?
+o a Rasch wechselnde Wetterbedingungen 
+o b Häufiger Starkwind
+x c Schwacher Wind
+o d Instabile Wetterlage
+328
+E110105 Question:Durch welche Eigenschaften zeichnet sich der subtropische Hochdruckgürtel  aus?
+o a Bodennahe Konvergenz, Gewitter und unbeständige Winde
+o b Reine advektive (horizontale) Luftbewegungen und beständige östliche Winde
+x c Bodennahe Divergenz, unbeständige und schwache Winde
+o d Reine advektive (horizontale) Luftbewegungen und beständige westliche Winde
+329
+E110106 Question:In welcher Klimazone herrschen östliche Winde vor?
+x a Polarzone
+x b Passatzone
+o c Gemäßigte Breiten 
+o d Rossbreiten
+330
+E110107 Question:Was ist die innertropische Konvergenzzone?
+x a Zone der aufeinandertreffenden Passatwinde
+o b Zone der auseinanderströmenden Passatwinde 
+x c Zone tiefen Drucks um den Äquator
+o d Zone hohen Drucks um den Äquator
+331
+E110108 Question:In welchen der folgenden planetarischen Gürtel/Klimazonen herrscht hoher  Luftdruck vor?
+x a Rossbreiten
+x b Polarzone
+o c Innertropische Konvergenzzone 
+o d Polare Tiefdruckrinne
+332
+E110109 Question:In welchen der folgenden Klimazonen herrscht niedriger Luftdruck vor?
+o a Rossbreiten
+o b Polarzone
+x c Innertropische Konvergenzzone 
+x d Polare Tiefdruckrinne
+333
+E110110 Question:Wo wehen die Passatwinde?
+x a Am polseitigen Rand der innertropischen Konvergenzzone 
+o b Am südlichen Rand der polaren Tiefdruckrinne
+o c In der Kalmenzone
+o d In den gemäßigten Breiten
+334
+Category F Sicherheit
+F010201A Question:Was ist ein Strecktau?
+o a Leine zum Durchsetzen des Vorlieks eines Großsegels.
+o b Leine zum Durchsetzen des Unterlieks eines Großsegels.
+o c Leine mit der der Großbaum nach unten gehalten werden kann.
+x d Leine / Gurt vom Cockpit zum Bug gespannt zum Einpicken der Sicherheitsleine.
+335
+F010201B Question:Was ist ein Strecktau?
+o a Festmacher mit Dämpfungselement zum Dämpfen ruckartiger Bewegungen beim Liegen 
+x b Leine oder Gurt vom Vorschiff bis zum Cockpit zum Einpicken der Sicherheitsleinen
+o c Leine zum Strecken des Vorlieks des Großsegels
+o d Leinenverbindung Rettungsweste-Schiff
+336
+F010201C Question:Was ist ein Strecktau?
+o a Eine Leine zur Bedienung des Bullenstanders
+o b Eine Leine zur Fixierung des Ankers und Entlastung des Ankerspills 
+o c Eine Leine zum Klarieren eines Überläufers auf der Winsch
+x d Leine oder Gurt zum Einhängen der Sicherheitsleinen/Sorgeleinen
+337
+F010301 Question:Welche Bauarten von Radarreflektoren findet man auf Jachten?
+x a Oktaeder-Reflektoren 
+x b Blipper-Reflektoren
+x c Röhren-Reflektoren
+o d Spiegel-Reflektoren
+338
+F010302 Question:Wozu werden Radarreflektoren eingesetzt?
+x a Zur Erhöhung der Radarsichtbarkeit
+o b Zum Schutz der Crew vor den Strahlen des eigenen Radars
+x c Zur Rückstrahlung von Radarsignalen
+o d Hinter der Radarantenne angebrachter Reflektor zum Verstärken der eingehenden Signale
+339
+F010303 Question:Was ist das Funktionsprinzip von passiven Radarreflektoren?
+x a Jeweils drei Spiegel sind so angeordnet, dass einfallende Radarstrahlen in ihre Ausgangsrichtung reflektiert werden.
+o b Durch Material und Anordnung der Spiegel werden die einfallenden Radarstrahlen verstärkt.
+o c Sie antworten auf ein einfallendes Radarsignal mit der Aussendung eines eigenen Signals. 
+o d Sie werden erst durch ein einfallendes Radarsignal eingeschaltet.
+340
+F010304 Question:Nach welchem Grundprinzip arbeiten Radar-Transponder?
+o a Sie suchen die Umgebung nach Radarsignalen anderer Schiffe ab.
+o b Sie strahlen permanent definierte Radarimpulse aus.
+x c Sie antworten auf ein einfallendes Radarsignal mit der Aussendung eines eigenen Signals. 
+o d Sie übermitteln Navigations- und Schiffsdaten an andere Schiffe.
+341
+F010305 Question:Was trifft auf Radarreflektoren bzw. Radar-Transponder zu?
+x a Radarreflektoren reflektieren eintreffende Radarsignale in ihre Ausgangsrichtung.
+x b Radar-Transponder antworten auf eintreffende Radarsignale mit eigenen Radarsignalen. 
+o c Radarreflektoren antworten auf eintreffende Radarsignale, Radar-Transponder leiten Signale an andere Radaranlagen weiter.
+x d Radarreflektoren benötigen keine Stromversorgung, Radar-Transponder schon.
+342
+F010401 Question:Wie arbeitet AIS?
+o a Ähnlich Radar, auf Basis von elektronischen Echos zur Erkennung von Schiffen in der Umgebung
+x b Bewegungs- und Identifikationsdaten werden über UKW ausgesendet und von AIS- Empfängern empfangen.
+o c Schiffsdaten werden via Satellit an andere Schiffe in der Umgebung übermittelt.
+o d Auf Basis von Laufzeitdifferenzen ausgesendeter Signale können Schiffe in der Umgebung erkannt werden.
+343
+F010402 Question:Welche Antenne ist für einen AIS-B-Transceiver zweckmäßig?
+o a Eine zweite Mastantenne wegen der höheren Reichweite
+o b Ein Antennensplitter wegen der besseren Kontrollmöglichkeit 
+x c Eine Antenne am Heckkorb
+o d Eine Langdrahtantenne
+344
+F011201 Question:Wie kann die tote Zone beim Kurzwellenfunk verkleinert werden?
+x a Durch Verwendung niedrigerer Frequenzen 
+o b Durch Verwendung höherer Frequenzen
+o c Durch Funken bei Tag
+o d Durch Funken bei Nacht
+345
+F011202 Question:In welchen nautischen Werken findet man Informationen über  Wetternachrichten für Kurzwellenempfänger?
+o a Admiralty Sailing Directions
+o b Admiralty List of Lights
+o c Admiralty The Mariner's Handbook 
+x d Admiralty List of Radio Signals
+346
+F040401 Question:Was ist zu tun, wenn das Ruderrad plötzlich leer durchdreht?
+o a Seenot signalisieren
+o b Wahrscheinlich wurde das Ruderblatt verloren. 
+x c Versuchen mit dem Autopiloten zu steuern
+x d Notruderpinne zum Steuern einsetzen
+347
+F040402 Question:Was kann getan werden, wenn das Steuerseil der Ruderanlage gebrochen ist?
+x a Notruderpinne einsetzen
+o b Notruder riggen
+x c Versuchen das Steuerseil zu reparieren 
+o d Sofort Schlepphilfe anfordern
+348
+F040403 Question:Was kann getan werden, wenn das Ruderblatt verloren wurde?
+o a Notruderpinne einsetzen
+x b Notruder riggen
+o c Autopilot verwenden
+o d Sofort Schlepphilfe anfordern
+349
+F060401 Question:Wie werden im GMDSS die Not- und Sicherheitsfrequenzen auf VHF  überwacht?
+o a Ununterbrochene Empfangsbereitschaft auf Kanal 6
+o b Seit 2010 besteht keine Verpflichtung zur Hörwache mehr
+x c Automatische elektronische Empfangsbereitschaft auf CH 70 
+o d Hörwache auf Kanal 70
+350
+F060402 Question:Was ist ein „Travel Report“?
+o a Liste aller Schiffe, die innerhalb von 24 Stunden Funkverkehr geführt haben
+o b Liste aller Schiffe, die innerhalb von 24 Stunden ein Verkehrstrennungsgebiet befahren haben
+x c Anmeldung des Auslaufens, des Zielhafens und der ETA eines Schiffes 
+o d Sammelruf an alle im Seegebiet vermuteten Schiffe
+351
+Category M Modul Motor
+M010108 Question:Welche Aufgaben kann die Nockenwelle beim Dieselmotor erfüllen?
+o a Antrieb des Vergasers 
+x b Steuerung der Ventile 
+o c Antrieb des Zündverteilers
+x d Antrieb der Treibstoffpumpe
+352
+M010201 Question:Wie gelangt beim Dieselmotor der Treibstoff in den Zylinder?
+o a Über den Fallstrom-Vergaser 
+o b Über den Turbolader
+x c Über die Einspritzpumpe
+o d Über die Leckölleitung
+353
+M010309 Question:Aus welchem Material besteht das Impellerrad der Seewasserpumpe der  Motorkühlung üblicherweise?
+o a Kohlefaser 
+x b Gummi
+o c Stahl
+o d glasfaserverstärkter Kunststoff
+354
+M020204 Question:Welche Ersatzteile werden zur raschen Fehlerbehebung an einem Bootsdiesel  üblicherweise mitgeführt?
+o a Einspritzpumpe
+x b Dieselförderpumpe
+o c Einspritzdüse
+o d Zylinderkopfdichtung
+355
