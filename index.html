@@ -165,6 +165,10 @@ function showMenu() {
             <button class="menu-btn" onclick="startWrongAll()">❌ Alle falschen Fragen <span class="badge">${wrongAll}</span></button>
             <button class="menu-btn btn-back" onclick="resetProgress()" style="margin-top:20px;font-size:.85rem;text-align:center">🗑️ Fortschritt zurücksetzen</button>
         </div>
+        <div style="text-align:center;margin-top:24px;display:flex;flex-direction:column;gap:8px">
+            <a href="oesv_fragensammlung_fb3_1_0.pdf" target="_blank" style="color:var(--muted);font-size:.85rem;text-decoration:none">📄 OESV Fragensammlung FB3 (PDF)</a>
+            <a href="https://www.segelverband.at/ausbildung/seefahrt/vor-der-pruefung/#c3416" target="_blank" style="color:var(--muted);font-size:.85rem;text-decoration:none">🌐 OESV – Vor der Prüfung</a>
+        </div>
     `);
 }
 
@@ -219,7 +223,7 @@ function showWrongByCategory() {
 // ── START MODES ──
 function startCategory(cat) {
     const cats = getCategories();
-    runQuiz(shuffle(cats[cat]), cat.replace(/^\d+_/, '').replace(/_/g, ' '));
+    runQuiz(cats[cat], cat.replace(/^\d+_/, '').replace(/_/g, ' '));
 }
 function startRandom() { runQuiz(shuffle(quizData), 'Zufällige Fragen'); }
 function startWrongAll() {
@@ -249,10 +253,8 @@ function runQuiz(questions, title) {
 
         let html = `<h1>⚓ FB3 Quiz</h1>`;
         html += `<div class="question-header"><h2>${title}</h2><span class="progress">${idx+1} / ${questions.length}</span></div>`;
-        html += `<div class="question-text">${q.question} ${multiHint}</div>`;
-        if (q.picture) {
-            html += `<div style="margin-bottom:16px;text-align:center"><img src="img/${q.picture}" alt="${q.picture}" style="max-width:100%;border-radius:8px;"></div>`;
-        }
+        html += `<div class="question-text">${q.question} ${multiHint}<span style="color:var(--muted);font-size:.8rem;margin-left:8px">#${q.id} · ${q.key}</span></div>`;
+        html += `<div style="margin-bottom:16px;text-align:center"><img src="img/${q.key}.png" alt="" style="max-width:100%;border-radius:8px;display:none" onload="this.style.display='block'" onerror="this.parentElement.style.display='none'"></div>`;
         html += `<div class="answers" id="answers">`;
         q.answers.forEach((a, i) => {
             html += `<button class="answer-btn" id="ans${i}" onclick="toggleAnswer(${i})">${a.option}) ${a.text}</button>`;
@@ -352,7 +354,7 @@ function runQuiz(questions, title) {
   {
     "id": 1,
     "key": "A010101",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Wie reagiert eine Jacht unter Motor auf seitlichen Wind?",
     "answers": [
       {
@@ -380,7 +382,7 @@ function runQuiz(questions, title) {
   {
     "id": 2,
     "key": "A010405",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Wie weit versetzt ein Strom von 2  kn ein manövrierendes Boot pro Sekunde?",
     "answers": [
       {
@@ -408,7 +410,7 @@ function runQuiz(questions, title) {
   {
     "id": 3,
     "key": "A030301",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Welche Rechte und Pflichten hat ein Schiffsführer?",
     "answers": [
       {
@@ -436,7 +438,7 @@ function runQuiz(questions, title) {
   {
     "id": 4,
     "key": "A030302",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Wenn vor Antritt der Fahrt der Skipper nicht feststeht, dann …?",
     "answers": [
       {
@@ -464,7 +466,7 @@ function runQuiz(questions, title) {
   {
     "id": 5,
     "key": "A030401",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Darf während einer Bootsreise Alkohol konsumiert werden?",
     "answers": [
       {
@@ -492,7 +494,7 @@ function runQuiz(questions, title) {
   {
     "id": 6,
     "key": "A030513",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Wo am Schiff wird die Flagge Q geführt?",
     "answers": [
       {
@@ -520,7 +522,7 @@ function runQuiz(questions, title) {
   {
     "id": 7,
     "key": "A030701A",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Womit muss gemäß JachtVO ein Rettungsring ausgerüstet sein?",
     "answers": [
       {
@@ -548,7 +550,7 @@ function runQuiz(questions, title) {
   {
     "id": 8,
     "key": "A030702",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Womit eine Rettungsweste gemäß JachtVO ausgerüstet sein?",
     "answers": [
       {
@@ -576,7 +578,7 @@ function runQuiz(questions, title) {
   {
     "id": 9,
     "key": "A030702B",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Womit muss der in der Nähe des Rudergängers befindliche Rettungsring gemäß JachtVO ausgerüstet sein?",
     "answers": [
       {
@@ -604,7 +606,7 @@ function runQuiz(questions, title) {
   {
     "id": 10,
     "key": "A030703",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Wieviele Rettungswesten müssen gemäß JachtVO an Bord sein?",
     "answers": [
       {
@@ -632,7 +634,7 @@ function runQuiz(questions, title) {
   {
     "id": 11,
     "key": "A030704",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Wo ist die Ausrüstung österreichischer Jachten mit Funkanlagen geregelt?",
     "answers": [
       {
@@ -660,7 +662,7 @@ function runQuiz(questions, title) {
   {
     "id": 12,
     "key": "A030901",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Was wird als Langfahrt bezeichnet?",
     "answers": [
       {
@@ -688,7 +690,7 @@ function runQuiz(questions, title) {
   {
     "id": 13,
     "key": "A030902",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Was gehört u. a. zur Vorbereitung einer Langstreckenfahrt?",
     "answers": [
       {
@@ -716,7 +718,7 @@ function runQuiz(questions, title) {
   {
     "id": 14,
     "key": "A030903",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Wie lange dauert die Törnvorbereitung für eine Langfahrt?",
     "answers": [
       {
@@ -744,7 +746,7 @@ function runQuiz(questions, title) {
   {
     "id": 15,
     "key": "A030904",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Wie sollte der Skipper die Crew einer Langfahrt einteilen?",
     "answers": [
       {
@@ -772,7 +774,7 @@ function runQuiz(questions, title) {
   {
     "id": 16,
     "key": "A030908",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Welche der aufgelisteten Informationen sind zum Wachwechsel von  Relevanz?",
     "answers": [
       {
@@ -800,7 +802,7 @@ function runQuiz(questions, title) {
   {
     "id": 17,
     "key": "A030909",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Welche Informationsmöglichkeiten hat der Skipper um für eine Langfahrt eine Lebensmittelliste zu erstellen?",
     "answers": [
       {
@@ -828,7 +830,7 @@ function runQuiz(questions, title) {
   {
     "id": 18,
     "key": "A030910",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Was berechnet man vorrangig mittels einer Lebensmittelliste für eine  Langfahrt?",
     "answers": [
       {
@@ -856,7 +858,7 @@ function runQuiz(questions, title) {
   {
     "id": 19,
     "key": "A030911",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Nach welchen Kriterien erstellt man vorrangig eine Lebensmittelliste für eine Langfahrt?",
     "answers": [
       {
@@ -884,7 +886,7 @@ function runQuiz(questions, title) {
   {
     "id": 20,
     "key": "A030912",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Die beiden getrennten Wassertanks Ihrer Jacht sind auf Langfahrt ...?",
     "answers": [
       {
@@ -912,7 +914,7 @@ function runQuiz(questions, title) {
   {
     "id": 21,
     "key": "A030913",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Zu den mindestens einmal täglich durchgeführten Kontrollen auf Langfahrt gehört?",
     "answers": [
       {
@@ -940,7 +942,7 @@ function runQuiz(questions, title) {
   {
     "id": 22,
     "key": "A040401",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Wohin ist der Müll auf Langfahrten zu entsorgen?",
     "answers": [
       {
@@ -968,7 +970,7 @@ function runQuiz(questions, title) {
   {
     "id": 23,
     "key": "A040401",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Warum sollte man für den anfallenden Müll bei Langfahrten einen Plan aufstellen?",
     "answers": [
       {
@@ -996,7 +998,7 @@ function runQuiz(questions, title) {
   {
     "id": 24,
     "key": "A050301",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Wodurch wird eine Leine geschwächt?",
     "answers": [
       {
@@ -1024,7 +1026,7 @@ function runQuiz(questions, title) {
   {
     "id": 25,
     "key": "A050302",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Warum haben fast alle hochfesten Leinen einen Mantel?",
     "answers": [
       {
@@ -1052,7 +1054,7 @@ function runQuiz(questions, title) {
   {
     "id": 26,
     "key": "A050401",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Wie verhindern Sie das Aufdrehen eines Tampen aus Kunststoff?",
     "answers": [
       {
@@ -1080,7 +1082,7 @@ function runQuiz(questions, title) {
   {
     "id": 27,
     "key": "A050402",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Wie verhindern Sie das Aufdrehen eines Tampen aus Naturfaser?",
     "answers": [
       {
@@ -1108,7 +1110,7 @@ function runQuiz(questions, title) {
   {
     "id": 28,
     "key": "A050403",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Welche Art von Takling schützt zuverlässiger?",
     "answers": [
       {
@@ -1136,7 +1138,7 @@ function runQuiz(questions, title) {
   {
     "id": 29,
     "key": "A050501",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Was ist ein Rückspleiß?",
     "answers": [
       {
@@ -1164,7 +1166,7 @@ function runQuiz(questions, title) {
   {
     "id": 30,
     "key": "A050502",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Wie reduziert ein Augspleiß die Bruchlast einer dreikardeligen Leine?",
     "answers": [
       {
@@ -1192,7 +1194,7 @@ function runQuiz(questions, title) {
   {
     "id": 31,
     "key": "A050503",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Wozu dient ein Augspleiß?",
     "answers": [
       {
@@ -1220,7 +1222,7 @@ function runQuiz(questions, title) {
   {
     "id": 32,
     "key": "A050504",
-    "category": "Jachtbedienung",
+    "category": "01_Jachtbedienung",
     "question": "Wozu dient ein Kurzspleiß?",
     "answers": [
       {
@@ -1248,7 +1250,7 @@ function runQuiz(questions, title) {
   {
     "id": 33,
     "key": "B010101",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was gehört zu den Hauptabmessungen einer Jacht?",
     "answers": [
       {
@@ -1276,7 +1278,7 @@ function runQuiz(questions, title) {
   {
     "id": 34,
     "key": "B010102",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was bedeutet die Abkürzung WL im Jachtbau?",
     "answers": [
       {
@@ -1304,7 +1306,7 @@ function runQuiz(questions, title) {
   {
     "id": 35,
     "key": "B010103",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was ist die Konstruktionswasserlinie (CWL) im Jachtbau?",
     "answers": [
       {
@@ -1332,7 +1334,7 @@ function runQuiz(questions, title) {
   {
     "id": 36,
     "key": "B010104",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was bedeutet die Abkürzung LWL im Jachtbau?",
     "answers": [
       {
@@ -1360,7 +1362,7 @@ function runQuiz(questions, title) {
   {
     "id": 37,
     "key": "B010105",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was wird als Lateralplan bezeichnet?",
     "answers": [
       {
@@ -1388,7 +1390,7 @@ function runQuiz(questions, title) {
   {
     "id": 38,
     "key": "B010106",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was kann dem Lateralplan entnommen werden?",
     "answers": [
       {
@@ -1416,7 +1418,7 @@ function runQuiz(questions, title) {
   {
     "id": 39,
     "key": "B010107",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Wofür ist der Lateralplan ein Indikator?",
     "answers": [
       {
@@ -1444,7 +1446,7 @@ function runQuiz(questions, title) {
   {
     "id": 40,
     "key": "B010108",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was wird im Jachtbau als Längsriss bezeichnet?",
     "answers": [
       {
@@ -1472,7 +1474,7 @@ function runQuiz(questions, title) {
   {
     "id": 41,
     "key": "B010109",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was wird im Jachtbau als Freibord bezeichnet?",
     "answers": [
       {
@@ -1500,7 +1502,7 @@ function runQuiz(questions, title) {
   {
     "id": 42,
     "key": "B010110",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was sind Spanten?",
     "answers": [
       {
@@ -1528,7 +1530,7 @@ function runQuiz(questions, title) {
   {
     "id": 43,
     "key": "B010111",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was ist der Kiel?",
     "answers": [
       {
@@ -1556,7 +1558,7 @@ function runQuiz(questions, title) {
   {
     "id": 44,
     "key": "B010201",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was versteht man unter Stabilität von Schiffen?",
     "answers": [
       {
@@ -1584,7 +1586,7 @@ function runQuiz(questions, title) {
   {
     "id": 45,
     "key": "B010202",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was sind Unterschiede zwischen Formstabilität und Gewichtsstabilität?",
     "answers": [
       {
@@ -1612,7 +1614,7 @@ function runQuiz(questions, title) {
   {
     "id": 46,
     "key": "B010203",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was sind Eigenschaften von ausschließlich formstabilen bzw. gewichtsstabilen Booten?",
     "answers": [
       {
@@ -1640,7 +1642,7 @@ function runQuiz(questions, title) {
   {
     "id": 47,
     "key": "B010204",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Wann wird ein Boot als gewichtsstabil bezeichnet?",
     "answers": [
       {
@@ -1668,7 +1670,7 @@ function runQuiz(questions, title) {
   {
     "id": 48,
     "key": "B010205",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Wodurch wird die Gewichtsstabilität einer Jacht vergrößert?",
     "answers": [
       {
@@ -1696,7 +1698,7 @@ function runQuiz(questions, title) {
   {
     "id": 49,
     "key": "B010206",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Bis zu welchem Krängungswinkel erzeugt ein gewichtsstabiles Boot ein  aufrichtendes Moment?",
     "answers": [
       {
@@ -1724,7 +1726,7 @@ function runQuiz(questions, title) {
   {
     "id": 50,
     "key": "B010207",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Wann wird ein Boot als formstabil bezeichnet?",
     "answers": [
       {
@@ -1752,7 +1754,7 @@ function runQuiz(questions, title) {
   {
     "id": 51,
     "key": "B010208",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Welcher Rumpfquerschnitt ist im Wasser eher formstabil?",
     "answers": [
       {
@@ -1780,7 +1782,7 @@ function runQuiz(questions, title) {
   {
     "id": 52,
     "key": "B010209",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Bis zu welchem Krängungswinkel erzeugt ein ausschließlich formstabiles Boot ein aufrichtendes Moment?",
     "answers": [
       {
@@ -1808,7 +1810,7 @@ function runQuiz(questions, title) {
   {
     "id": 53,
     "key": "B010210",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was wird im Jachtbau als Stabilität bezeichnet?",
     "answers": [
       {
@@ -1836,7 +1838,7 @@ function runQuiz(questions, title) {
   {
     "id": 54,
     "key": "B010211",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was wird im Jachtbau als (scheinbares) Metazentrum bezeichnet?",
     "answers": [
       {
@@ -1864,7 +1866,7 @@ function runQuiz(questions, title) {
   {
     "id": 55,
     "key": "B010212",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was stellt im Jachtbau eine Stabilitätskurve dar?",
     "answers": [
       {
@@ -1892,7 +1894,7 @@ function runQuiz(questions, title) {
   {
     "id": 56,
     "key": "B010501A",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Wozu dient eine Opferanode?",
     "answers": [
       {
@@ -1920,7 +1922,7 @@ function runQuiz(questions, title) {
   {
     "id": 57,
     "key": "B010501C",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Wozu dient die Opferanode?",
     "answers": [
       {
@@ -1948,7 +1950,7 @@ function runQuiz(questions, title) {
   {
     "id": 58,
     "key": "B010504",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Wann bzw. wie oft müssen Opferanoden kontrolliert werden??",
     "answers": [
       {
@@ -1976,7 +1978,7 @@ function runQuiz(questions, title) {
   {
     "id": 59,
     "key": "B020101",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Welche Bordnetzspannungen sind auf Jachten üblich?",
     "answers": [
       {
@@ -2004,7 +2006,7 @@ function runQuiz(questions, title) {
   {
     "id": 60,
     "key": "B020201",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Warum werden auf Jachten üblicherweise zwei getrennte Stromnetze betrieben?",
     "answers": [
       {
@@ -2032,7 +2034,7 @@ function runQuiz(questions, title) {
   {
     "id": 61,
     "key": "B020202",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Welches Nebenaggregat eines Bootsdiesels ist in der Abbildung mit der Zahl 3 versehen?",
     "answers": [
       {
@@ -2055,13 +2057,12 @@ function runQuiz(questions, title) {
         "text": "Wasserpumpe",
         "is_correct": false
       }
-    ],
-    "picture": "B020202.png"
+    ]
   },
   {
     "id": 62,
     "key": "B020203",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was bewirkt die Serienschaltung von zwei Batterien mit gleicher Spannung und gleicher Kapazität?",
     "answers": [
       {
@@ -2089,7 +2090,7 @@ function runQuiz(questions, title) {
   {
     "id": 63,
     "key": "B020204A",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was bewirkt die Parallelschaltung von zwei Batterien mit gleicher Spannung und gleicher Kapazität?",
     "answers": [
       {
@@ -2117,7 +2118,7 @@ function runQuiz(questions, title) {
   {
     "id": 64,
     "key": "B020204B",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was bewirkt die Parallel-Schaltung zweier 12 V - Akkumulatoren mit je 70 Ah?",
     "answers": [
       {
@@ -2145,7 +2146,7 @@ function runQuiz(questions, title) {
   {
     "id": 65,
     "key": "B020205",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Welche Risken bestehen, wenn die Ladespannung eines 12 V-Bordnetzes (mit Bleiakkumulatoren) 14,4 V übersteigt?",
     "answers": [
       {
@@ -2173,7 +2174,7 @@ function runQuiz(questions, title) {
   {
     "id": 66,
     "key": "B020206",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was gehört zu den Wartungsarbeiten von Bleiakkumulatoren?",
     "answers": [
       {
@@ -2201,7 +2202,7 @@ function runQuiz(questions, title) {
   {
     "id": 67,
     "key": "B020207",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was gehört zu den Wartungsarbeiten von Bleiakkumulatoren?",
     "answers": [
       {
@@ -2229,7 +2230,7 @@ function runQuiz(questions, title) {
   {
     "id": 68,
     "key": "B020208",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was sind Ursachen für Knallgasbildung (Kochen) bei Bleiakkumulatoren?",
     "answers": [
       {
@@ -2257,7 +2258,7 @@ function runQuiz(questions, title) {
   {
     "id": 69,
     "key": "B020209",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was ist beim Laden von Bleiakkumulatoren zu beachten?",
     "answers": [
       {
@@ -2285,7 +2286,7 @@ function runQuiz(questions, title) {
   {
     "id": 70,
     "key": "B020210",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Warum sollen bei laufendem Motor die Akkumulatoren nicht abgeklemmt werden?",
     "answers": [
       {
@@ -2313,7 +2314,7 @@ function runQuiz(questions, title) {
   {
     "id": 71,
     "key": "B020301",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was ist die technische Einheit für die Stromstärke?",
     "answers": [
       {
@@ -2341,7 +2342,7 @@ function runQuiz(questions, title) {
   {
     "id": 72,
     "key": "B020302",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was ist die technische Einheit der elektrischen Spannung?",
     "answers": [
       {
@@ -2369,7 +2370,7 @@ function runQuiz(questions, title) {
   {
     "id": 73,
     "key": "B020303",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was ist die technische Einheit der Leistung?",
     "answers": [
       {
@@ -2397,7 +2398,7 @@ function runQuiz(questions, title) {
   {
     "id": 74,
     "key": "B020304",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was wird mit einem Amperemeter gemessen?",
     "answers": [
       {
@@ -2425,7 +2426,7 @@ function runQuiz(questions, title) {
   {
     "id": 75,
     "key": "B020305",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was wird mit einem Aräometer (Säureheber) gemessen?",
     "answers": [
       {
@@ -2453,7 +2454,7 @@ function runQuiz(questions, title) {
   {
     "id": 76,
     "key": "B020306",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Womit kann die Säuredichte und damit der Ladezustand eines Bleiakkumulators gemessen werden?",
     "answers": [
       {
@@ -2481,7 +2482,7 @@ function runQuiz(questions, title) {
   {
     "id": 77,
     "key": "B020307",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Was wird mit einem Voltmeter gemessen?",
     "answers": [
       {
@@ -2509,7 +2510,7 @@ function runQuiz(questions, title) {
   {
     "id": 78,
     "key": "B020308A",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "In welcher Einheit wird die Kapazität einer Batterie angegeben?",
     "answers": [
       {
@@ -2537,7 +2538,7 @@ function runQuiz(questions, title) {
   {
     "id": 79,
     "key": "B020401",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Welche Größenordnung hat die Stromaufnahme eines typischen 12 V-Bordkühlschranks?",
     "answers": [
       {
@@ -2565,7 +2566,7 @@ function runQuiz(questions, title) {
   {
     "id": 80,
     "key": "B020402",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Welche Größenordnung hat die Stromaufnahme einer typischen 12 V-Ankerwinsch?",
     "answers": [
       {
@@ -2593,7 +2594,7 @@ function runQuiz(questions, title) {
   {
     "id": 81,
     "key": "B020403",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Welche Größenordnung hat die Leistung eines typischen Bordkühlschranks?",
     "answers": [
       {
@@ -2621,7 +2622,7 @@ function runQuiz(questions, title) {
   {
     "id": 82,
     "key": "B020404",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Welche Größenordnung hat die Leistung einer typischen Ankerwinsch?",
     "answers": [
       {
@@ -2649,7 +2650,7 @@ function runQuiz(questions, title) {
   {
     "id": 83,
     "key": "B020405",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Wie viel Strom kann zwei parallel geschalteten Batterien mit je 180 Ah theoretisch entnommen werden?",
     "answers": [
       {
@@ -2677,7 +2678,7 @@ function runQuiz(questions, title) {
   {
     "id": 84,
     "key": "B030101",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Wie wird die Bewegung des Ruderrades üblicherweise auf die Ruderwelle übertragen?",
     "answers": [
       {
@@ -2705,7 +2706,7 @@ function runQuiz(questions, title) {
   {
     "id": 85,
     "key": "B030201",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "@Wie sind Bordheizungen üblicherweise aufgebaut?",
     "answers": [
       {
@@ -2733,7 +2734,7 @@ function runQuiz(questions, title) {
   {
     "id": 86,
     "key": "B030202",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Wie erfolgt die Frischwasserversorgung auf einer Jacht?",
     "answers": [
       {
@@ -2761,7 +2762,7 @@ function runQuiz(questions, title) {
   {
     "id": 87,
     "key": "B030203",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Welche Möglichkeiten gibt es üblicherweise zur Warmwasseraufbereitung auf Jachten?",
     "answers": [
       {
@@ -2789,7 +2790,7 @@ function runQuiz(questions, title) {
   {
     "id": 88,
     "key": "B030504A",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Welche Maßnahmen sind zu ergreifen, wenn an Bord Gasgeruch festgestellt wird?",
     "answers": [
       {
@@ -2817,7 +2818,7 @@ function runQuiz(questions, title) {
   {
     "id": 89,
     "key": "B030508",
-    "category": "Bootsbau",
+    "category": "02_Bootsbau",
     "question": "Auf welchen Überdruck wird der Gasdruck an der Flasche mit einem handelsüblichen Druckminderer größenordnungsmäßig geregelt?",
     "answers": [
       {
@@ -2845,7 +2846,7 @@ function runQuiz(questions, title) {
   {
     "id": 90,
     "key": "C010402",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "In welcher Zeitzone gilt Zonenzeit = UTC + 1?",
     "answers": [
       {
@@ -2873,7 +2874,7 @@ function runQuiz(questions, title) {
   {
     "id": 91,
     "key": "C010404",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Mitteleuropäische Sommerzeit MESZ entpricht?",
     "answers": [
       {
@@ -2901,7 +2902,7 @@ function runQuiz(questions, title) {
   {
     "id": 92,
     "key": "C010405",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Mitteleuropäische Zeit MEZ entspricht?",
     "answers": [
       {
@@ -2929,7 +2930,7 @@ function runQuiz(questions, title) {
   {
     "id": 93,
     "key": "C010406",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Westeuropäische Zeit WEZ entspricht?",
     "answers": [
       {
@@ -2957,7 +2958,7 @@ function runQuiz(questions, title) {
   {
     "id": 94,
     "key": "C010501",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist das Chart Datum einer (englischen) Seekarte?",
     "answers": [
       {
@@ -2985,7 +2986,7 @@ function runQuiz(questions, title) {
   {
     "id": 95,
     "key": "C010502",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist das Kartendatum einer Seekarte?",
     "answers": [
       {
@@ -3013,7 +3014,7 @@ function runQuiz(questions, title) {
   {
     "id": 96,
     "key": "C010503",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist das Kartennull einer Seekarte?",
     "answers": [
       {
@@ -3041,7 +3042,7 @@ function runQuiz(questions, title) {
   {
     "id": 97,
     "key": "C010601",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist eine Isogone?",
     "answers": [
       {
@@ -3069,7 +3070,7 @@ function runQuiz(questions, title) {
   {
     "id": 98,
     "key": "C010602",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wie verlaufen Isogonen?",
     "answers": [
       {
@@ -3097,7 +3098,7 @@ function runQuiz(questions, title) {
   {
     "id": 99,
     "key": "C020301",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wie viele Karten umfasst ein Stromatlas für ein bestimmtes Seegebiet?",
     "answers": [
       {
@@ -3125,7 +3126,7 @@ function runQuiz(questions, title) {
   {
     "id": 100,
     "key": "C020302",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Welche Informationen über den Gezeitenstrom findet man in einem Stromatlas?",
     "answers": [
       {
@@ -3153,7 +3154,7 @@ function runQuiz(questions, title) {
   {
     "id": 101,
     "key": "C020303",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wo kann man Angaben über die Stromverhältnisse in größeren Seegebieten finden?",
     "answers": [
       {
@@ -3181,7 +3182,7 @@ function runQuiz(questions, title) {
   {
     "id": 102,
     "key": "C020304",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was gilt für die 13 Kartenblätter eines Stromatlas eines bestimmten Seegebiets?",
     "answers": [
       {
@@ -3209,7 +3210,7 @@ function runQuiz(questions, title) {
   {
     "id": 103,
     "key": "C040113",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist eine Doppelpeilung?",
     "answers": [
       {
@@ -3237,7 +3238,7 @@ function runQuiz(questions, title) {
   {
     "id": 104,
     "key": "C040114",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist eine Versegelungspeilung?",
     "answers": [
       {
@@ -3265,7 +3266,7 @@ function runQuiz(questions, title) {
   {
     "id": 105,
     "key": "C040201",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Welche Art von Standlinie ergibt sich aus einer Höhenwinkelmessung?",
     "answers": [
       {
@@ -3293,7 +3294,7 @@ function runQuiz(questions, title) {
   {
     "id": 106,
     "key": "C040202",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wie lautet die näherungsweise Formel für den Abstand aus einer Höhenwinkelmessung?",
     "answers": [
       {
@@ -3321,7 +3322,7 @@ function runQuiz(questions, title) {
   {
     "id": 107,
     "key": "C050101",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wofür wird RADAR in der Nautik hauptsächlich verwendet?",
     "answers": [
       {
@@ -3349,7 +3350,7 @@ function runQuiz(questions, title) {
   {
     "id": 108,
     "key": "C050102",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist das Funktionsprinzip eines Impulsradars?",
     "answers": [
       {
@@ -3377,7 +3378,7 @@ function runQuiz(questions, title) {
   {
     "id": 109,
     "key": "C050103",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wie unterscheidet sich ein frequenzmoduliertes Dauerstrichradar FMCW von einem Impulsradar?",
     "answers": [
       {
@@ -3405,7 +3406,7 @@ function runQuiz(questions, title) {
   {
     "id": 110,
     "key": "C050104",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Welche Einstellungen sind zu kontrollieren, wenn beim Radar ein Bereichswechsel vorgenommen wird?",
     "answers": [
       {
@@ -3433,7 +3434,7 @@ function runQuiz(questions, title) {
   {
     "id": 111,
     "key": "C050105",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Worauf beruht die Distanzmessung beim Impulsradar?",
     "answers": [
       {
@@ -3461,7 +3462,7 @@ function runQuiz(questions, title) {
   {
     "id": 112,
     "key": "C050201",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist die horizontale Auflösung einer Radaranlage?",
     "answers": [
       {
@@ -3489,7 +3490,7 @@ function runQuiz(questions, title) {
   {
     "id": 113,
     "key": "C050202",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was kann bei einer Radaranlage Störechos hervorrufen?",
     "answers": [
       {
@@ -3517,7 +3518,7 @@ function runQuiz(questions, title) {
   {
     "id": 114,
     "key": "C050203",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wozu dient das Bedienungselement „SEA CLUTTER“ auf dem Radargerät?",
     "answers": [
       {
@@ -3545,7 +3546,7 @@ function runQuiz(questions, title) {
   {
     "id": 115,
     "key": "C050301",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Welche Darstellungsarten gibt es beim Radargerät?",
     "answers": [
       {
@@ -3573,7 +3574,7 @@ function runQuiz(questions, title) {
   {
     "id": 116,
     "key": "C050302",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was bedeutet die Radardarstellung „Head Up?",
     "answers": [
       {
@@ -3601,7 +3602,7 @@ function runQuiz(questions, title) {
   {
     "id": 117,
     "key": "C050303",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was bedeutet die Radardarstellung „North Up?",
     "answers": [
       {
@@ -3629,7 +3630,7 @@ function runQuiz(questions, title) {
   {
     "id": 118,
     "key": "C050304",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was bedeutet die Radardarstellung „Course Up?",
     "answers": [
       {
@@ -3657,7 +3658,7 @@ function runQuiz(questions, title) {
   {
     "id": 119,
     "key": "C050305",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Der Radarmonitor ist auf „Head Up“ eingestellt. Was bedeutet das für Peilungen?",
     "answers": [
       {
@@ -3685,7 +3686,7 @@ function runQuiz(questions, title) {
   {
     "id": 120,
     "key": "C050306",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Radardarstellung HEAD UP, Kurs 90°, Echo steuerbord achteraus: Wo befindet sich das Objekt?",
     "answers": [
       {
@@ -3713,7 +3714,7 @@ function runQuiz(questions, title) {
   {
     "id": 121,
     "key": "C050307",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Radararstellung NORTH UP, Kurs 90°, Echo am Monitor links unten: Wo befindet sich das Objekt?",
     "answers": [
       {
@@ -3741,7 +3742,7 @@ function runQuiz(questions, title) {
   {
     "id": 122,
     "key": "C050308",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Das Radar arbeitet im ,,Head up Modus und zeigt einen Kontakt auf der rechten Seite des Schirmes. Wo ist dieses Fahrzeug?",
     "answers": [
       {
@@ -3769,7 +3770,7 @@ function runQuiz(questions, title) {
   {
     "id": 123,
     "key": "C050309",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist am Radarbildschirm der Unterschied zwischen Head Up (HU) und  Course Up (CU)?",
     "answers": [
       {
@@ -3797,7 +3798,7 @@ function runQuiz(questions, title) {
   {
     "id": 124,
     "key": "C050310A",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Auf welche Art kann mit Radar ein Standort ermittelt werden?",
     "answers": [
       {
@@ -3825,7 +3826,7 @@ function runQuiz(questions, title) {
   {
     "id": 125,
     "key": "C050310B",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Auf welche Art kann mit Radar ein Standort ermittelt werden?",
     "answers": [
       {
@@ -3853,7 +3854,7 @@ function runQuiz(questions, title) {
   {
     "id": 126,
     "key": "C050401",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wozu wird Radar in der Navigation eingesetzt?",
     "answers": [
       {
@@ -3881,7 +3882,7 @@ function runQuiz(questions, title) {
   {
     "id": 127,
     "key": "C050402",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wie ist die Bedieneinrichtung für die Distanzmessung auf dem Radargerät  üblicherweise beschriftet?",
     "answers": [
       {
@@ -3909,7 +3910,7 @@ function runQuiz(questions, title) {
   {
     "id": 128,
     "key": "C050403",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wie ist die Bedieneinrichtung zum Peilen auf dem Radargerät üblicherweise  beschriftet?",
     "answers": [
       {
@@ -3937,7 +3938,7 @@ function runQuiz(questions, title) {
   {
     "id": 129,
     "key": "C050404",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Welche Messungen sind mit Radar möglich?",
     "answers": [
       {
@@ -3965,7 +3966,7 @@ function runQuiz(questions, title) {
   {
     "id": 130,
     "key": "C050406",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was sind Radarantwortbaken (RACON)?",
     "answers": [
       {
@@ -3993,7 +3994,7 @@ function runQuiz(questions, title) {
   {
     "id": 131,
     "key": "C050407",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wie ist die Genauigkeit von Radarbeobachtungen zu bewerten?",
     "answers": [
       {
@@ -4021,7 +4022,7 @@ function runQuiz(questions, title) {
   {
     "id": 132,
     "key": "C050408A",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist eine Seitenpeilung?",
     "answers": [
       {
@@ -4049,7 +4050,7 @@ function runQuiz(questions, title) {
   {
     "id": 133,
     "key": "C050408B",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist das Ergebnis einer Seitenpeilung?",
     "answers": [
       {
@@ -4077,7 +4078,7 @@ function runQuiz(questions, title) {
   {
     "id": 134,
     "key": "C050409",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wie wird eine Seitenpeilung in eine rechtweisende Peilung umgerechnet?",
     "answers": [
       {
@@ -4105,7 +4106,7 @@ function runQuiz(questions, title) {
   {
     "id": 135,
     "key": "C050410",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was bedeutet querab?",
     "answers": [
       {
@@ -4133,7 +4134,7 @@ function runQuiz(questions, title) {
   {
     "id": 136,
     "key": "C050415",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was wird mit einer 4-Strich-Peilung konstruiert?",
     "answers": [
       {
@@ -4161,7 +4162,7 @@ function runQuiz(questions, title) {
   {
     "id": 137,
     "key": "C050501",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was sind Hinweise auf einen möglichen Kollisionskurs?",
     "answers": [
       {
@@ -4189,7 +4190,7 @@ function runQuiz(questions, title) {
   {
     "id": 138,
     "key": "C050502",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Welche Bewegungen stellt das abgebildete Wegedreieck dar?",
     "answers": [
       {
@@ -4212,13 +4213,12 @@ function runQuiz(questions, title) {
         "text": "Relativbewegung des eigenen Bootes von W nach O",
         "is_correct": false
       }
-    ],
-    "picture": "C050502.png"
+    ]
   },
   {
     "id": 139,
     "key": "C050503",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist der CPA?",
     "answers": [
       {
@@ -4246,7 +4246,7 @@ function runQuiz(questions, title) {
   {
     "id": 140,
     "key": "C050504",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist die TCPA?",
     "answers": [
       {
@@ -4274,7 +4274,7 @@ function runQuiz(questions, title) {
   {
     "id": 141,
     "key": "C060101",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wie ermittelt ein GPS-Empfänger die aktuelle Position?",
     "answers": [
       {
@@ -4302,7 +4302,7 @@ function runQuiz(questions, title) {
   {
     "id": 142,
     "key": "C060102",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Nach welchem Verfahren ermittelt der GPS-Empfänger die aktuelle Position?",
     "answers": [
       {
@@ -4330,7 +4330,7 @@ function runQuiz(questions, title) {
   {
     "id": 143,
     "key": "C060103",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wann kann die vom GPS angezeigte Position direkt in die Seekarte  eingetragen werden?",
     "answers": [
       {
@@ -4358,7 +4358,7 @@ function runQuiz(questions, title) {
   {
     "id": 144,
     "key": "C060104",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wozu dient die POB (früher MOB)-Funktion des GPS-Empfängers?",
     "answers": [
       {
@@ -4386,7 +4386,7 @@ function runQuiz(questions, title) {
   {
     "id": 145,
     "key": "C060301",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist die VMC des GPS-Empfängers?",
     "answers": [
       {
@@ -4414,7 +4414,7 @@ function runQuiz(questions, title) {
   {
     "id": 146,
     "key": "C060302",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist die VMG?",
     "answers": [
       {
@@ -4442,7 +4442,7 @@ function runQuiz(questions, title) {
   {
     "id": 147,
     "key": "C060303",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist der XTE am GPS-Empfänger?",
     "answers": [
       {
@@ -4470,7 +4470,7 @@ function runQuiz(questions, title) {
   {
     "id": 148,
     "key": "C060304",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist der Sollkurs des GPS-Empfängers?",
     "answers": [
       {
@@ -4498,7 +4498,7 @@ function runQuiz(questions, title) {
   {
     "id": 149,
     "key": "C060305",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Am GPS-Empfänger ist ein Wegpunkt aktiviert. Welche Informationen  werden angezeigt?",
     "answers": [
       {
@@ -4526,7 +4526,7 @@ function runQuiz(questions, title) {
   {
     "id": 150,
     "key": "C060501",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist das differentielle GPS?",
     "answers": [
       {
@@ -4554,7 +4554,7 @@ function runQuiz(questions, title) {
   {
     "id": 151,
     "key": "C060601",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Welche Systeme sind Satelliten-Navigationssysteme?",
     "answers": [
       {
@@ -4582,7 +4582,7 @@ function runQuiz(questions, title) {
   {
     "id": 152,
     "key": "C060701",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was sind Rasterkarten?",
     "answers": [
       {
@@ -4610,7 +4610,7 @@ function runQuiz(questions, title) {
   {
     "id": 153,
     "key": "C060702",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was sind Vektorkarten?",
     "answers": [
       {
@@ -4638,7 +4638,7 @@ function runQuiz(questions, title) {
   {
     "id": 154,
     "key": "C070811",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist der Unterschied zwischen Horizont und Kimm?",
     "answers": [
       {
@@ -4666,7 +4666,7 @@ function runQuiz(questions, title) {
   {
     "id": 155,
     "key": "C080101A",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was sind Ursachen für die Gezeiten?",
     "answers": [
       {
@@ -4694,7 +4694,7 @@ function runQuiz(questions, title) {
   {
     "id": 156,
     "key": "C080102",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Zu welcher Zeit bzw. Mondphase ist in mittleren Breiten mit niedrigstem  Hochwasser zu rechnen?",
     "answers": [
       {
@@ -4722,7 +4722,7 @@ function runQuiz(questions, title) {
   {
     "id": 157,
     "key": "C080103",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Unter welchen Bedingungen ist in den mittleren Breiten mit niedrigstem  Hochwasser zu rechnen?",
     "answers": [
       {
@@ -4750,7 +4750,7 @@ function runQuiz(questions, title) {
   {
     "id": 158,
     "key": "C080104",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Zu welcher Zeit bzw. Mondphase ist in mittleren Breiten mit niedrigstem  Niedrigwasser zu rechnen?",
     "answers": [
       {
@@ -4778,7 +4778,7 @@ function runQuiz(questions, title) {
   {
     "id": 159,
     "key": "C080105",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Unter welchen Bedingungen ist in den mittleren Breiten mit niedrigstem  Niedrigwasser zu rechnen?",
     "answers": [
       {
@@ -4806,7 +4806,7 @@ function runQuiz(questions, title) {
   {
     "id": 160,
     "key": "C080106",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "In welchem Zeitraum des Mondmonats ist der Tidenhub besonders groß?",
     "answers": [
       {
@@ -4834,7 +4834,7 @@ function runQuiz(questions, title) {
   {
     "id": 161,
     "key": "C080107",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "In welchem Zeitraum des Mondmonats ist der Tidenhub besonders gering?",
     "answers": [
       {
@@ -4862,7 +4862,7 @@ function runQuiz(questions, title) {
   {
     "id": 162,
     "key": "C080108",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wie kann in Europa der Mond zur Nippzeit aussehen?",
     "answers": [
       {
@@ -4890,7 +4890,7 @@ function runQuiz(questions, title) {
   {
     "id": 163,
     "key": "C080109",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wie kann in Europa der Mond zur Springzeit aussehen?",
     "answers": [
       {
@@ -4918,7 +4918,7 @@ function runQuiz(questions, title) {
   {
     "id": 164,
     "key": "C080110",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wie ist die Konstellation Sonne - Mond - Erde bei Nippzeit?",
     "answers": [
       {
@@ -4946,7 +4946,7 @@ function runQuiz(questions, title) {
   {
     "id": 165,
     "key": "C080111",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Womit ist der in der Seekarte angegebene Wert der Tiefe zu korrigieren?",
     "answers": [
       {
@@ -4974,7 +4974,7 @@ function runQuiz(questions, title) {
   {
     "id": 166,
     "key": "C080112",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Mit welcher Unterlage kann die Höhe der Gezeit zu einem beliebigen  Zeitpunkt bestimmt werden?",
     "answers": [
       {
@@ -5002,7 +5002,7 @@ function runQuiz(questions, title) {
   {
     "id": 167,
     "key": "C080113",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist die Springverspätung?",
     "answers": [
       {
@@ -5030,7 +5030,7 @@ function runQuiz(questions, title) {
   {
     "id": 168,
     "key": "C080114",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was wird als Tidenkurve bezeichnet?",
     "answers": [
       {
@@ -5058,7 +5058,7 @@ function runQuiz(questions, title) {
   {
     "id": 169,
     "key": "C080201",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was wird als Flut bezeichnet?",
     "answers": [
       {
@@ -5086,7 +5086,7 @@ function runQuiz(questions, title) {
   {
     "id": 170,
     "key": "C080202",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was wird als Ebbe bezeichnet?",
     "answers": [
       {
@@ -5114,7 +5114,7 @@ function runQuiz(questions, title) {
   {
     "id": 171,
     "key": "C080203",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was wird als Tidenfall bezeichnet?",
     "answers": [
       {
@@ -5142,7 +5142,7 @@ function runQuiz(questions, title) {
   {
     "id": 172,
     "key": "C080204",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was wird als Tidenstieg bezeichnet?",
     "answers": [
       {
@@ -5170,7 +5170,7 @@ function runQuiz(questions, title) {
   {
     "id": 173,
     "key": "C080205",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was wird als Tide bezeichnet?",
     "answers": [
       {
@@ -5198,7 +5198,7 @@ function runQuiz(questions, title) {
   {
     "id": 174,
     "key": "C080206",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was bezeichnet man als Tide?",
     "answers": [
       {
@@ -5226,7 +5226,7 @@ function runQuiz(questions, title) {
   {
     "id": 175,
     "key": "C080207",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was bedeutet Stillwasser?",
     "answers": [
       {
@@ -5254,7 +5254,7 @@ function runQuiz(questions, title) {
   {
     "id": 176,
     "key": "C090101",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Welches Betonnungssystem wird in Europa verwendet?",
     "answers": [
       {
@@ -5282,7 +5282,7 @@ function runQuiz(questions, title) {
   {
     "id": 177,
     "key": "C090102",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wo gilt das Betonnungssystem Region A?",
     "answers": [
       {
@@ -5310,7 +5310,7 @@ function runQuiz(questions, title) {
   {
     "id": 178,
     "key": "C090103A",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was unterscheidet das Betonnungssystem IALA A von IALA B?",
     "answers": [
       {
@@ -5338,7 +5338,7 @@ function runQuiz(questions, title) {
   {
     "id": 179,
     "key": "C090103B",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was sind Unterschiede zwischen den Betonnungssystemen IALA A von IALA B?",
     "answers": [
       {
@@ -5366,7 +5366,7 @@ function runQuiz(questions, title) {
   {
     "id": 180,
     "key": "C090201",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist das Lateralsystem?",
     "answers": [
       {
@@ -5394,7 +5394,7 @@ function runQuiz(questions, title) {
   {
     "id": 181,
     "key": "C090202A",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wie ist zu steuern, wenn eine Tonne mit Toppzeichen Zylinder auftaucht?",
     "answers": [
       {
@@ -5422,7 +5422,7 @@ function runQuiz(questions, title) {
   {
     "id": 182,
     "key": "C090202B",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wie ist zu steuern, wenn eine Tonne mit Toppzeichen Kegel, Spitze nach oben, auftaucht?",
     "answers": [
       {
@@ -5450,7 +5450,7 @@ function runQuiz(questions, title) {
   {
     "id": 183,
     "key": "C090202C",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wie verhält man sich bei einem Seezeichen mit einem Zylinder als  Toppzeichen?",
     "answers": [
       {
@@ -5478,7 +5478,7 @@ function runQuiz(questions, title) {
   {
     "id": 184,
     "key": "C090203",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Zu welchem Betonnungssystem gehört das abgebildete Seezeichen?",
     "answers": [
       {
@@ -5501,13 +5501,12 @@ function runQuiz(questions, title) {
         "text": "Einzelgefahr-Zeichen",
         "is_correct": false
       }
-    ],
-    "picture": "C090203.png"
+    ]
   },
   {
     "id": 185,
     "key": "C090203D",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wie verhält man sich bei einem Seezeichen mit einem Zylinder als  Toppzeichen?",
     "answers": [
       {
@@ -5535,7 +5534,7 @@ function runQuiz(questions, title) {
   {
     "id": 186,
     "key": "C090204",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was bedeutet das abgebildete Seezeichen?",
     "answers": [
       {
@@ -5558,13 +5557,12 @@ function runQuiz(questions, title) {
         "text": "Einzelgefahrzeichen",
         "is_correct": false
       }
-    ],
-    "picture": "C090204.png"
+    ]
   },
   {
     "id": 187,
     "key": "C090301",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Welche Bedeutung hat das abgebildete Seezeichen?",
     "answers": [
       {
@@ -5587,13 +5585,12 @@ function runQuiz(questions, title) {
         "text": "Fahrwassermitte",
         "is_correct": true
       }
-    ],
-    "picture": "C090301.png"
+    ]
   },
   {
     "id": 188,
     "key": "C090302",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Wie sieht ein Mitte-Fahrwasser-Zeichen aus?",
     "answers": [
       {
@@ -5621,7 +5618,7 @@ function runQuiz(questions, title) {
   {
     "id": 189,
     "key": "C090401",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was ist das Kardinalsystem?",
     "answers": [
       {
@@ -5649,7 +5646,7 @@ function runQuiz(questions, title) {
   {
     "id": 190,
     "key": "C090402",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Auf Kurs Süd taucht nachts voraus ein Feuer mit der dargestellten Kennung  auf. Wie ist zu steuern?",
     "answers": [
       {
@@ -5672,13 +5669,12 @@ function runQuiz(questions, title) {
         "text": "Dieses Seezeichen muss westlich passiert werden.",
         "is_correct": true
       }
-    ],
-    "picture": "C090402.png"
+    ]
   },
   {
     "id": 191,
     "key": "C090403",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Auf Kurs Nord taucht nachts voraus ein Feuer SFkl(9) auf. Wie ist zu steuern?",
     "answers": [
       {
@@ -5701,13 +5697,12 @@ function runQuiz(questions, title) {
         "text": "Das Seezeichen muss Richtung Westen umfahren werden.",
         "is_correct": true
       }
-    ],
-    "picture": "C090403.png"
+    ]
   },
   {
     "id": 192,
     "key": "C090404",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Auf Kurs Ost taucht nachts voraus ein Feuer mit der dargestellten Kennung  auf. Wie ist zu steuern?",
     "answers": [
       {
@@ -5735,7 +5730,7 @@ function runQuiz(questions, title) {
   {
     "id": 193,
     "key": "C090405",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Welche Bedeutung kann ein Leuchtfeuer mit der Kennung Q W haben?",
     "answers": [
       {
@@ -5763,7 +5758,7 @@ function runQuiz(questions, title) {
   {
     "id": 194,
     "key": "C090406",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Welche Bedeutung kann ein Leuchtfeuer mit der Kennung Q(9) W haben?",
     "answers": [
       {
@@ -5791,7 +5786,7 @@ function runQuiz(questions, title) {
   {
     "id": 195,
     "key": "C090407",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Welche Bedeutung kann ein Leuchtfeuer mit der Kennung Q(6)+LFl W  haben?",
     "answers": [
       {
@@ -5819,7 +5814,7 @@ function runQuiz(questions, title) {
   {
     "id": 196,
     "key": "C090408",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Welche Bedeutung kann ein Leuchtfeuer mit der Kennung Q(3) W haben?",
     "answers": [
       {
@@ -5847,7 +5842,7 @@ function runQuiz(questions, title) {
   {
     "id": 197,
     "key": "C090409",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Welche Bedeutung hat das abgebildete Seezeichen?",
     "answers": [
       {
@@ -5870,13 +5865,12 @@ function runQuiz(questions, title) {
         "text": "Südquadrant, im Süden zu umfahren",
         "is_correct": false
       }
-    ],
-    "picture": "C090409.png"
+    ]
   },
   {
     "id": 198,
     "key": "C090410",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Zu welchem Betonnungssystem gehört das abgebildete Seezeichen?",
     "answers": [
       {
@@ -5899,13 +5893,12 @@ function runQuiz(questions, title) {
         "text": "Einzelgefahrzeichen",
         "is_correct": false
       }
-    ],
-    "picture": "C090410.png"
+    ]
   },
   {
     "id": 199,
     "key": "C090501",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Welche Bedeutung hat das abgebildete Seezeichen?",
     "answers": [
       {
@@ -5928,13 +5921,12 @@ function runQuiz(questions, title) {
         "text": "Mittefahrwasserzeichen, kann an jeder Seite passiert werden.",
         "is_correct": false
       }
-    ],
-    "picture": "C090501.png"
+    ]
   },
   {
     "id": 200,
     "key": "C090502",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Welche Bedeutung hat das abgebildete Seezeichen?",
     "answers": [
       {
@@ -5957,13 +5949,12 @@ function runQuiz(questions, title) {
         "text": "Einzelgefahrzeichen",
         "is_correct": true
       }
-    ],
-    "picture": "C090502.png"
+    ]
   },
   {
     "id": 201,
     "key": "C090503",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was bedeutet eine schwarz-rot-schwarz waagrecht gestreifte Tonne?",
     "answers": [
       {
@@ -5991,7 +5982,7 @@ function runQuiz(questions, title) {
   {
     "id": 202,
     "key": "C090601",
-    "category": "Navigation",
+    "category": "03_Navigation",
     "question": "Was sind Sonderzeichen?",
     "answers": [
       {
@@ -6019,7 +6010,7 @@ function runQuiz(questions, title) {
   {
     "id": 203,
     "key": "D010101",
-    "category": "Rechtskunde",
+    "category": "04_Rechtskunde",
     "question": "Was ist die IALA?",
     "answers": [
       {
@@ -6047,7 +6038,7 @@ function runQuiz(questions, title) {
   {
     "id": 204,
     "key": "D010102",
-    "category": "Rechtskunde",
+    "category": "04_Rechtskunde",
     "question": "Was ist die IMO?",
     "answers": [
       {
@@ -6075,7 +6066,7 @@ function runQuiz(questions, title) {
   {
     "id": 205,
     "key": "D020401",
-    "category": "Rechtskunde",
+    "category": "04_Rechtskunde",
     "question": "Für welche Fahrtbereiche und welchen Berechtigungsumfang kann in  Österreich ein IC ausgestellt werden?",
     "answers": [
       {
@@ -6103,7 +6094,7 @@ function runQuiz(questions, title) {
   {
     "id": 206,
     "key": "D020402",
-    "category": "Rechtskunde",
+    "category": "04_Rechtskunde",
     "question": "Wie weit reichen die Fahrtbereiche lt. Jachtverordnung?",
     "answers": [
       {
@@ -6131,7 +6122,7 @@ function runQuiz(questions, title) {
   {
     "id": 207,
     "key": "D020403",
-    "category": "Rechtskunde",
+    "category": "04_Rechtskunde",
     "question": "Bis zu welcher Entfernung von der Küste bzw. von Inseln reicht der  Fahrtenbereich 1?",
     "answers": [
       {
@@ -6159,7 +6150,7 @@ function runQuiz(questions, title) {
   {
     "id": 208,
     "key": "D020404",
-    "category": "Rechtskunde",
+    "category": "04_Rechtskunde",
     "question": "Bis zu welcher Entfernung von der Küste bzw. von  Inseln reicht der  Fahrtbereich 2?",
     "answers": [
       {
@@ -6187,7 +6178,7 @@ function runQuiz(questions, title) {
   {
     "id": 209,
     "key": "D020405",
-    "category": "Rechtskunde",
+    "category": "04_Rechtskunde",
     "question": "Bis zu welcher Entfernung von der Küste bzw. von Inseln reicht der  Fahrtenbereich 3?",
     "answers": [
       {
@@ -6215,7 +6206,7 @@ function runQuiz(questions, title) {
   {
     "id": 210,
     "key": "D020406",
-    "category": "Rechtskunde",
+    "category": "04_Rechtskunde",
     "question": "Welche Jachten dürfen mit dem IC für FB1 geführt werden?",
     "answers": [
       {
@@ -6243,7 +6234,7 @@ function runQuiz(questions, title) {
   {
     "id": 211,
     "key": "D020407",
-    "category": "Rechtskunde",
+    "category": "04_Rechtskunde",
     "question": "Welche Jachten dürfen mit dem FB2 geführt werden?",
     "answers": [
       {
@@ -6271,7 +6262,7 @@ function runQuiz(questions, title) {
   {
     "id": 212,
     "key": "E010101",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was wird mit dem Begriff Wetter beschrieben?",
     "answers": [
       {
@@ -6299,7 +6290,7 @@ function runQuiz(questions, title) {
   {
     "id": 213,
     "key": "E010102",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was wird mit dem Begriff Klima beschrieben?",
     "answers": [
       {
@@ -6327,7 +6318,7 @@ function runQuiz(questions, title) {
   {
     "id": 214,
     "key": "E010103",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wodurch unterscheiden sich die Begriffe Wetter und Klima?",
     "answers": [
       {
@@ -6355,7 +6346,7 @@ function runQuiz(questions, title) {
   {
     "id": 215,
     "key": "E010201",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was sind Ursachen für unterschiedliche Zustände der Atmosphäre?",
     "answers": [
       {
@@ -6383,7 +6374,7 @@ function runQuiz(questions, title) {
   {
     "id": 216,
     "key": "E020110",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wie groß ist der niedrigste gemessene Luftdruck auf Meereshöhe?",
     "answers": [
       {
@@ -6411,7 +6402,7 @@ function runQuiz(questions, title) {
   {
     "id": 217,
     "key": "E020111",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wie groß ist der höchste gemessene Luftdruck auf Meereshöhe?",
     "answers": [
       {
@@ -6439,7 +6430,7 @@ function runQuiz(questions, title) {
   {
     "id": 218,
     "key": "E020112",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "In welchem Bereich bewegt sich der Luftdruck in gemäßigten Breiten auf  Meereshöhe?",
     "answers": [
       {
@@ -6467,7 +6458,7 @@ function runQuiz(questions, title) {
   {
     "id": 219,
     "key": "E020201",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wie lässt sich aus einer Vorhersagekarte die zu erwartende  Windgeschwindigkeit ermitteln?",
     "answers": [
       {
@@ -6495,7 +6486,7 @@ function runQuiz(questions, title) {
   {
     "id": 220,
     "key": "E020202",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Auf einer Breite von ca. 40° N herrscht ein Druckgradient von 3 hPa. Mit  welcher Windgeschwindigkeit ist zu rechnen?",
     "answers": [
       {
@@ -6523,7 +6514,7 @@ function runQuiz(questions, title) {
   {
     "id": 221,
     "key": "E020203",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Der Druckunterschied zwischen 40 sm voneinander entfernten Orten in den  mittleren Breiten beträgt 2 hPa. Mit welcher Windgeschwindigkeit ist zu  rechnen?",
     "answers": [
       {
@@ -6551,7 +6542,7 @@ function runQuiz(questions, title) {
   {
     "id": 222,
     "key": "E020204",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was trifft auf die Windgeschwindigkeit bei gleichem Druckgradienten zu?",
     "answers": [
       {
@@ -6579,7 +6570,7 @@ function runQuiz(questions, title) {
   {
     "id": 223,
     "key": "E020205",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Welche Bedeutungen kann ein geringer Isobarenabstand haben?",
     "answers": [
       {
@@ -6607,7 +6598,7 @@ function runQuiz(questions, title) {
   {
     "id": 224,
     "key": "E020206",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Position 45° N / 012° E. Welche Windrichtung/Geschwindigtkeit ist aus der  Wetterkarte etwa zu schließen?",
     "answers": [
       {
@@ -6630,13 +6621,12 @@ function runQuiz(questions, title) {
         "text": "Wind etwa NE/40kn",
         "is_correct": true
       }
-    ],
-    "picture": "E020206.png"
+    ]
   },
   {
     "id": 225,
     "key": "E020207",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Position 39° N / 010°W. Auf welche Windrichtung/-geschwindigkeit ist aus  der Wetterkarte zu schließen?",
     "answers": [
       {
@@ -6659,13 +6649,12 @@ function runQuiz(questions, title) {
         "text": "Wind etwa SE/30 kn",
         "is_correct": false
       }
-    ],
-    "picture": "E020207.png"
+    ]
   },
   {
     "id": 226,
     "key": "E020208",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Der Druckunterschied zwischen 40 sm voneinander entfernten Orten auf  etwa 45° N  beträgt 2 hPa. Mit welcher Windgeschwindigkeit ist zu rechnen?",
     "answers": [
       {
@@ -6693,7 +6682,7 @@ function runQuiz(questions, title) {
   {
     "id": 227,
     "key": "E020209",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Der Druckunterschied zwischen 120 sm voneinander entfernten Orten auf  etwa 45° N  beträgt 4 hPa. Mit welcher Windgeschwindigkeit ist zu rechnen?",
     "answers": [
       {
@@ -6721,7 +6710,7 @@ function runQuiz(questions, title) {
   {
     "id": 228,
     "key": "E020210",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Der Druckunterschied zwischen 150 sm voneinander entfernten Orten auf  etwa 45° N  beträgt 5 hPa. Mit welcher Windgeschwindigkeit ist zu rechnen?",
     "answers": [
       {
@@ -6749,7 +6738,7 @@ function runQuiz(questions, title) {
   {
     "id": 229,
     "key": "E020211",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Der Druckunterschied zwischen 75 sm voneinander entfernten Orten auf  etwa 45° N  beträgt 5 hPa. Mit welcher Windgeschwindigkeit ist zu rechnen?",
     "answers": [
       {
@@ -6777,7 +6766,7 @@ function runQuiz(questions, title) {
   {
     "id": 230,
     "key": "E020301A",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wie wird die Windstärke angegeben?",
     "answers": [
       {
@@ -6805,7 +6794,7 @@ function runQuiz(questions, title) {
   {
     "id": 231,
     "key": "E020302",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wie viele Windstärkestufen hat die Beaufortskala (ohne Windstärke 0)?",
     "answers": [
       {
@@ -6833,7 +6822,7 @@ function runQuiz(questions, title) {
   {
     "id": 232,
     "key": "E020303A",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "In welchen Maßeinheiten wird die Windgeschwindigkeit angegeben?",
     "answers": [
       {
@@ -6861,7 +6850,7 @@ function runQuiz(questions, title) {
   {
     "id": 233,
     "key": "E020303B",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wie wird die Windgeschwindigkeit angegeben?",
     "answers": [
       {
@@ -6889,7 +6878,7 @@ function runQuiz(questions, title) {
   {
     "id": 234,
     "key": "E020401",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Welche Auswirkungen auf den Wind hat die Coriolis-Kraft?",
     "answers": [
       {
@@ -6917,7 +6906,7 @@ function runQuiz(questions, title) {
   {
     "id": 235,
     "key": "E020402",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist der Gradientenwind?",
     "answers": [
       {
@@ -6945,7 +6934,7 @@ function runQuiz(questions, title) {
   {
     "id": 236,
     "key": "E020403",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist der geostrophische Wind?",
     "answers": [
       {
@@ -6973,7 +6962,7 @@ function runQuiz(questions, title) {
   {
     "id": 237,
     "key": "E020404",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist der Bodenwind?",
     "answers": [
       {
@@ -7001,7 +6990,7 @@ function runQuiz(questions, title) {
   {
     "id": 238,
     "key": "E020406",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wodurch wird der Wind von der direkten Richtung zum Minimum abgelenkt?",
     "answers": [
       {
@@ -7029,7 +7018,7 @@ function runQuiz(questions, title) {
   {
     "id": 239,
     "key": "E020407",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was sind Ursachen dafür, dass der Wind in Bodennähe nicht parallel zu den  Isobaren weht?",
     "answers": [
       {
@@ -7057,7 +7046,7 @@ function runQuiz(questions, title) {
   {
     "id": 240,
     "key": "E020601",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was gehört zu den Hauptelementen des planetarischen Windsystems?",
     "answers": [
       {
@@ -7085,7 +7074,7 @@ function runQuiz(questions, title) {
   {
     "id": 241,
     "key": "E020602",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was trifft für das planetarische Windsystem zu?",
     "answers": [
       {
@@ -7113,7 +7102,7 @@ function runQuiz(questions, title) {
   {
     "id": 242,
     "key": "E020603",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Mit welchen Winden kann in der Karibik gerechnet werden?",
     "answers": [
       {
@@ -7141,7 +7130,7 @@ function runQuiz(questions, title) {
   {
     "id": 243,
     "key": "E020604",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Welche Richtungen haben die auf der Nordhalbkugel vorkommenden  Passatwinde?",
     "answers": [
       {
@@ -7169,7 +7158,7 @@ function runQuiz(questions, title) {
   {
     "id": 244,
     "key": "E020605",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Welche Richtungen haben die auf der Südhalbkugel vorkommenden  Passatwinde?",
     "answers": [
       {
@@ -7197,7 +7186,7 @@ function runQuiz(questions, title) {
   {
     "id": 245,
     "key": "E020606",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Welche großräumigen Windsysteme gibt es im planetarischen Windsystem?",
     "answers": [
       {
@@ -7225,7 +7214,7 @@ function runQuiz(questions, title) {
   {
     "id": 246,
     "key": "E020607",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "In welchen Seegebieten tritt DER Monsun auf.",
     "answers": [
       {
@@ -7253,7 +7242,7 @@ function runQuiz(questions, title) {
   {
     "id": 247,
     "key": "E020608",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was sind die „Roaring Forties“?",
     "answers": [
       {
@@ -7281,7 +7270,7 @@ function runQuiz(questions, title) {
   {
     "id": 248,
     "key": "E020609",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Welche der folgenden Ausdrücke bezeichnen die innertropische  Konvergenzzone?",
     "answers": [
       {
@@ -7309,7 +7298,7 @@ function runQuiz(questions, title) {
   {
     "id": 249,
     "key": "E020610",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was sind Zonen mit geringer horizontaler Luftströmung?",
     "answers": [
       {
@@ -7337,7 +7326,7 @@ function runQuiz(questions, title) {
   {
     "id": 250,
     "key": "E030101",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wonach werden Wolken unterschieden?",
     "answers": [
       {
@@ -7365,7 +7354,7 @@ function runQuiz(questions, title) {
   {
     "id": 251,
     "key": "E030102",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Zu welcher Gattung gehört die abgebildete Wolke?",
     "answers": [
       {
@@ -7388,13 +7377,12 @@ function runQuiz(questions, title) {
         "text": "Altostratus",
         "is_correct": false
       }
-    ],
-    "picture": "E030102.png"
+    ]
   },
   {
     "id": 252,
     "key": "E030103",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Zu welcher Gattung gehört die abgebildete Wolke?",
     "answers": [
       {
@@ -7417,13 +7405,12 @@ function runQuiz(questions, title) {
         "text": "Cirrus",
         "is_correct": false
       }
-    ],
-    "picture": "E030103.png"
+    ]
   },
   {
     "id": 253,
     "key": "E030104",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Zu welcher Gattung gehört die abgebildete Wolke?",
     "answers": [
       {
@@ -7446,13 +7433,12 @@ function runQuiz(questions, title) {
         "text": "Stratus",
         "is_correct": false
       }
-    ],
-    "picture": "E030104.png"
+    ]
   },
   {
     "id": 254,
     "key": "E030105",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Zu welcher Gattung gehört die abgebildete Wolke?",
     "answers": [
       {
@@ -7475,13 +7461,12 @@ function runQuiz(questions, title) {
         "text": "Cumulonimbus",
         "is_correct": false
       }
-    ],
-    "picture": "E030105.png"
+    ]
   },
   {
     "id": 255,
     "key": "E030106",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Zu welcher Gattung gehört die abgebildete Wolke?",
     "answers": [
       {
@@ -7504,13 +7489,12 @@ function runQuiz(questions, title) {
         "text": "Stratus",
         "is_correct": false
       }
-    ],
-    "picture": "E030106.png"
+    ]
   },
   {
     "id": 256,
     "key": "E030107",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist aufgrund der abgebildeten Wolkenformation zu erwarten?",
     "answers": [
       {
@@ -7533,13 +7517,12 @@ function runQuiz(questions, title) {
         "text": "Stratusbewölkung, Warmfront zieht auf",
         "is_correct": false
       }
-    ],
-    "picture": "E030107.png"
+    ]
   },
   {
     "id": 257,
     "key": "E030108",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Warum sinkt in der Nacht bei klarem Himmel die Temperatur tiefer ab als bei  bewölktem Himmel?",
     "answers": [
       {
@@ -7567,7 +7550,7 @@ function runQuiz(questions, title) {
   {
     "id": 258,
     "key": "E030201",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Welche Arten von Nebel gibt es?",
     "answers": [
       {
@@ -7595,7 +7578,7 @@ function runQuiz(questions, title) {
   {
     "id": 259,
     "key": "E030202",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wie kann auf See Nebel entstehen?",
     "answers": [
       {
@@ -7623,7 +7606,7 @@ function runQuiz(questions, title) {
   {
     "id": 260,
     "key": "E030203",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wodurch kann Nebel entstehen?",
     "answers": [
       {
@@ -7651,7 +7634,7 @@ function runQuiz(questions, title) {
   {
     "id": 261,
     "key": "E030204",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Unter welchen Umständen kann sich Nebel bilden?",
     "answers": [
       {
@@ -7679,7 +7662,7 @@ function runQuiz(questions, title) {
   {
     "id": 262,
     "key": "E030205",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was wird als Seerauch bezeichnet?",
     "answers": [
       {
@@ -7707,7 +7690,7 @@ function runQuiz(questions, title) {
   {
     "id": 263,
     "key": "E040101",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wie können thermische Tiefdruckgebiete entstehen?",
     "answers": [
       {
@@ -7735,7 +7718,7 @@ function runQuiz(questions, title) {
   {
     "id": 264,
     "key": "E040102",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was sind thermische Tiefdruckgebiete?",
     "answers": [
       {
@@ -7763,7 +7746,7 @@ function runQuiz(questions, title) {
   {
     "id": 265,
     "key": "E040206",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Welches Kräftegleichgewicht beschreibt den Wind in einem Tiefdruckgebiet?",
     "answers": [
       {
@@ -7791,7 +7774,7 @@ function runQuiz(questions, title) {
   {
     "id": 266,
     "key": "E040207",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wodurch bilden sich dynamische Tiefdruckgebiete in der polaren  Tiefdruckrinne?",
     "answers": [
       {
@@ -7819,7 +7802,7 @@ function runQuiz(questions, title) {
   {
     "id": 267,
     "key": "E040208",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist ein Tief-Ausläufer?",
     "answers": [
       {
@@ -7847,7 +7830,7 @@ function runQuiz(questions, title) {
   {
     "id": 268,
     "key": "E040209",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was wird als Randtief bezeichnet?",
     "answers": [
       {
@@ -7875,7 +7858,7 @@ function runQuiz(questions, title) {
   {
     "id": 269,
     "key": "E040401A",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist eine Antizyklone?",
     "answers": [
       {
@@ -7903,7 +7886,7 @@ function runQuiz(questions, title) {
   {
     "id": 270,
     "key": "E040401B",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist eine Antizyklone?",
     "answers": [
       {
@@ -7931,7 +7914,7 @@ function runQuiz(questions, title) {
   {
     "id": 271,
     "key": "E040403",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Welches Kräftegleichgewicht beschreibt den Wind in einem Hochdruckgebiet?",
     "answers": [
       {
@@ -7959,7 +7942,7 @@ function runQuiz(questions, title) {
   {
     "id": 272,
     "key": "E040404",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wann wird ein Gebiet als Hochdruckgebiet bezeichnet?",
     "answers": [
       {
@@ -7987,7 +7970,7 @@ function runQuiz(questions, title) {
   {
     "id": 273,
     "key": "E040405",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wann wird ein Gebiet als Tiefdruckgebiet bezeichnet?",
     "answers": [
       {
@@ -8015,7 +7998,7 @@ function runQuiz(questions, title) {
   {
     "id": 274,
     "key": "E040501",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist ein Tiefdrucktrog?",
     "answers": [
       {
@@ -8043,7 +8026,7 @@ function runQuiz(questions, title) {
   {
     "id": 275,
     "key": "E040601",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wie fließt die Luft zwischen Hoch und Tief südlich des Äquators?",
     "answers": [
       {
@@ -8071,7 +8054,7 @@ function runQuiz(questions, title) {
   {
     "id": 276,
     "key": "E040701",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Welche Zusammenhänge sind durch die Rückenwindregel beschrieben?",
     "answers": [
       {
@@ -8099,7 +8082,7 @@ function runQuiz(questions, title) {
   {
     "id": 277,
     "key": "E040702",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was sagt die Rückenwindregel auf der Nordhalbkugel aus?",
     "answers": [
       {
@@ -8127,7 +8110,7 @@ function runQuiz(questions, title) {
   {
     "id": 278,
     "key": "E040703",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Welcher Zusammenhang ist durch die Querwindregel beschrieben?",
     "answers": [
       {
@@ -8155,7 +8138,7 @@ function runQuiz(questions, title) {
   {
     "id": 279,
     "key": "E040704",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wo befindet man sich in Bezug auf das Tief, wenn der Höhenwind von links  und der Bodenwind von hinten weht?",
     "answers": [
       {
@@ -8183,7 +8166,7 @@ function runQuiz(questions, title) {
   {
     "id": 280,
     "key": "E050101",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was wird als Westwetterlage bezeichnet?",
     "answers": [
       {
@@ -8211,7 +8194,7 @@ function runQuiz(questions, title) {
   {
     "id": 281,
     "key": "E050103",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was bedeutet ein Genuatief für das Wetter in der Adria?",
     "answers": [
       {
@@ -8239,7 +8222,7 @@ function runQuiz(questions, title) {
   {
     "id": 282,
     "key": "E050104",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was bedeutet ein Azorenhoch für das Wetter im Mittelmeer?",
     "answers": [
       {
@@ -8267,7 +8250,7 @@ function runQuiz(questions, title) {
   {
     "id": 283,
     "key": "E060101",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was bedeutet es, wenn der Luftdruck rasch fällt?",
     "answers": [
       {
@@ -8295,7 +8278,7 @@ function runQuiz(questions, title) {
   {
     "id": 284,
     "key": "E060102",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was bedeutet ein rascher Anstieg des Luftdrucks in der Adria?",
     "answers": [
       {
@@ -8323,7 +8306,7 @@ function runQuiz(questions, title) {
   {
     "id": 285,
     "key": "E060103",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Seit längerem herrscht gleichbleibender höherer Luftdruck. Welche  Wettersituation ist zu erwarten?",
     "answers": [
       {
@@ -8351,7 +8334,7 @@ function runQuiz(questions, title) {
   {
     "id": 286,
     "key": "E060104",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Auf mittlerer Breite fällt der Luftdruck innerhalb 3 Stunden um 4 hPa. Welche  Windstärke ist zu erwarten?",
     "answers": [
       {
@@ -8379,7 +8362,7 @@ function runQuiz(questions, title) {
   {
     "id": 287,
     "key": "E060105",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wie groß ist die tägliche Schwankung des Luftdrucks in gemäßigten Breiten  bei stabiler Wetterlage?",
     "answers": [
       {
@@ -8407,7 +8390,7 @@ function runQuiz(questions, title) {
   {
     "id": 288,
     "key": "E060106",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wie groß ist die tägliche Schwankung des Luftdrucks am Äquator bei stabiler  Wetterlage?",
     "answers": [
       {
@@ -8435,7 +8418,7 @@ function runQuiz(questions, title) {
   {
     "id": 289,
     "key": "E070101",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "In welcher Reihenfolge werden die Informationen in einem Seewetterbericht  gesendet?",
     "answers": [
       {
@@ -8463,7 +8446,7 @@ function runQuiz(questions, title) {
   {
     "id": 290,
     "key": "E070102A",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Ab welcher Windstärke wird üblicherweise eine Starkwindwarnung  herausgegeben?",
     "answers": [
       {
@@ -8491,7 +8474,7 @@ function runQuiz(questions, title) {
   {
     "id": 291,
     "key": "E070102B",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Ab welcher Windstärke wird üblicherweise eine Sturmwarnung  herausgegeben?",
     "answers": [
       {
@@ -8519,7 +8502,7 @@ function runQuiz(questions, title) {
   {
     "id": 292,
     "key": "E070203",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Worauf lässt Dünung schließen?",
     "answers": [
       {
@@ -8547,7 +8530,7 @@ function runQuiz(questions, title) {
   {
     "id": 293,
     "key": "E070204",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Welche Sichtweite wird als meteorologisch gute Sicht bezeichnet?",
     "answers": [
       {
@@ -8575,7 +8558,7 @@ function runQuiz(questions, title) {
   {
     "id": 294,
     "key": "E070301",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist MSI?",
     "answers": [
       {
@@ -8603,7 +8586,7 @@ function runQuiz(questions, title) {
   {
     "id": 295,
     "key": "E070302",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Welche Informationen werden durch MSI übermittelt?",
     "answers": [
       {
@@ -8631,7 +8614,7 @@ function runQuiz(questions, title) {
   {
     "id": 296,
     "key": "E070303",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was sind Bestandteile des MSI?",
     "answers": [
       {
@@ -8659,7 +8642,7 @@ function runQuiz(questions, title) {
   {
     "id": 297,
     "key": "E070304",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Mit welchen Geräten kann eine Wetterkarte an Bord empfangen werden?",
     "answers": [
       {
@@ -8687,7 +8670,7 @@ function runQuiz(questions, title) {
   {
     "id": 298,
     "key": "E070401",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist NAVTEX?",
     "answers": [
       {
@@ -8715,7 +8698,7 @@ function runQuiz(questions, title) {
   {
     "id": 299,
     "key": "E070402",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Welche Informationen werden u. a. über NAVTEX verbreitet?",
     "answers": [
       {
@@ -8743,7 +8726,7 @@ function runQuiz(questions, title) {
   {
     "id": 300,
     "key": "E070403",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Mit welchen Geräten können NAVTEX-Meldungen empfangen werden?",
     "answers": [
       {
@@ -8771,7 +8754,7 @@ function runQuiz(questions, title) {
   {
     "id": 301,
     "key": "E070404",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Auf welcher Frequenz / welchem Kanal werden NAVTEX-Meldungen  verbreitet?",
     "answers": [
       {
@@ -8799,7 +8782,7 @@ function runQuiz(questions, title) {
   {
     "id": 302,
     "key": "E070405",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wie kann man an Bord Wetterinformationen erhalten?",
     "answers": [
       {
@@ -8827,7 +8810,7 @@ function runQuiz(questions, title) {
   {
     "id": 303,
     "key": "E070601",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was bedeutet increasing in englischsprachigen Wetterberichten?",
     "answers": [
       {
@@ -8855,7 +8838,7 @@ function runQuiz(questions, title) {
   {
     "id": 304,
     "key": "E070602",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was bedeutet decreasing in englischsprachigen Wetterberichten?",
     "answers": [
       {
@@ -8883,7 +8866,7 @@ function runQuiz(questions, title) {
   {
     "id": 305,
     "key": "E070603",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was bedeutet backing in englischsprachigen Wetterberichten?",
     "answers": [
       {
@@ -8911,7 +8894,7 @@ function runQuiz(questions, title) {
   {
     "id": 306,
     "key": "E070604",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was bedeutet synopsis in englischsprachigen Wetterberichten?",
     "answers": [
       {
@@ -8939,7 +8922,7 @@ function runQuiz(questions, title) {
   {
     "id": 307,
     "key": "E080201",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was geben die Werte der Isohypsen in einer 500 hPa-Geopotentialkarte an?",
     "answers": [
       {
@@ -8967,7 +8950,7 @@ function runQuiz(questions, title) {
   {
     "id": 308,
     "key": "E080202",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Position Madeira (33° N/018° W): Mit welchem Druckgradienten ist etwa zu  rechnen?",
     "answers": [
       {
@@ -8990,13 +8973,12 @@ function runQuiz(questions, title) {
         "text": "Gradient 5",
         "is_correct": false
       }
-    ],
-    "picture": "E080202.png"
+    ]
   },
   {
     "id": 309,
     "key": "E080203",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Worauf weist ein hohes Geopotential in einer 500 hPa-Geopotentialkarte ihn?",
     "answers": [
       {
@@ -9024,7 +9006,7 @@ function runQuiz(questions, title) {
   {
     "id": 310,
     "key": "E080301",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist ein Windstern?",
     "answers": [
       {
@@ -9052,7 +9034,7 @@ function runQuiz(questions, title) {
   {
     "id": 311,
     "key": "E090101",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wie heißen Karten, die die durchschnittlichen monatlichen Wind- und  Stromverhältnisse größerer Seebereiche darstellen?",
     "answers": [
       {
@@ -9080,7 +9062,7 @@ function runQuiz(questions, title) {
   {
     "id": 312,
     "key": "E100201",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wieviele Stufen hat die Seegangsskala nach Douglas (ohne Stärke null)?",
     "answers": [
       {
@@ -9108,7 +9090,7 @@ function runQuiz(questions, title) {
   {
     "id": 313,
     "key": "E100202",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wonach wird der Seegang klassifiziert?",
     "answers": [
       {
@@ -9136,7 +9118,7 @@ function runQuiz(questions, title) {
   {
     "id": 314,
     "key": "E100203",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Welche Wellenhöhe wird im Seewetterbericht angegeben?",
     "answers": [
       {
@@ -9164,7 +9146,7 @@ function runQuiz(questions, title) {
   {
     "id": 315,
     "key": "E100204",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist die signifikante Wellenhöhe?",
     "answers": [
       {
@@ -9192,7 +9174,7 @@ function runQuiz(questions, title) {
   {
     "id": 316,
     "key": "E100302",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was wird als Fetch bezeichnet?",
     "answers": [
       {
@@ -9220,7 +9202,7 @@ function runQuiz(questions, title) {
   {
     "id": 317,
     "key": "E100401",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist Dünung?",
     "answers": [
       {
@@ -9248,7 +9230,7 @@ function runQuiz(questions, title) {
   {
     "id": 318,
     "key": "E100402",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was unterscheidet Windsee von Dünung?",
     "answers": [
       {
@@ -9276,7 +9258,7 @@ function runQuiz(questions, title) {
   {
     "id": 319,
     "key": "E100501A",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist Grundsee?",
     "answers": [
       {
@@ -9304,7 +9286,7 @@ function runQuiz(questions, title) {
   {
     "id": 320,
     "key": "E100501B",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist Grundsee?",
     "answers": [
       {
@@ -9332,7 +9314,7 @@ function runQuiz(questions, title) {
   {
     "id": 321,
     "key": "E100502",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Unter welchen Umständen entsteht Grundsee?",
     "answers": [
       {
@@ -9360,7 +9342,7 @@ function runQuiz(questions, title) {
   {
     "id": 322,
     "key": "E100503",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist Kreuzsee?",
     "answers": [
       {
@@ -9388,7 +9370,7 @@ function runQuiz(questions, title) {
   {
     "id": 323,
     "key": "E100504",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wie ensteht Kreuzsee?",
     "answers": [
       {
@@ -9416,7 +9398,7 @@ function runQuiz(questions, title) {
   {
     "id": 324,
     "key": "E100601",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wie wirken sich Strömungen auf den Seegang aus?",
     "answers": [
       {
@@ -9444,7 +9426,7 @@ function runQuiz(questions, title) {
   {
     "id": 325,
     "key": "E110101",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wo sind die,,Roaring Forties?",
     "answers": [
       {
@@ -9472,7 +9454,7 @@ function runQuiz(questions, title) {
   {
     "id": 326,
     "key": "E110102",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist die Westwindzone?",
     "answers": [
       {
@@ -9500,7 +9482,7 @@ function runQuiz(questions, title) {
   {
     "id": 327,
     "key": "E110103",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wie wird der Luftdruckgürtel um den Äquator bezeichnet?",
     "answers": [
       {
@@ -9528,7 +9510,7 @@ function runQuiz(questions, title) {
   {
     "id": 328,
     "key": "E110104",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist typisch für die Rossbreiten?",
     "answers": [
       {
@@ -9556,7 +9538,7 @@ function runQuiz(questions, title) {
   {
     "id": 329,
     "key": "E110105",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Durch welche Eigenschaften zeichnet sich der subtropische Hochdruckgürtel  aus?",
     "answers": [
       {
@@ -9584,7 +9566,7 @@ function runQuiz(questions, title) {
   {
     "id": 330,
     "key": "E110106",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "In welcher Klimazone herrschen östliche Winde vor?",
     "answers": [
       {
@@ -9612,7 +9594,7 @@ function runQuiz(questions, title) {
   {
     "id": 331,
     "key": "E110107",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Was ist die innertropische Konvergenzzone?",
     "answers": [
       {
@@ -9640,7 +9622,7 @@ function runQuiz(questions, title) {
   {
     "id": 332,
     "key": "E110108",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "In welchen der folgenden planetarischen Gürtel/Klimazonen herrscht hoher  Luftdruck vor?",
     "answers": [
       {
@@ -9668,7 +9650,7 @@ function runQuiz(questions, title) {
   {
     "id": 333,
     "key": "E110109",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "In welchen der folgenden Klimazonen herrscht niedriger Luftdruck vor?",
     "answers": [
       {
@@ -9696,7 +9678,7 @@ function runQuiz(questions, title) {
   {
     "id": 334,
     "key": "E110110",
-    "category": "Wetter",
+    "category": "05_Wetter",
     "question": "Wo wehen die Passatwinde?",
     "answers": [
       {
@@ -9724,7 +9706,7 @@ function runQuiz(questions, title) {
   {
     "id": 335,
     "key": "F010201A",
-    "category": "Sicherheit",
+    "category": "06_Sicherheit",
     "question": "Was ist ein Strecktau?",
     "answers": [
       {
@@ -9752,7 +9734,7 @@ function runQuiz(questions, title) {
   {
     "id": 336,
     "key": "F010201B",
-    "category": "Sicherheit",
+    "category": "06_Sicherheit",
     "question": "Was ist ein Strecktau?",
     "answers": [
       {
@@ -9780,7 +9762,7 @@ function runQuiz(questions, title) {
   {
     "id": 337,
     "key": "F010201C",
-    "category": "Sicherheit",
+    "category": "06_Sicherheit",
     "question": "Was ist ein Strecktau?",
     "answers": [
       {
@@ -9808,7 +9790,7 @@ function runQuiz(questions, title) {
   {
     "id": 338,
     "key": "F010301",
-    "category": "Sicherheit",
+    "category": "06_Sicherheit",
     "question": "Welche Bauarten von Radarreflektoren findet man auf Jachten?",
     "answers": [
       {
@@ -9836,7 +9818,7 @@ function runQuiz(questions, title) {
   {
     "id": 339,
     "key": "F010302",
-    "category": "Sicherheit",
+    "category": "06_Sicherheit",
     "question": "Wozu werden Radarreflektoren eingesetzt?",
     "answers": [
       {
@@ -9864,7 +9846,7 @@ function runQuiz(questions, title) {
   {
     "id": 340,
     "key": "F010303",
-    "category": "Sicherheit",
+    "category": "06_Sicherheit",
     "question": "Was ist das Funktionsprinzip von passiven Radarreflektoren?",
     "answers": [
       {
@@ -9892,7 +9874,7 @@ function runQuiz(questions, title) {
   {
     "id": 341,
     "key": "F010304",
-    "category": "Sicherheit",
+    "category": "06_Sicherheit",
     "question": "Nach welchem Grundprinzip arbeiten Radar-Transponder?",
     "answers": [
       {
@@ -9920,7 +9902,7 @@ function runQuiz(questions, title) {
   {
     "id": 342,
     "key": "F010305",
-    "category": "Sicherheit",
+    "category": "06_Sicherheit",
     "question": "Was trifft auf Radarreflektoren bzw. Radar-Transponder zu?",
     "answers": [
       {
@@ -9948,7 +9930,7 @@ function runQuiz(questions, title) {
   {
     "id": 343,
     "key": "F010401",
-    "category": "Sicherheit",
+    "category": "06_Sicherheit",
     "question": "Wie arbeitet AIS?",
     "answers": [
       {
@@ -9976,7 +9958,7 @@ function runQuiz(questions, title) {
   {
     "id": 344,
     "key": "F010402",
-    "category": "Sicherheit",
+    "category": "06_Sicherheit",
     "question": "Welche Antenne ist für einen AIS-B-Transceiver zweckmäßig?",
     "answers": [
       {
@@ -10004,7 +9986,7 @@ function runQuiz(questions, title) {
   {
     "id": 345,
     "key": "F011201",
-    "category": "Sicherheit",
+    "category": "06_Sicherheit",
     "question": "Wie kann die tote Zone beim Kurzwellenfunk verkleinert werden?",
     "answers": [
       {
@@ -10032,7 +10014,7 @@ function runQuiz(questions, title) {
   {
     "id": 346,
     "key": "F011202",
-    "category": "Sicherheit",
+    "category": "06_Sicherheit",
     "question": "In welchen nautischen Werken findet man Informationen über  Wetternachrichten für Kurzwellenempfänger?",
     "answers": [
       {
@@ -10060,7 +10042,7 @@ function runQuiz(questions, title) {
   {
     "id": 347,
     "key": "F040401",
-    "category": "Sicherheit",
+    "category": "06_Sicherheit",
     "question": "Was ist zu tun, wenn das Ruderrad plötzlich leer durchdreht?",
     "answers": [
       {
@@ -10088,7 +10070,7 @@ function runQuiz(questions, title) {
   {
     "id": 348,
     "key": "F040402",
-    "category": "Sicherheit",
+    "category": "06_Sicherheit",
     "question": "Was kann getan werden, wenn das Steuerseil der Ruderanlage gebrochen ist?",
     "answers": [
       {
@@ -10116,7 +10098,7 @@ function runQuiz(questions, title) {
   {
     "id": 349,
     "key": "F040403",
-    "category": "Sicherheit",
+    "category": "06_Sicherheit",
     "question": "Was kann getan werden, wenn das Ruderblatt verloren wurde?",
     "answers": [
       {
@@ -10144,7 +10126,7 @@ function runQuiz(questions, title) {
   {
     "id": 350,
     "key": "F060401",
-    "category": "Sicherheit",
+    "category": "06_Sicherheit",
     "question": "Wie werden im GMDSS die Not- und Sicherheitsfrequenzen auf VHF  überwacht?",
     "answers": [
       {
@@ -10172,7 +10154,7 @@ function runQuiz(questions, title) {
   {
     "id": 351,
     "key": "F060402",
-    "category": "Sicherheit",
+    "category": "06_Sicherheit",
     "question": "Was ist ein „Travel Report“?",
     "answers": [
       {
@@ -10200,7 +10182,7 @@ function runQuiz(questions, title) {
   {
     "id": 352,
     "key": "M010108",
-    "category": "Motor",
+    "category": "07_Motor",
     "question": "Welche Aufgaben kann die Nockenwelle beim Dieselmotor erfüllen?",
     "answers": [
       {
@@ -10228,7 +10210,7 @@ function runQuiz(questions, title) {
   {
     "id": 353,
     "key": "M010201",
-    "category": "Motor",
+    "category": "07_Motor",
     "question": "Wie gelangt beim Dieselmotor der Treibstoff in den Zylinder?",
     "answers": [
       {
@@ -10256,7 +10238,7 @@ function runQuiz(questions, title) {
   {
     "id": 354,
     "key": "M010309",
-    "category": "Motor",
+    "category": "07_Motor",
     "question": "Aus welchem Material besteht das Impellerrad der Seewasserpumpe der  Motorkühlung üblicherweise?",
     "answers": [
       {
@@ -10284,7 +10266,7 @@ function runQuiz(questions, title) {
   {
     "id": 355,
     "key": "M020204",
-    "category": "Motor",
+    "category": "07_Motor",
     "question": "Welche Ersatzteile werden zur raschen Fehlerbehebung an einem Bootsdiesel  üblicherweise mitgeführt?",
     "answers": [
       {
